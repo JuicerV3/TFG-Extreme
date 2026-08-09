@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <h1>TerraFirmaGreg - Modern</h1>
+  <h1>TerraFirmaGreg - Modern - Extreme edition</h1>
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
     <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/icon/v3/1080x_1080p_still_ring.gif?raw=true" alt="Logo" height="120"/>
   </a>
