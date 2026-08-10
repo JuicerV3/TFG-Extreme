@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "โลหะผสมยุคเริ่มต้น",
+  "category": "tfc:getting_started",
+  "icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
+  "pages": [
+    {"type": "patchouli:text", "text": "$(thing)โลหะผสม$() คือวิธีการผสมโลหะตั้งแต่สองชนิดขึ้นไปเข้าด้วยกัน เพื่อสร้างโลหะชนิดใหม่ที่แข็งแกร่งขึ้น ในช่วงต้นเกม แม้ว่าทองแดงจะเป็นโลหะที่มีประโยชน์สำหรับทำเครื่องมือ แต่โลหะระดับถัดไปจะเป็นหนึ่งในสามชนิดของ $(thing)Bronze$() โลหะผสมประกอบด้วย $(thing)โลหะ$() องค์ประกอบต่างๆ ซึ่งแต่ละชนิดต้องมีอัตราส่วนเป็นเปอร์เซ็นต์ตามที่กำหนดไว้ของปริมาณทั้งหมด"},
+    {"type": "patchouli:text", "text": "หนึ่งในวิธีการสร้างโลหะผสมในช่วงต้นเกมคือการใช้ $(thing)Small Vessel$() กระบวนการนี้มีความคล้ายคลึงกับ $(l:getting_started/finding_ores#casting)การหล่อ$() เป็นอย่างมาก อย่างไรก็ตาม แทนที่จะใช้โลหะเพียงชนิดเดียว ให้ใส่ชิ้นแร่ลงในภาชนะในปริมาณและอัตราส่วนที่ถูกต้องเพื่อผสมเป็นโลหะผสมที่ต้องการ"},
+    {"type": "patchouli:text", "text": "ตัวอย่างเช่น ในการสร้าง $(thing)Bronze$() ปริมาณ 1000 mB (แสดงทางขวามือ) คุณจะต้องใช้ $(thing)Copper$() ระหว่าง 700 ถึง 800 mB และ $(thing)Tin$() ระหว่าง 200 ถึง 300 mB$(br2)สามหน้าถัดไปจะแสดงสูตรผสมของโลหะผสมทองแดงทั้งสามชนิด โลหะผสมแต่ละชนิดสามารถใช้ทำเครื่องมือ $(l:mechanics/armor)Armor$() และสิ่งของโลหะอื่นๆ ได้ โดยพวกมันจะมีความแตกต่างกันเล็กน้อย ทำให้เครื่องมือที่ได้มีความทนทาน ประสิทธิภาพ และพลังโจมตีที่แตกต่างกัน"},
+    {"type": "patchouli:spotlight", "item": "gtceu:bronze_ingot", "title": "Bronze", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"},
+    {"type": "patchouli:spotlight", "item": "gtceu:bismuth_bronze_ingot", "title": "Bismuth Bronze", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"},
+    {"type": "patchouli:spotlight", "item": "gtceu:black_bronze_ingot", "title": "Black Bronze", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"},
+    {"type": "patchouli:text", "text": "โลหะผสมอื่นๆ ไม่เหมาะสำหรับการทำเครื่องมือ ได้แก่ $(thing)Brass$(), $(thing)Rose Gold$() และ $(thing)Sterling Silver$()$(br2)$(thing)Brass$() เป็นโลหะผสมที่มีประโยชน์สำหรับกลไกทุกประเภท รวมถึง $(l:mechanics/mechanical_power)Mechanical Power$()$(br2)$(thing)Rose Gold$() และ $(thing)Sterling Silver$() ใช้สำหรับการคราฟต์ $(l:mechanics/steel#red_steel)Red Steel$() และ $(l:mechanics/steel#blue_steel)Blue Steel$()", "title": "โลหะผสมอเนกประสงค์"},
+    {"type": "patchouli:spotlight", "anchor": "brass", "item": "create:brass_ingot", "title": "Brass", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"},
+    {"type": "patchouli:spotlight", "item": "gtceu:rose_gold_ingot", "title": "Rose Gold", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"},
+    {"type": "patchouli:spotlight", "item": "gtceu:sterling_silver_ingot", "title": "Sterling Silver", "link_recipes": false, "text": "$(br)$(bold)ข้อกำหนด:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"}
+  ],
+  "read_by_default": true,
+  "sortnum": 5,
+  "extra_recipe_mappings": {"gtceu:bronze_ingot": 3, "gtceu:bismuth_bronze_ingot": 4, "gtceu:black_bronze_ingot": 5, "create:brass_ingot": 7}
+}
