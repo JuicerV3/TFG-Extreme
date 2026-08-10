@@ -1,0 +1,64 @@
+{
+  "name": "วัสดุก่อสร้างขั้นสูง",
+  "category": "tfc:mechanics",
+  "icon": "tfc:brick/rhyolite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "นอกเหนือจาก$(l:getting_started/building_materials)วัสดุก่อสร้าง$()ดั้งเดิมของยุคหิน การได้รับเครื่องมือโลหะช่วยให้สามารถสร้างวัสดุก่อสร้างที่ขั้นสูงยิ่งขึ้นได้"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br) 1. $(l:mechanics/advanced_building_materials#alabaster)Alabaster$()$(br) 2. $(l:mechanics/advanced_building_materials#bricks_and_mortar)Bricks and Mortar$()$(br)",
+      "title": "สารบัญ"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "alabaster",
+      "text": "อะลาบาสเตอร์เป็นบล็อกก่อสร้างที่ทำจาก$(l:the_world/ores_and_minerals#gypsum)ยิปซัม$() อะลาบาสเตอร์สามารถทำได้โดยการคราฟต์โดยตรงด้วย$(l:the_world/ores_and_minerals#gypsum)ยิปซัม$() อย่างไรก็ตาม สามารถทำได้อย่างมีประสิทธิภาพมากขึ้นโดยการหมักหมัก$(l:the_world/ores_and_minerals#gypsum)ยิปซัม$() ร่วมกับ$(thing)น้ำปูนใส$() ปริมาณ 100 mB ในถังไม้",
+      "title": "อะลาบาสเตอร์"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster_brick/raw_gypsum",
+      "recipe2": "tfc:crafting/alabaster_bricks",
+      "title": "อิฐอะลาบาสเตอร์"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อะลาบาสเตอร์สามารถนำไป$(l:mechanics/dye)ย้อมสี$()เป็นสีใดก็ได้ใน$(l:mechanics/barrels)ถังไม้$()สีย้อม บล็อกอะลาบาสเตอร์ดิบยังสามารถนำไป$(l:mechanics/chisel)สกัด$()เป็น$(thing)อะลาบาสเตอร์ขัดเงา$()ได้โดยใช้โหมดสกัดแบบ$(thing)เรียบ$() หรือคราฟต์เป็นบันได, สแลบ, หรือกำแพง",
+      "title": "ของตกแต่งอะลาบาสเตอร์"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster/magenta_bricks_stairs",
+      "recipe2": "tfc:crafting/alabaster/magenta_polished_slab",
+      "title": "บันไดและสแลบ"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "bricks_and_mortar",
+      "text": "$(thing)อิฐหิน$()สามารถทำขึ้นได้โดยใช้$(l:mechanics/chisel)สิ่ว$()กับหินก้อนเล็กๆ หลายก้อน จากนั้นจำเป็นต้องใช้$(thing)ปูนก่อ$()เพื่อประกอบเป็นบล็อกก่อสร้างที่แข็งแรง$(br2)ปูนก่อสามารถทำได้โดยการใส่$(thing)ทราย$()ลงในถังไม้ที่บรรจุ$(l:mechanics/barrels#limewater)น้ำปูนใส$()",
+      "title": "อิฐและปูนก่อ"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/rock/gneiss_brick",
+      "recipe2": "tfc:crafting/rock/gneiss_bricks"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ยังสามารถสร้างบล็อกหินตกแต่งอื่นๆ ได้อีก เช่นทั้ง$(thing)อิฐร้าว$() และ$(thing)หินสกัด$() บล็อกหิน$(thing)มีตะไคร่น้ำ$()สามารถสร้างได้โดยการวางหินคอบเบิลสโตนหรืออิฐไว้ใต้น้ำ ใกล้กับอิฐหรือหินคอบเบิลสโตนที่มีตะไคร่น้ำอยู่แล้ว ตะไคร่น้ำจะเริ่มแพร่กระจายไปยังบล็อกใกล้เคียงเหล่านี้"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/rock/gneiss_chiseled",
+      "recipe2": "tfc:crafting/rock/gneiss_cracked"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:alabaster/raw": 2,
+    "tfc:alabaster/polished": 2
+  }
+}

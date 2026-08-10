@@ -1,0 +1,161 @@
+{
+  "name": "การทำกระดาษ",
+  "category": "tfc:mechanics",
+  "icon": "tfc:unrefined_paper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Paper$() สามารถทำได้จากลำต้นที่ผ่านกระบวนการของพืชผล $(l:mechanics/crops#papyrus)Papyrus$(), จาก $(l:mechanics/papermaking#parchment)Animal Hides$() หรือจาก $(l:mechanics/papermaking#paperfromwood)กระบวนการอันยาวนานโดยใช้ไม้บางประเภท$() กระดาษมีประโยชน์สำหรับสิ่งเขียน เช่น $(thing)Books$() และ $(thing)Maps$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/papyrus_strips",
+      "text": "Papyrus ต้องถูกตัดเป็นเส้นด้วย $(thing)Knife$() เสียก่อน"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/soaked_papyrus_strip",
+      "text": "จากนั้น นำแถบ Papyrus ไปแช่ใน $(l:mechanics/barrels)Barrel$() ที่บรรจุ $(thing)Water$()"
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "tfc:loom/unrefined_paper",
+      "text": "จากนั้น นำแถบ Papyrus ที่แช่น้ำแล้วมาทอเข้าด้วยกันในกี่ทอผ้า (Loom) เพื่อทำ $(thing)Unrefined Paper$() สุดท้าย จะต้องนำไปวางบนท่อนไม้และทำการ $(l:mechanics/leather_making#scraping)Scraped$() เพื่อทำเป็น $(thing)Paper$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/map",
+      "recipe2": "tfc:crafting/vanilla/name_tag"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:writable_book",
+      "recipe2": "minecraft:book_from_glue"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/pine_lectern",
+      "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เปิดไปหน้าถัดไปสำหรับข้อมูลการทำกระดาษผ่านกระบวนการแผ่นหนัง (Parchment)"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "parchment",
+      "text": "$(thing)Parchment Paper$() เริ่มต้นด้วยหนังที่ผ่านการขูดแล้ว (Scraped Hide) ทบทวน $(l:mechanics/leather_making)บทการทำเครื่องหนัง$() เพื่อเรียนรู้วิธีการทำ Parchment ต้องการการปรับปรุงสภาพด้วยไอเทมหลายชนิด อย่างแรกคือต้องใช้ $(thing)Pumice$() โดย Pumice สามารถพบได้บนพื้นใกล้กับ $(l:the_world/geology)Volcanoes$() หรือจากการใช้ $(l:mechanics/sluices)Sluicing$() หรือ $(l:mechanics/panning)Panning$() แหล่งแร่ที่มี Andesite, Rhyolite หรือ Dacite ปะปนอยู่",
+      "title": "Parchment"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:groundcover/pumice"
+        }
+      },
+      "name": "Pumice",
+      "text": "หิน Pumice ที่วางอยู่บนพื้น",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/large_treated_hide",
+      "text": "การคราฟต์ Pumice, Hammer และ Scraped Hide ร่วมกัน จะได้ชิ้นส่วนของ $(thing)Treated Hide$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/parchment",
+      "text": "Treated Hide, $(l:mechanics/glassworking#lime)Lime Powder$(), แป้ง (Flour) และไข่สด จะเสร็จสิ้นกระบวนการปรับปรุงสภาพและให้กระดาษที่สามารถใช้งานได้"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "paperfromwood",
+      "text": "$(thing)Creating Paper from Wood$() เป็นกระบวนการโบราณที่ต้องแปรรูปไม้ประเภทที่แข็งแรงให้เป็นแผ่น จากนั้นย่อยสลายให้เป็นเยื่อไม้ (Pulp) แล้วทำการอัด ตากแห้ง และขูดเพื่อทำกระดาษ$(br2)โปรดทราบว่าไม้ประเภทที่เนื้ออ่อนกว่าจะไม่เหมาะสำหรับการทำกระดาษ",
+      "title": "การทำกระดาษจากไม้"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ขั้นแรก คุณต้องหา Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Stripped Hardwood",
+      "item": {
+        "tag": "tfg:stripped_hardwood"
+      },
+      "text": "กระบวนการเริ่มต้นโดยการลอกเปลือกของ $(thing)Hardwood$() ออกเพื่อเปิดให้เห็นเส้นใยภายในของท่อนไม้ คุณสามารถลอกเปลือกท่อนไม้ได้โดยวางลงแล้วคลิกขวาด้วย Axe"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Hardwood Strip",
+      "recipe": "tfg:crafting/strip_hardwood",
+      "text": "ถัดมา ไม้ที่ลอกเปลือกแล้วจะถูกเหลาด้วย Axe เพื่อรับ $(item)Hardwood Strips$() ซึ่งสามารถทำได้โดยใช้ Axe หรือวิธีที่ซับซ้อนกว่า"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "title": "Soaked Hardwood Strip",
+      "recipe": "tfg:barrel/soak_hardwood_strip",
+      "text": "จากนั้น นำแถบไม้แต่ละชิ้นไปแช่ใน $(l:mechanics/barrels)Barrel$() ที่บรรจุ $(thing)Water$() วิธีนี้จะ $(thing)ลดทอนความแข็งแรงของโครงสร้าง$() ของ $(thing)ไม้$() เพื่อให้สามารถ $(thing)ย่อยสลายเพิ่มเติม$() ได้"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "recipe": "tfg:quern/soaked_hardwood_strip",
+      "title": "Hardwood Pulp",
+      "text": "หลังจากนั้น ให้ใช้ $(l:mechanics/quern)Quern$() บดย่อยแถบไม้ที่แช่น้ำแล้วให้กลายเป็น $(item)Hardwood Pulp$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+      "title": "การรวบรวมเยื่อไม้",
+      "text": "ในขณะที่ Quern มอบกองเยื่อไม้ขนาดเล็กให้แก่คุณ คุณจะต้องนำพวกมันมารวมกันใน $(thing)Workbench$() วิธีการบดแถบไม้ที่ซับซ้อนกว่าจะให้ปริมาณเยื่อไม้ที่สูงกว่า"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:thermochemically_treated_hardwood_dust",
+      "title": "การย่อยสลายเยื่อไม้",
+      "text": "ก่อนที่เยื่อไม้จะสามารถนำไปแปรรูปต่อเป็นกระดาษได้ จำเป็นต้องย่อยสลายเพิ่มเติมโดยการ $(thing)ต้มร่วมกับ Lye$() ใน $(l:firmalife/oven_appliances#vat)Vat$() หรือ $(l:mechanics/pot)Pot$()"
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:soaked_unrefined_paper",
+      "title": "การอัดเยื่อไม้",
+      "text": "หลังจากย่อยสลายด้วยการต้มร่วมกับ Lye แล้ว $(item)Thermochemically Treated Hardwood Pulp$() สามารถนำมาอัดเป็นแผ่น $(item)Soaked Unrefined Paper$() ได้"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfg:anvil/soaked_unrefined_paper",
+      "text": "คุณสามารถใช้ $(l:mechanics/anvils)Anvil$() ในการตีเยื่อไม้ให้เป็นแผ่นได้"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "การย่ำในถัง Barrel",
+      "item": {
+        "tag": "firmalife:stomping_barrels"
+      },
+      "text": "อีกวิธีหนึ่ง คุณสามารถย่ำ Thermochemically Treated Hardwood Pulp ใน $(l:firmalife/wine)Stomping Barrel$() ได้"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "tfg:drying/unrefined_paper",
+      "text": "ขั้นตอนสุดท้ายคือการ $(l:firmalife/drying)Drying (ตากแห้ง)$() $(item)Soaked Unrefined Paper$() ให้กลายเป็น $(item)Unrefined Paper$() ซึ่งสามารถนำไป Scraped เป็น $(item)Paper$() ได้ตามที่แสดงไว้ก่อนหน้านี้"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ทางลัดลดขั้นตอน...?",
+      "text": "การก้าวหน้าใน Tech-Tree จะช่วยให้คุณสร้างกระดาษจากไม้โดยใช้ขั้นตอนโดยรวมน้อยลง ตรวจสอบ $(thing)EMI$() สำหรับแนวทางต่างๆ ที่คุณสามารถใช้ในการทำกระดาษจากไม้ได้"
+    }
+  ],
+  "read_by_default": true
+}

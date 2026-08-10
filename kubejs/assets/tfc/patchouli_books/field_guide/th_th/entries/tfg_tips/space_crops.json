@@ -1,0 +1,590 @@
+{
+	"name": "พืชต่างดาว",
+	"category": "tfc:tfg_tips",
+	"icon": "betterend:textures/item/blossom_berry.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "พืชต่างดาว",
+			"text": "ปรากฏว่าโลกไม่ใช่เทหวัตถุบนฟากฟ้าเพียงแห่งเดียวที่มีชีวิต ในระหว่างการเดินทาง คุณอาจพบกับพืชพรรณกินได้ชนิดอื่นๆ พืชเหล่านี้ทั้งหมดใช้ระบบกลไกเดียวกันกับที่คุณคุ้นเคยบนโลก (โดยมีข้อยกเว้นบางประการ) และสามารถปลูกได้ในพื้นที่การเกษตร (Farmland) ทั่วไป, ใน $(l:firmalife/greenhouse)เรือนกระจก (Greenhouse)$() ของ Firmalife หรือในเรือนกระจกไฟฟ้า (Electric Greenhouse) ของ GregTech ตามความต้องการของคุณ"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)เครื่องกระจายอากาศ (Air Distributor)$() จะช่วยรักษาอุณหภูมิในพื้นที่ปิดให้คงที่อยู่ที่ 15 °C เนื่องจากเหตุผลทางเทคนิค อุณหภูมินี้จึงไม่สามารถแสดงในทูลทิปของ Jade ได้ขณะอยู่บนดาวเคราะห์ดวงอื่น คุณจึงต้องใช้แท็บสภาพอากาศ (Climate tab) ในช่องเก็บของของคุณเพื่อตรวจสอบอุณหภูมิ$(br2)อีกทางเลือกหนึ่งคือการใช้เรือนกระจกของ Firmalife ซึ่งแม้ว่าจะให้ผลผลิตไม่มากเท่า แต่ก็ไม่ต้องคำนึงถึงสภาพภูมิอากาศทั้งหมดเช่นกัน"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "สารบัญ",
+			"text": "$(li)$(l:tfc:tfg_tips/space_crops#amber_root)Amber Root$()$(li)$(l:tfc:tfg_tips/space_crops#blossom_berry)Blossom Berry$()$(li)$(l:tfc:tfg_tips/space_crops#bolux_mushroom)Bolux Mushroom$()$(li)$(l:tfc:tfg_tips/space_crops#bulbkin)Bulbkin$()$(li)$(l:tfc:tfg_tips/space_crops#chalmie_mushroom)Chalmie Mushroom$()$(li)$(l:tfc:tfg_tips/space_crops#chorus_fruit)Chorus Fruit$()$(li)$(l:tfc:tfg_tips/space_crops#nox_berry)Nox Berry$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chorus_fruit",
+			"title": "Chorus Fruit",
+			"text": "$(bold)ตำแหน่ง$(): ดวงจันทร์ (The Moon)$(br)$(bold)ไบโอม$(): Chorus Forest, Chorus Thicket$(br2)ต้น Chorus Plant เจริญเติบโตเป็นทรงสูง การทำลายลำต้นจะไม่ได้รับอะไรเลย ในขณะที่การทำลายดอก (Flower) ที่อยู่ด้านบนจะได้รับ Chorus Fruit หรือดอกไม้$(br)Chorus Fruit สามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผลไม้ (Fruit)$() นำไปทำสุกเป็น $(item)Popped Chorus Fruit$() หรือนำไปกลั่นเป็น $(thing)ไนโตรเจน (Nitrogen)$() ได้$(br)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"Z  "
+					],
+					[
+						"V D"
+					],
+					[
+						"EXB"
+					],
+					[
+						" V "
+					],
+					[
+						" 0 "
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:moon_sand",
+					"V": "tfg:lunar_chorus_plant[down=true,up=true]",
+					"E": "tfg:lunar_chorus_plant[south=true,up=true]",
+					"X": "tfg:lunar_chorus_plant[north=true,down=true,south=true]",
+					"B": "tfg:lunar_chorus_plant[north=true,up=true]",
+					"D": "tfg:lunar_chorus_flower[age=5]",
+					"Z": "tfg:lunar_chorus_flower[age=0]"
+				}
+			},
+			"text": "$(thing)Chorus Flower$() สามารถปลูกได้ด้วยตนเองโดยการนำไปวางบนบล็อกกรวด (Gravel) หรือทราย (Sand) ใดๆ",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amber_root",
+			"title": "Amber Root",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 0 - 40 %$(br)$(bold)สารอาหารที่ต้องการ$(): ฟอสฟอรัส (Phosphorus)$(br2)Amber Root เป็นพืชเพาะปลูกขนาดหนึ่งบล็อก เมล็ด Amber Root Seeds สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะให้ผลผลิตเป็น $(item)Amber Shoots$() ซึ่งสามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ธัญพืช (Grain)$() ได้"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:amber_root[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Amber Root ป่า (Wild Amber Root)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Amber Mycelium และ Rusticus Mycelium",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blossom_berry",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 70 - 100 %$(br)$(bold)สารอาหารที่ต้องการ$(): โพแทสเซียม (Potassium)$(br2)Blossom Berry เป็นพืชเพาะปลูกขนาดหนึ่งบล็อก เมล็ด Blossom Berry Seeds สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะให้ผลผลิตเป็น $(item)Blossom Berries$() ซึ่งสามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผลไม้ (Fruit)$() ได้",
+			"title": "Blossom Berry"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:blossom_berry[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Blossom Berry ป่า (Wild Blossom Berry)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Amber, Rusticus หรือ Sangnum Mycelium"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bolux_mushroom",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 0 - 40 %$(br)$(bold)สารอาหารที่ต้องการ$(): ฟอสฟอรัส (Phosphorus)$(br2)เห็ด Bolux Mushroom เป็นพืชเพาะปลูกขนาดหนึ่งบล็อก สปอร์ Bolux Mushroom Spores สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะให้ผลผลิตเป็น $(item)Bolux Mushrooms$() ซึ่งสามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผัก (Vegetables)$() ได้$(br2)แนะนำให้ $(item)ปรุงสุก (cook)$() เห็ด Bolux Mushrooms ก่อนรับประทาน",
+			"title": "Bolux Mushroom"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:bolux_mushroom[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)เห็ด Bolux Mushroom ป่า (Wild Bolux Mushrooms)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Amber, Rusticus หรือ Sangnum Mycelium"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bulbkin",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -100 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 0 - 60 %$(br)$(bold)สารอาหารที่ต้องการ$(): ไนโตรเจน (Nitrogen)$(br2)Bulbkin เป็นพืชเลื้อยขยายพื้นที่ (Spreading crop) เมล็ด Bulbkin Seeds สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะขยายวางบล็อก $(item)Bulbkin Block$() ได้สูงสุดสองบล็อกบนพื้นข้างเคียงเมื่อต้นโตเต็มที่ หากเก็บบล็อก Bulbkin ออกไป และต้นไม้โตเต็มที่อีกครั้ง ก็สามารถเติบโตขยาย Bulbkin เพิ่มได้อีก Bulbkin สามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผลไม้ (Fruit)$() หรือนำไปแปรรูปเป็น $(thing)ผงเรืองแสง (Glowstone Dust)$() ได้$(br)",
+			"title": "Bulbkin"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=1]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=2]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" C ",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=3]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfg:grass/mars_farmland",
+						"0": "tfg:grass/mars_farmland",
+						"C": "betterend:cave_pumpkin_plant[age=3,south=true]",
+						"P": "betterend:cave_pumpkin"
+					}
+				}
+			],
+			"text": "$(thing)Bulbkin ป่า (Wild Bulbkins)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Amber หรือ Sangnum Mycelium"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chalmie_mushroom",
+			"title": "Chalmie Mushroom",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 0 - 40 %$(br)$(bold)สารอาหารที่ต้องการ$(): ฟอสฟอรัส (Phosphorus)$(br2)เห็ด Chalmie Mushroom เป็นพืชเพาะปลูกขนาดหนึ่งบล็อก สปอร์ Chalmie Mushroom Spores สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะให้ผลผลิตเป็น $(item)Chalmie Mushrooms$() ซึ่งสามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผัก (Vegetables)$() ได้$(br2)แนะนำให้ $(item)ปรุงสุก (cook)$() เห็ด Chalmie Mushrooms ก่อนรับประทาน"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:chorus_mushroom[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)เห็ด Chalmie Mushroom ป่า (Wild Chalmie Mushrooms)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Amber, Rusticus และ Sangnum Mycelium"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nox_berry",
+			"title": "Nox Berry",
+			"text": "$(bold)ตำแหน่ง$(): ดาวอังคาร (Mars)$(br)$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ความชื้น$(): 50 - 100 %$(br)$(bold)สารอาหารที่ต้องการ$(): โพแทสเซียม (Potassium)$(br2)Nox Berry เป็นพืชเพาะปลูกขนาดหนึ่งบล็อก เมล็ด Nox Berry Seeds สามารถนำไปปลูกบนพื้นที่การเกษตร (Farmland) และจะให้ผลผลิตเป็น $(item)Nox Berries$() ซึ่งสามารถรับประทานเพื่อเพิ่มค่าสารอาหารหมวด $(thing)ผลไม้ (Fruit)$() ได้$(br2)แนะนำให้ $(item)ปรุงสุก (cook)$() Nox Berries ก่อนรับประทาน"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=0]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=1]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=2]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "betterend:shadow_berry[age=3]",
+						"Z": "tfg:grass/mars_farmland"
+					}
+				}
+			],
+			"text": "$(thing)Nox Berry ป่า (Wild Nox Berries)$() สามารถเติบโตได้ในทุกสภาพภูมิอากาศบน Rusticus และ Sangnum Mycelium"
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:lunar_chorus_flower": 4,
+		"minecraft:chorus_fruit": 4,
+		"betterend:amber_root_seeds": 6,
+		"betterend:amber_root_product": 6,
+		"betterend:blossom_berry_seeds": 8,
+		"betterend:blossom_berry_product": 8,
+		"betterend:bolux_mushroom_seeds": 10,
+		"betterend:bolux_mushroom_product": 10,
+		"betterend:cave_pumpkin_plant_seeds": 12,
+		"betterend:cave_pumpkin": 12,
+		"betterend:chorus_mushroom_seeds": 14,
+		"betterend:chorus_mushroom_product": 14,
+		"betterend:shadow_berry_seeds": 16,
+		"betterend:shadow_berry_product": 16
+	}
+}

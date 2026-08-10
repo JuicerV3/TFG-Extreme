@@ -1,0 +1,28 @@
+{
+	"name": "The Unposter",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Unposter$() ใช้สำหรับเพาะปลูกเห็ด$(br2)คุณสามารถใส่ไอเทมชนิดเดียวกับที่ใช้ใน composter ได้ แต่แทนที่จะทำ compost เมื่อมีเห็ดอยู่ในระยะของมัน มันจะใช้ไอเทมข้างในเพื่อขยายพันธุ์เห็ดนั้นในพื้นที่รอบๆ ตัวมัน"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "หมายเหตุเพิ่มเติม",
+			"text": "$(thing)Unposter$() จะค้นหาและขยายพันธุ์เห็ดในพื้นที่สี่เหลี่ยมขนาด 11x11 โดยมีตัวมันเองเป็นจุดศูนย์กลาง$(br2)โปรดทราบว่าเห็ดเมื่อถูกเก็บขึ้นมาแล้ว จะไม่สามารถนำกลับไปวางลงบนพื้นได้อีก คุณจะต้องค้นหาเห็ดที่เกิดตามธรรมชาติเพื่อให้ unposter ทำงาน"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/unposter_radius.png"
+			],
+			"border": true
+		}
+	],
+	"read_by_default": true
+}

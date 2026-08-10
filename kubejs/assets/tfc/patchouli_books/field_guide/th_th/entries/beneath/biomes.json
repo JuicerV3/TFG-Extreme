@@ -1,0 +1,111 @@
+{
+	"name": "Biomes",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath มีไบโอมใหม่ให้สำรวจเต็มไปหมด! โดย The Beneath สามารถแบ่งออกเป็นสามชั้นตามแนวตั้ง ซึ่งแต่ละชั้นจะมีชุดไบโอมของตัวเอง ยิ่งคุณลึกลงไปเท่าไหร่ ทุกไบโอมก็ยิ่งร้อนและอันตรายมากขึ้นเท่านั้น!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Salt Caves",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "เหมือนสายลมมหาสมุทรอันอบอุ่น ไบโอมนี้เต็มไปด้วย $(item)Halite$() เหมาะอย่างยิ่งสำหรับใช้สร้างฐาน!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Muggy Bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "ชื้นและคล้ายหนองน้ำ เป็นแหล่งไม้ที่ปลอดภัย หากคุณสามารถหลีกเลี่ยง $(thing)Crocodiles$() ได้"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Decaying Caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "เหล่านักรีไซเคิลของธรรมชาติกำลังทำงานอย่างหนักในภูมิภาคที่อับชื้นและเต็มไปด้วยการเน่าเปื่อยนี้"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Webbed Lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "ไม่ต้องเดาเลยว่ามีตัวอะไรอาศัยอยู่ที่นี่! นอกจากนี้ยังโดดเด่นด้วยเสา $(thing)Travertine$() ขนาดใหญ่อีกด้วย"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Tar Pools",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "เป็นปราบเกลื่อนด้วยทรายคล้ายทะเลทรายขนาดเล็ก พื้นที่นี้มี $(thing)Tar Pits$() เหนียวหนึบที่เต็มไปด้วยน้ำมัน"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Geothermal Springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "ไม่มี Sulfur Cubes ที่นี่ แต่ไบโอมที่มีไอน้ำพวยพุ่งนี้เป็นสถานที่ที่ดีเยี่ยมในการหา $(thing)Spring Water$() สำหรับการฟื้นฟูสุขภาพ"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Thorny Grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "ไบโอมที่สัญจรไปมาได้ยากลำบาก ซึ่งมีพืชที่จะส่งผลกระทบต่อคุณเมื่อเหยียบลงไป ระวังให้ดี!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lush Hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "ร้อนและเต็มไปด้วยพื้นที่สีเขียว! เฟินที่หนาทึบปกปิด $(thing)Kaolin Clay$() ที่อยู่ข้างใต้"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Ash Forest",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "สิ่งที่หลงเหลืออยู่ของ Lush Hollow หลังจากเกิดไฟป่าบ่อยครั้งที่เกิดจากความร้อน"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lava Floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "พื้นที่ $(thing)Pyroxenite$() ที่อุดมไปด้วยแร่ ตัดสลับด้วยสายธารลาวา"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basalt Deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "ไบโอม Nether ยอดฮิตของทุกคนกลับมาแล้ว และยังคงอันตรายในการเดินทางเช่นเคย"
+		}
+	],
+	"read_by_default": true
+}

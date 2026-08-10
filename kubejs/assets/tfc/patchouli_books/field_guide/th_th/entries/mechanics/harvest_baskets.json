@@ -1,0 +1,26 @@
+{
+	"name": "Harvest Baskets",
+	"icon": "tfg:harvest_basket",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Harvest Baskets",
+			"item": {
+				"tag": "tfg:harvester"
+			},
+			"text": "สร้างขึ้นมาสำหรับผู้ที่มีรูปร่างเตี้ย--$(thing)Harvest Baskets$() เป็นอุปกรณ์ที่จำเป็นอย่างยิ่งสำหรับการเก็บผลไม้จากต้นไม้และพุ่มไม้$(br)การใช้งาน Harvest Basket ให้คลิกขวาที่ต้นไม้ผลหรือพุ่มไม้ผล แล้วบล็อกทั้งหมดใน$(thing)รัศมี 7 บล็อก$() จะถูกเก็บเกี่ยว"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Harvest Basket ทั่วไปมีความทนทาน $(thing)128$() ในขณะที่ aluminium Harvest Basket จะไม่เสียความทนทานเลยเมื่อใช้งาน นอกจากนี้ Harvest Basket ยังสามารถนำไปใช้งานร่วมกับอุปกรณ์อย่าง $(thing)Create Deployer$() เพื่อทำระบบเก็บเกี่ยวอัตโนมัติได้ โดยตัวตะกร้าจะเสียความทนทานในระหว่างกระบวนการทำงาน"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Harvest Basket",
+			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
+			"text": "$(item)Harvest Basket$() แบบพื้นฐานสามารถทำได้จาก soaked papyrus หรือไม้เนื้อแข็ง"
+		}
+	]
+}

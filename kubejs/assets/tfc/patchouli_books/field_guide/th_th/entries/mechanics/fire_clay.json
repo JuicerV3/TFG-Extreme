@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Fire Clay",
+  "category": "tfc:mechanics",
+  "icon": "tfc:fire_clay",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ประโยชน์การใช้งานของ fire clay มีจำนวนไม่มาก แต่ทั้งหมดล้วนมีความสำคัญ Fire clay เป็นดินเหนียวรูปแบบที่แข็งแกร่งกว่าซึ่งทนความร้อนได้ดีกว่า มันถูกใช้สำหรับทำสิ่งของที่ต้องสัมผัสกับความร้อนสูงมาก!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_clay",
+      "text": "Fire clay ทำจากผง $(l:tfg_ores/earth_vein_index#normal_graphite)graphite$() ที่บดใน $(l:mechanics/quern)quern$() ร่วมกับผง $(l:tfg_ores/surface_kaolin#powder)kaolinite$()"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/kaolin_clay",
+      "text": "ผง Kaolinite ทำขึ้นโดยการให้ความร้อนแก่ $(l:mechanics/surface_kaolin)Kaolin Clay$() อย่างไรก็ตาม กระบวนการนี้ไม่ได้สมบูรณ์แบบ และมีเพียง 20% ของดินเหนียวเท่านั้นที่จะกลายเป็นผง!"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "crucible",
+      "recipe": "tfc:fire_clay_knapping/crucible",
+      "text": "$(l:mechanics/crucible)Crucible$() ในสภาพที่ยังไม่ได้เผาทำขึ้นมาจาก fire clay"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "fire_bricks",
+      "recipe": "tfc:fire_clay_knapping/brick",
+      "text": "$(l:mechanics/blast_furnace)Blast Furnace$() รับเฉพาะอิฐทนไฟ (fire bricks) เป็นฉนวนเท่านั้น"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+      "text": "$(thing)Fire Ingot Molds$() เป็น $(l:getting_started/pottery#mold)Ingot Mold$() ชนิดที่แข็งแกร่งกว่า ซึ่งมีโอกาสแตกหักเพียง 1 ใน 100 เมื่อเทียบกับ 1 ใน 10 สำหรับแม่พิมพ์ ingot mold ทั่วไป"
+    }
+  ],
+  "read_by_default": true
+}

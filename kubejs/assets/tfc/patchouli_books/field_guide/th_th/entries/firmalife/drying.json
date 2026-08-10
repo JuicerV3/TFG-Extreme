@@ -1,0 +1,42 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Drying (การตากแห้ง)",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:drying_mat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Drying Mat$() (เสื่อตาก) ใช้สำหรับตากแห้งไอเท็ม คราฟต์ขึ้นโดยใช้ $(thing)Fruit Leaves$() (ใบไม้ผล) ซึ่งหาได้จากการทำลายใบของ $(thing)Fruit Trees$() (ต้นไม้ผล)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/drying_mat",
+      "text": "สูตรคราฟต์สำหรับ Drying Mat (เสื่อตาก)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "วิธีใช้งานเสื่อตาก ให้นำไปวางไว้กลางแจ้งแดดส่องถึง แล้ววางไอเท็มลงไปโดยกด $(item)$(k:key.use)$() หลังจากผ่านไปครึ่งวัน ไอเท็มจะตากแห้งสมบูรณ์ แต่หากฝนตก กระบวนการตากแห้งจะต้องเริ่มต้นใหม่ทั้งหมด"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/solar_drier",
+      "text": "Solar Drier (เครื่องตากพลังงานแสงอาทิตย์) ทำงานเหมือนกับเสื่อตาก แต่มีความเร็วสูงกว่าถึง 12 เท่า"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เสื่อตาก (Drying mat) สามารถทำเป็นระบบอัตโนมัติได้ การดันหัว Piston เข้าใส่เสื่อตากจะดันไอเท็มให้หลุดออกมา และการดร็อปไอเท็มลงบนเสื่อตากจะวางไอเท็มลงบนเสื่อโดยอัตโนมัติ"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/drying_fruit",
+      "text": "การตากแห้งผลไม้เป็นการใช้งานเสื่อตากที่พบได้ทั่วไป ผลไม้ตากแห้งนำไปใช้เป็นส่วนผสมในบางสูตรอาหาร และมีอายุการเก็บรักษายาวนานยิ่งขึ้น"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/tofu",
+      "text": "Tofu (เต้าหู้) ทำขึ้นโดยใช้เสื่อตาก (Drying mat)"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

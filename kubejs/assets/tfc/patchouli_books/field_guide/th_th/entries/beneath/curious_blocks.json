@@ -1,0 +1,29 @@
+{
+	"name": "บล็อกพิเศษ",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct",
+			"text": "ทางส่งน้ำ (Aqueducts) สามารถใช้ขนย้ายลาวาและของเหลวอื่นๆ ได้เช่นกัน ซึ่งอาจเป็นประโยชน์อย่างมากในการสร้าง $(l:beneath/hellforge)Hellforge$()"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks",
+			"text": "อิฐนรก (Hellbricks) เป็นบล็อกก่อสร้างที่ใช้สำหรับการสร้าง $(l:beneath/hellforge)Hellforge$() เช่นกัน"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ancient_altar",
+			"text": "ฐานวางพายร็อกซิไนต์ (Pyroxenite Pedestal) สามารถใช้จัดแสดงสิ่งของที่คุณต้องการอวดได้!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
+			"text": "อิฐมิกมาไทต์ (Migmatite) และพายร็อกซิไนต์ (Pyroxenite) ทำขึ้นเหมือนกับอิฐทั่วไป ซึ่งรวมถึงขั้นตอนที่ต้องทำเป็นไอเทมก้อนอิฐก่อนด้วย"
+		}
+	],
+	"read_by_default": true
+}

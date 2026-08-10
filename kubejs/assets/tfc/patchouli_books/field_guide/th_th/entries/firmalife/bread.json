@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "ขนมปัง",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ในการทำ $(thing)ขนมปัง$() ก่อนอื่นคุณต้องได้รับ $(thing)ยีสต์$() เสียก่อน การเตรียมยีสต์ชุดแรก ทำได้โดยนำ $(l:firmalife/drying)ผลไม้อบแห้ง$() ไปปิดผนึกไว้ในถังไม้ที่มี $(thing)น้ำ$() หลังจากผ่านไปสามวัน $(thing)หัวเชื้อยีสต์$() จะก่อตัวขึ้น$(br)หลังจากนี้ คุณสามารถเลี้ยงยีสต์ของคุณได้โดยนำหัวเชื้อยีสต์ไปปิดผนึกในถังไม้ร่วมกับ $(thing)แป้ง$() ซึ่งจะทำให้ยีสต์เพิ่มจำนวนขึ้น โดยแป้ง 1 ชิ้นต่อยีสต์ 100mB จะได้ยีสต์เพิ่มเป็น 600mB ถือว่าคุ้มค่ามาก!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "สามารถนำหัวเชื้อยีสต์ สารให้ความหวาน และแป้งมารวมกันเพื่อทำ $(thing)โด$() ได้ โดยแป้งโดสามารถนำไปทำให้สุกได้ตามปกติเพื่อทำเป็น $(thing)ขนมปัง!$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "ขนมปังแผ่น",
+      "text": "เมื่ออบเสร็จแล้ว คุณสามารถใช้ $(thing)มีด$() หั่นขนมปังออกเป็น $(thing)แผ่น$() ซึ่งสามารถนำไปใช้สำหรับ $(l:tfc:mechanics/sandwiches)การทำแซนด์วิช$() หรือนำไปปิ้งจนเป็น $(thing)ขนมปังปิ้ง$() ที่ทาด้วย $(thing)เนย$() หรือแยมผลไม้ก็ได้"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "ขนมปังปิ้ง"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

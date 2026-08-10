@@ -1,0 +1,80 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Quern",
+  "category": "tfc:mechanics",
+  "icon": "tfc:quern",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Quern$() เป็นอุปกรณ์สำหรับบดไอเทม มันสามารถบดแร่ดิบสำหรับการ$(l:tfg_ores/ore_basics#processing)แปรรูป$() รวมถึงใช้ทำผงชนิดต่างๆ $(l:mechanics/dye)สีย้อม$() และไอเทมอื่นๆ อีกหลายชนิด โดยประกอบขึ้นมาจาก $(thing)Base$() และ $(thing)Handstone$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/quern",
+      "text": "ส่วนฐานของ quern สามารถคราฟต์ได้ด้วยบล็อก $(thing)smooth stone$() สามบล็อก และบล็อก $(thing)Stone$() ชนิดใดก็ได้อีกสามบล็อก$(br2)บล็อกหินสามารถรับได้ผ่าน$(l:getting_started/primitive_anvils#raw_rock)การสกัด$() และบล็อก smooth stone ได้จากการใช้ $(l:mechanics/chisel)Chisel$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/handstone",
+      "text": "quern จำเป็นต้องมี $(thing)Handstone$() ในการทำงาน"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_empty.png"
+      ],
+      "text": "ชี้ไปที่ด้านบนของบล็อก quern แล้วกด $(item)$(k:key.use)$() เพื่อวาง handstone",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_add_item.png"
+      ],
+      "text": "กด $(item)$(k:key.use)$() ที่ด้านบนของ handstone เพื่อใส่ไอเทม",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_handle.png"
+      ],
+      "text": "กด $(item)$(k:key.use)$() ที่มือหมุนเพื่อหมุน handstone",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_result.png"
+      ],
+      "text": "ผลลัพธ์จะปรากฏขึ้นที่ฐานของ quern ให้กด $(item)$(k:key.use)$() ที่บริเวณใดก็ได้บนฐานเพื่อเก็บไอเทมออกมา",
+      "border": true
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "Crushed Ore",
+      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+      "text": "$(l:tfg_ores/ore_basics#processing)แร่$() สามารถนำมาบดเพื่อรับโลหะเพิ่มขึ้นได้"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "Powders",
+      "recipe": "tfg:quern/sulfur",
+      "text": "quern ถูกใช้เพื่อทำ $(thing)Powders$() แบบต่างๆ จากฝุ่นแร่ เช่น $(thing)Sulfur$() นอกจากนี้ยังสามารถนำ $(thing)Gems$() มาบดเป็นผงได้เช่นกัน"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "Dyes",
+      "recipe": "tfc:quern/red_dye",
+      "text": "$(l:mechanics/dye)สีย้อม$() สามารถรับได้จากดอกไม้ชนิดต่างๆ"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "tfc:foods/flour"
+      },
+      "text": "$(thing)Crops$() สามารถนำมาแปรรูปด้วยมีดหรือ quern เพื่อให้ได้ $(thing)Grain$() ซึ่งสามารถนำไปบดต่อจนกลายเป็น $(thing)Flour$() ได้"
+    }
+  ],
+  "read_by_default": true
+}

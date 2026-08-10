@@ -1,0 +1,68 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Blast Furnace",
+  "category": "tfc:mechanics",
+  "icon": "tfc:blast_furnace",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Blast Furnace$() คืออุปกรณ์ระดับสูงที่ใช้ในการสร้าง $(thing)Steel$() โดยการผสม $(l:getting_started/finding_ores)Iron Ores$(), $(l:tfg_tips/basic_automation)Coke$() หรือ $(l:beneath/ores_and_minerals#cursecoal)Anthacite$() และ $(l:mechanics/flux)Flux$() ในสภาพแวดล้อมที่ร้อนและได้รับการควบคุม คุณจะสามารถสร้างโลหะที่แข็งแกร่งกว่าเหล็กหล่อหรือเหล็กเหนียวได้$(br2)ในการสร้าง blast furnace คุณจะต้องมี $(l:mechanics/crucible)Crucible$() และ $(thing)Wrought Iron Plates$() จำนวนมากเป็นอันดับแรก"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/blast_furnace",
+      "text": "การคราฟต์ blast furnace จำเป็นต้องใช้ $(thing)Crucible$() ร่วมกับ $(thing)Double Wrought Iron Plates$() จำนวนหนึ่งที่คุณต้องใช้"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "จากนั้นคุณจะต้องสร้าง blast furnace ร่วมกับ $(thing)Chimney$() ของมัน โดยปล่องไฟจะต้องสร้างขึ้นจาก $(l:mechanics/fire_clay#fire_bricks)Reinforced Fire Bricks$() เนื่องจากมีความแข็งแรงพอที่จะทนต่อความร้อนสูงได้ อิฐเหล่านี้สามารถคราฟต์ได้จากบล็อกอิฐทนไฟ และแผ่นเหล็กหล่อหรือแผ่นเหล็กเหนียว คุณสามารถใช้แผ่นเหล็กติดเข้ากับด้านที่เปิดโล่งของอิฐแต่ละด้านได้โดยการกด $(item)$(k:key.sneak)$() + $(item)$(k:key.use)$() ขณะถือแผ่นเหล็กในมือ หรือคราฟต์เป็น $(l:mechanics/blast_furnace_insulation)Blast Furnace Insulation$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:blast_furnace",
+      "name": "A Blast Furnace",
+      "text": "blast furnace ที่มีความสูงของปล่องไฟขั้นต่ำ",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ปล่องไฟของ blast furnace สามารถสร้างได้สูงสุดห้าชั้น โดยแต่ละชั้นจะต้องใช้ $(thing)Fire Bricks$() 4 บล็อก และ $(thing)Wrought Iron Plates$() 12 แผ่น การมีจำนวนชั้นมากขึ้นจะช่วยเพิ่มความจุรวมของ blast furnace ทำให้สามารถถลุง steel ได้มากขึ้นในแต่ละครั้ง ปล่องไฟแต่ละชั้น (สูงสุดห้าชั้น) จะช่วยให้ blast furnace บรรจุไอเทมแร่เพิ่มขึ้นได้ชั้นละ 4 ชิ้น"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ในการใช้งาน blast furnace คุณต้องโยนไอเทมลงไปทางด้านบนของปล่องไฟ — สำหรับการผลิต steel คุณต้องใส่ไอเทม $(l:getting_started/finding_ores)Iron Ores$() และ $(l:mechanics/flux)Flux$() ในจำนวนที่เท่ากัน แร่เหล็กหรือไอเทมใดๆ ที่สามารถละลายเป็น $(thing)Cast Iron$() ได้สามารถใช้ได้ทั้งหมด นอกจากนี้คุณยังต้องใส่ $(l:tfg_tips/basic_automation)Coke$() หรือ $(l:beneath/ores_and_minerals#cursecoal)Anthacite$() ซึ่งจะถูกเผาไหม้ไปเรื่อยๆ ขณะที่ blast furnace ทำงาน"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การใช้งาน blast furnace จะเปิดหน้าต่างอินเทอร์เฟซของ blast furnace ตามที่เห็นทางขวามือ ในอินเทอร์เฟซนี้ คุณจะเห็นเกจวัดทั้งปริมาณแร่และเชื้อเพลิงภายใน blast furnace ช่องขวาบนจะต้องใส่ $(thing)Tuyere$() ซึ่งเป็นท่อโลหะที่ใช้เป่าลมเข้าสู่ blast furnace เพื่อให้ได้อุณหภูมิสูงที่สุดที่จำเป็นสำหรับการถลุง steel โดย tuyere สามารถตีขึ้นรูปได้บน $(l:mechanics/anvils)Anvil$()"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/blast_furnace.png"
+      ],
+      "text": "หน้าต่างอินเทอร์เฟซของ Blast Furnace",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "คุณยังจำเป็นต้องมี $(l:mechanics/bellows)Bellows$() เพื่อให้ Blast Furnace บรรลุอุณหภูมิที่สูงพอจะละลายเหล็กได้ โดยสามารถวางไว้ที่ด้านใดด้านหนึ่งจากทั้งสี่ด้านของ blast furnace"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:full_blast_furnace",
+      "name": "",
+      "text": "blast furnace ขนาดเต็มรูปแบบพร้อมติดตั้ง bellows และ crucible",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "สุดท้าย ในการเริ่มต้น ให้จุดไฟ blast furnace ด้วย $(l:getting_started/firepit#firestarter)Fire Starter$() หรือ $(thing)Flint and Steel$() มันจะเริ่มเพิ่มความร้อนให้กับแร่ที่อยู่ข้างใน ตรวจสอบให้แน่ใจว่า blast furnace มีเชื้อเพลิงอย่างต่อเนื่อง และใช้ bellows เพื่อเติมอากาศเข้าสู่ blast furnace หลังจากอุณหภูมิภายในเพิ่มขึ้นถึงระดับสูงสุดของถ่านไม้แล้ว หลังจากแร่ข้างในร้อนขึ้น พวกมันจะละลายและเปลี่ยนเป็น $(l:mechanics/steel)Pig Iron$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "โลหะเหลวนี้จะหยดลงในภาชนะบรรจุของเหลวโลหะใดๆ ที่วางไว้ใต้ blast furnace โดยตรง เช่น $(l:mechanics/crucible)Crucible$() ซึ่งสามารถนำไปหล่อลงในแม่พิมพ์แท่งโลหะจากช่องผลลัพธ์ของ crucible แล้วนำไปตีขึ้นรูปเป็น $(l:mechanics/steel)Steel$() ได้"
+    }
+  ],
+  "read_by_default": true
+}

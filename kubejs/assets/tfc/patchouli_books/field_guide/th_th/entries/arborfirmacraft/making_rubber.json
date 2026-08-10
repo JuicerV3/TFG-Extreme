@@ -1,0 +1,49 @@
+{
+	"name": "Processing Latex",
+	"category": "tfc:arborfirmacraft",
+	"icon": "gtceu:sticky_resin",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "คุณได้รับ $(thing)latex$() บางส่วนจากการเจาะต้นไม้เขตร้อนเฉพาะชนิดแล้ว... ยินดีด้วย! Latex ด้วยตัวมันเองทำอะไรไม่ได้มากนัก แต่การนำไปแปรรูปจะทำให้เราได้ผลพลอยได้ที่มีประโยชน์มาก!$(br2)หากคุณยังไม่พบต้นไม้ที่ผลิต latex คุณสามารถดูหัวข้อ $(l:arborfirmacraft/tapping_index)Tapping Index$() สำหรับข้อมูลเพิ่มเติมได้!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sticky_resin",
+			"title": "A sticky substance",
+			"link_recipe": true,
+			"text": "หนึ่งในวิธีที่สามารถใช้ $(thing)Latex$() ได้คือการผลิต $(item)Sticky Resin$() โดย Sticky resin จำเป็นต้องผลิตจากการจัดการ latex ใน $(l:firmalife/oven_appliances#vat)Vat$() หรือ $(l:mechanics/pot)Pot$() ร่วมกับ $(thing)Wood Ash$() เพื่อให้มันจับตัวเป็นก้อน"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Sticky Business",
+			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+			"text": "$(thing)Sticky Resin$() มีการใช้งานมากมาย ต้องขอบคุณความเหนียวของมัน... มันสามารถใช้สร้างไอเทมหลายอย่าง เช่น $(item)Tape$() ซึ่งช่วยให้คุณย้าย crate ไปมาโดยไม่ทำของข้างในร่วง และที่สำคัญยิ่งกว่านั้น มันสามารถใช้สร้าง $(item)Resin Circuit Boards$() และ $(item)Resistors$() ซึ่งจะเป็นส่วนประกอบทางไฟฟ้าชิ้นแรกๆ ของคุณ"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:vulcanized_latex_bucket",
+			"title": "I am rubber...",
+			"text": "การใช้งานหลักอีกอย่างของ $(thing)Latex$() คือการทำ rubber เพื่อให้ latex แข็งแรงและมีความแข็งขึ้นสำหรับการใช้งานทางอุตสาหกรรม มันจำเป็นต้องได้รับความร้อน (ใน $(l:firmalife/oven_appliances#vat)Vat$() หรือ $(l:mechanics/pot)Pot$()) พร้อมทั้งใส่ $(thing)Sulfur Powder$() เพิ่มลงไปเพื่อผลิต $(thing)Vulcanized Latex$() ในความเป็นจริง กระบวนการทั้งหมดนี้เรียกว่า vulcanization!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Extraction",
+			"item": "gtceu:raw_rubber_dust",
+			"text": "การใช้ $(thing)Extractor$() หรือ $(thing)Vacuum Chamber$() จะสามารถทำให้อบแห้ง $(thing)Vulcanized Latex$() กลายเป็น $(item)Raw Rubber Pulp$() ซึ่ง pulp นี้จำเป็นต้องได้รับการจัดการเพิ่มเติมด้วย $(thing)Sulfur Dust$() ใน $(thing)Alloy Smelter$() เพื่อสร้าง $(thing)Rubber Ingots$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_ingot",
+			"text": "$(thing)Rubber Ingots$() มีการประยุกต์ใช้งานที่มีประโยชน์มากมาย เช่น สำหรับคราฟต์ $(thing)Belts$() สำหรับโรงงานของคุณ หรือสำหรับ $(bold)ฉนวนหุ้ม$() $(thing)electrical wires$() สายไฟที่หุ้มฉนวนแล้วจะปลอดภัยต่อการสัมผัสโดยไม่ถูกไฟฟ้าช็อตโดยไม่ได้ตั้งใจ และช่วยลดการสูญเสียแรงดันไฟฟ้า"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Conifer Pitch",
+			"item": "tfg:conifer_pitch_bucket",
+			"text": "Sticky Resin สามารถรับได้ผ่าน $(thing)Conifer Pitch$() ที่เจาะมาจาก $(thing)Coniferous Trees$() บางชนิดเช่นกัน แต่ต้นไม้เหล่านี้ไม่สามารถใช้ทำ Rubber ได้"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 3
+}

@@ -1,0 +1,74 @@
+{
+  "name": "การทอผ้า",
+  "category": "tfc:mechanics",
+  "icon": "tfc:spindle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)การทอผ้า$() คือกระบวนการรวมเส้นด้ายชนิดต่างๆ เข้าด้วยกันเพื่อผลิตเป็น $(thing)Cloth$() แม้ว่าขั้นตอนสุดท้ายของการทอผ้าจะทำใน $(thing)Loom$() แต่ผ้าบางชนิดอย่าง $(thing)Wool$() ที่ได้รับจาก $(l:mechanics/animal_husbandry#wooly_animals)สัตว์มีขน$() จำเป็นต้องใช้ $(thing)Spindle$() เพื่อปั่นเป็น $(thing)Wool Yarn$() ก่อนจึงจะสามารถนำไปทอได้"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/spindle_head",
+      "text": "$(thing)Unfired Spindle Head$() กะเทาะขึ้นจากดินเหนียว จากนั้นนำไปผ่านการ$(l:mechanics/heating)เผา$()เพื่อให้ได้ $(thing)Spindle Head$() ในการประกอบเป็น spindle ให้สำเร็จ ให้นำไปคราฟต์ร่วมกับ $(thing)Stick$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+      "text": "การคราฟต์ $(thing)Wool$() ร่วมกับ Spindle จะได้รับ $(thing)Wool Yarn$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/acacia_loom",
+      "text": "Loom คราฟต์ขึ้นโดยใช้เพียง $(thing)Lumber$() และ $(thing)Stick$()."
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "anchor": "wool_cloth",
+      "recipe": "tfc:loom/wool_cloth",
+      "text": "สูตรสำหรับ $(thing)Wool Cloth$() ต้องใช้ $(thing)Wool Yarn$() จำนวน 16 เส้น การใส่เส้นด้ายลงใน loom ทำได้โดยกด $(item)$(k:key.use)$() จากนั้นกด $(item)$(k:key.use)$() ค้างไว้เพื่อเริ่มทำงานกับ loom เมื่อทอเสร็จแล้ว ให้กด $(item)$(k:key.use)$() เพื่อเก็บไอเทมออกมา"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/loom_empty.png",
+        "tfc:textures/gui/book/tutorial/loom_full.png",
+        "tfc:textures/gui/book/tutorial/loom_working.png",
+        "tfc:textures/gui/book/tutorial/loom_done.png"
+      ],
+      "text": "ขั้นตอนต่างๆ ในการทำงานของ loom",
+      "border": true
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "tfc:loom/wool_block",
+      "text": "$(thing)Wool Cloth$() สามารถนำไปทอซ้ำเป็น $(thing)Wool Blocks$() ได้ โดยบล็อกขนสัตว์สามารถนำไป$(l:mechanics/dye)ย้อมสี$()ได้"
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "tfc:loom/silk_cloth",
+      "text": "$(thing)Silk Cloth$() สามารถสร้างขึ้นใน loom ได้จาก $(thing)String$() โดยสามารถใช้แทน Wool Cloth ได้ในบางกรณี"
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "anchor": "burlap_cloth",
+      "recipe": "tfc:loom/burlap_cloth",
+      "text": "$(thing)Burlap Cloth$() ยังไม่มีการใช้งาน แต่สามารถสร้างขึ้นได้จาก $(l:mechanics/crops#jute)Jute Fiber$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/color/light_blue_bed",
+      "recipe2": "tfc:crafting/vanilla/painting"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:spindle": 1,
+    "tfc:wool": 2,
+    "tag:tfc:looms": 3,
+    "tfc:wool_cloth": 4,
+    "minecraft:white_wool": 6,
+    "tfc:silk_cloth": 7,
+    "tfc:burlap_cloth": 8
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "ถนนคอนกรีต",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:concrete_road_panel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ถนนคอนกรีตให้โบนัสความเร็วในการเคลื่อนที่ 30% เมื่อสร้างอย่างถูกต้อง อย่างไรก็ตาม ผู้สร้างถนนต้องเอาใจใส่ในการสร้างถนนคอนกรีตเพื่อป้องกันไม่ให้แตกร้าวหรือถูกเหยียบขณะยังเปียก เนื่องจากสิ่งนี้จะทำให้โบนัสความเร็วหายไป"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ถนนคอนกรีต",
+      "images": [ "rnr:textures/gui/book/concrete_road.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "liquid_concrete",
+      "item": "gtceu:concrete_bucket",
+      "title": "การทำคอนกรีต",
+      "text": "ขั้นตอนแรกในการทำถนนคอนกรีตคือการผสมคอนกรีตเหลว ใช้ $(thing)Mixer$() เพื่อผสมน้ำเข้ากับผงหินชนิดใดก็ได้สองชนิด, ผง calcite หรือผง marble ชนิดใดชนิดหนึ่ง และผง gypsum หรือผงหินชนิดใดก็ได้สามชนิดกับผงดินเหนียวเพื่อทำ $(thing)Liquid Concrete$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "wet_concrete",
+      "item": "rnr:bucket/concrete",
+      "title": "การทำคอนกรีต",
+      "text": "จากนั้นนำคอนกรีตเหลวใส่ใน $(thing)Mixer$() ที่ตั้งค่าเป็น $(thing)Programmed Circuit #7$() พร้อมน้ำเพิ่มเพื่อเจือจางให้กลายเป็น $(thing)Wet Concrete Mix$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เมื่อผสม $(thing)Wet Concrete$() เสร็จแล้ว สามารถใช้ถังตักขึ้นมาและวางลงบน $(thing)Base Course Block$() ซึ่งมันจะกระจายไปยังบล็อกที่อยู่ติดกัน คอนกรีตจะแข็งตัวหลังจากผ่านไปหนึ่งวัน และจนกว่ามันจะแข็งตัว ต้องระมัดระวังไม่ให้มีสิ่งมีชีวิตเดินผ่านคอนกรีตเปียก เพราะจะทำให้เกิดพื้นผิวไม่เรียบซึ่งไม่ให้โบนัสความเร็ว รอยเท้าสามารถเกลี่ยให้เรียบได้ด้วย $(thing)Mattock$()"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "การเทถนนคอนกรีต",
+      "images": [ "rnr:textures/gui/book/wet_concrete.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การแตกร้าวจากการหดตัวก็เป็นสิ่งที่ต้องระวังเมื่อคอนกรีตเซ็ตตัว หากเทคอนกรีตในพื้นที่ที่กว้างเกินกว่าสี่บล็อก บล็อกที่อยู่ห่างเกินสองบล็อกจาก $(thing)Edge$(), $(thing)Control Joint$() หรือ $(thing)Textured Finish$() ที่ใกล้ที่สุดจะแตกร้าวเมื่อเซ็ตตัว สิ่งนี้สามารถป้องกันได้โดยการเทคอนกรีตในพื้นที่ขนาดเล็กกว่า, ใช้ $(thing)Mattock$() เพื่อเพิ่ม $(thing)Control Joints$() หรือการแต่งพื้นผิวแบบ $(thing)Textured Finish$()"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "รอยต่อควบคุม (Control Joints)",
+      "images": [ "rnr:textures/gui/book/control_joints.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Textured Finishes$() สร้างขึ้นโดยการกด $(thing)Bricks$(), $(thing)Flagstones$() หรือ $(thing)Smooth Stone Blocks$() ลงในคอนกรีตที่กำลังแห้งเพื่อสร้างพื้นผิวทางสถาปัตยกรรม บล็อกเหล่านี้ยังทำหน้าที่เป็น $(thing)Control Joints$() เพื่อป้องกันการแตกร้าวอีกด้วย เมื่อคอนกรีตแห้งสนิทแล้ว สามารถใช้ $(thing)Chisel$() เพื่อขึ้นรูปเป็นสแลบและบันไดได้"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ถนน Faux Sett",
+      "images": [ "rnr:textures/gui/book/faux_sett.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

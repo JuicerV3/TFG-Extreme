@@ -1,0 +1,30 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Pizza",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pizza.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ในการทำ $(thing)Pizza$() ให้ผสม Dough, Salt, Basil Leaves และน้ำมัน 100 mB ใน $(l:firmalife/mixing_bowl)Mixing Bowl$() น้ำมันสามารถใช้น้ำมันมะกอก (olive oil) หรือน้ำมันถั่วเหลือง (soybean oil ซึ่งเป็นผลผลิตจาก soybean paste ที่หมักปิดฝาในถังน้ำ)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "shredded_cheese",
+      "recipe": "firmalife:crafting/shredded_cheese",
+      "text": "คุณจะต้องมี shredded cheese สำหรับเริ่มต้น"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tomato_sauce",
+      "text": "ในการทำ $(thing)Tomato Sauce$() ให้ต้มมะเขือเทศ (tomato), เกลือ (salt), กระเทียม (garlic) และน้ำเข้าด้วยกันในหม้อต้ม หรืออีกวิธีหนึ่งโดยใช้ $(l:firmalife/oven_appliances#vat)Vat$() ต้มส่วนผสมที่คราฟต์จากวัตถุดิบเหล่านั้น ซึ่งรู้จักกันในชื่อ $(thing)Tomato Sauce Mix$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/raw_pizza_2",
+      "text": "Pizza ทำจากผัก (vegetables), เนื้อสัตว์ปรุงสุก (cooked meats) หรือผลไม้ (fruits) จำนวน 1-3 ชิ้น, shredded cheese หนึ่งชิ้น และ tomato sauce หนึ่งชิ้น"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 26
+}

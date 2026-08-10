@@ -1,0 +1,4213 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "พืชผล",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "พืชผลเป็นแหล่งอาหารและวัตถุดิบอื่นๆ แม้ว่าพืชผลแต่ละชนิดจะมีความแตกต่างกันเล็กน้อย แต่พืชผลทั้งหมดก็มีหลักการที่คล้ายคลึงกัน ในการเริ่มปลูกพืช คุณจะต้องมี $(thing)Seeds$() ซึ่งสามารถหาได้จากการค้นหา $(l:the_world/wild_crops)Wild Crops$() แล้วทำการทำลายพวกมัน$(br2)เมื่อคุณได้เมล็ดมาแล้ว คุณยังต้องใช้ $(thing)Hoe$() นอกจากนี้ Seeds ยังมีประโยชน์สำหรับใช้เป็น $(l:mechanics/fishing)เหยื่อตกปลา$() อีกด้วย"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "นอกจากการค้นหา Wild Crops แล้ว Seeds ยังสามารถผลิตได้จากพืชผลที่มีอยู่ เมื่อพืชผลที่โตเต็มที่ตายลง — ไม่ว่าจะจากสภาพอากาศ หรือปล่อยให้เน่าเสีย — พืชนั้นจะกลายเป็นเมล็ด โดยจะดรอบ Seeds มากขึ้น ซึ่งสามารถนำไปใช้ปลูกพืชผลเพิ่มขึ้นอีกในฤดูกาลถัดไป"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "สารบัญ",
+      "text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfg:rock_knapping/stone_hoe_head_1"
+      ],
+      "text": "เพื่อเริ่มต้น $(thing)Stone Hoe$() สามารถ $(thing)กะเทาะ$() ได้ดังภาพด้านบน"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/hoe_stone",
+      "text": "เมื่อกะเทาะหัว Hoe เสร็จแล้ว สามารถนำไปคราฟต์เป็น Hoe ได้$(br2)Hoe ทำงานเช่นเดียวกับใน Vanilla โดยการคลิกขวาที่บล็อกดินเพื่อเปลี่ยนเป็น $(thing)Farmland$() นอกจากนี้ยังสามารถใช้เปลี่ยน $(thing)Rooted Dirt$() ให้กลายเป็น $(thing)Dirt$() ได้อีกด้วย"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "พืชผลทั้งหมดจำเป็นต้องปลูกบน Farmland เพื่อที่จะเจริญเติบโต พืชผลบางชนิดมีความต้องการเพิ่มเติม เช่น ต้องอยู่ใต้น้ำ (Waterlogged) หรือต้องการกิ่งไม้ (Stick) ในการยึดเกาะเพื่อเจริญเติบโต$(br2)พืชผลไม่จำเป็นต้องใช้ $(thing)สารอาหาร$() ในการเจริญเติบโต แต่สารอาหารจะช่วยได้มาก สารอาหารมีสามชนิด ได้แก่ $(b)Nitrogen$(), $(6)Phosphorous$() และ $(d)Potassium$() พืชผลแต่ละชนิดจะมีสารอาหารที่โปรดปราน",
+      "title": "การปลูกพืชผล"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การได้รับสารอาหารที่โปรดปรานจะช่วยให้พืชผลเติบโตเร็วขึ้น และปรับปรุงผลผลิตของพืชผลในเวลาเก็บเกี่ยว นั่นหมายความว่าพืชผลที่ได้รับสารอาหารมากกว่าจะดรอบอาหารมากขึ้นเมื่อถูกเก็บเกี่ยว! การดูดซับสารอาหารยังมีผลช่วยฟื้นฟูสารอาหารชนิดอื่นรอบๆ ในปริมาณเล็กน้อยอีกด้วย$(br2)หน้าถัดจากนี้จะแสดงรายการพืชผลทั้งหมดที่มีใน TFC"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "barley",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 18 - 75 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Barley เป็นพืชผลบล็อกเดียว เมล็ด Barley สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Barley$() และ $(thing)Barley Seeds$()",
+      "title": "Barley"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/barley[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "oat",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 35 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Oat เป็นพืชผลบล็อกเดียว เมล็ด Oat สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Oat$() และ $(thing)Oat Seeds$()",
+      "title": "Oat"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/oat[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rye",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 85 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Rye เป็นพืชผลบล็อกเดียว เมล็ด Rye สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Rye$() และ $(thing)Rye Seeds$()",
+      "title": "Rye"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rye[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "maize",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 75 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Maize เป็นพืชผลความสูงสองบล็อก เมล็ด Maize สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(thing)Maize$() และ $(thing)Maize Seeds$()",
+      "title": "Maize"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/maize[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/maize[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/maize[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/maize[age=3,part=top]",
+            "Y": "tfc:crop/maize[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/maize[age=4,part=top]",
+            "Y": "tfc:crop/maize[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/maize[age=5,part=top]",
+            "Y": "tfc:crop/maize[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wheat",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Wheat เป็นพืชผลบล็อกเดียว เมล็ด Wheat สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Wheat$() และ $(thing)Wheat Seeds$()",
+      "title": "Wheat"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/wheat[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rice",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Rice เป็นพืชผลบล็อกเดียว Rice ต้องปลูกใต้น้ำ — โดยต้องปลูกบน Farmland ในน้ำจืดที่มีความลึกหนึ่งบล็อก และจะให้ผลผลิตเป็น $(thing)Rice$() และ $(thing)Rice Seeds$()",
+      "title": "Rice"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "หมายเหตุ: เพื่อที่จะเจริญเติบโต บล็อก Rice จะต้องอยู่ในภาวะ $(thing)Waterlogged$()",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=0,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=1,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=2,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=3,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=4,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=5,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=6,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/rice[age=7,fluid=water]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "beet",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 18 - 85 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Beet เป็นพืชผลบล็อกเดียว เมล็ด Beet สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Beet$() และ $(thing)Beet Seeds$()",
+      "title": "Beet"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/beet[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cabbage",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 15 - 65 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Cabbage เป็นพืชผลบล็อกเดียว เมล็ด Cabbage สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Cabbage$() และ $(thing)Cabbage Seeds$()",
+      "title": "Cabbage"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/cabbage[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "carrot",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 100 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Carrot เป็นพืชผลบล็อกเดียว เมล็ด Carrot สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Carrot$() และ $(thing)Carrot Seeds$()",
+      "title": "Carrot"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/carrot[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/carrot[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/carrot[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/carrot[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/carrot[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "garlic",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 15 - 75 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Garlic เป็นพืชผลบล็อกเดียว เมล็ด Garlic สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Garlic$() และ $(thing)Garlic Seeds$()",
+      "title": "Garlic"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/garlic[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/garlic[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/garlic[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/garlic[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/garlic[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "green_bean",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 38 - 100 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Green Beans เป็นพืชผลความสูงสองบล็อกแบบเลื้อย เมล็ด Green Bean สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อกหากมีกิ่งไม้ (Stick) อยู่ และจะให้ผลผลิตเป็น $(thing)Green Beans$() และ $(thing)Green Bean Seeds$()",
+      "title": "Green Beans"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "จำเป็นต้องใช้กิ่งไม้ (Stick) เพื่อให้พืชผลเติบโตเต็มที่",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=0,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=0,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=1,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=1,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=2,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=2,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=3,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=3,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=4,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=4,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=5,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=5,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=6,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=6,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/green_bean[age=7,part=top,stick=true]",
+            "Y": "tfc:crop/green_bean[age=7,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "potato",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 50 - 100 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Potatoes เป็นพืชผลบล็อกเดียว เมล็ด Potato สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Potatoes$() และ $(thing)Potato Seeds$()",
+      "title": "Potatoes"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/potato[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "pumpkin",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 30 - 80 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Pumpkins เป็นพืชผลแบบขยายกิ่งก้าน เมล็ด Pumpkin สามารถปลูกบน Farmland และจะวาง $(thing)Pumpkin Blocks$() ได้สูงสุดสองบล็อกบนพื้นข้างๆ เมื่อโตเต็มที่ หากขุดเก็บ Pumpkin Blocks และต้นพืชเจริญเติบโตเต็มที่อีกครั้ง ก็สามารถโตเป็นฟักทองเพิ่มได้อีก Pumpkins สามารถนำไปทำเป็น $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$() ได้",
+      "title": "Pumpkins"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=0]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=1]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=2]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=3]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=4]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=5]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=6]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/pumpkin[age=7]",
+            "P": "tfc:pumpkin"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "melon",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 75 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Melons เป็นพืชผลแบบขยายกิ่งก้าน เมล็ด Melon สามารถปลูกบน Farmland และจะวาง $(thing)Melon Blocks$() ได้สูงสุดสองบล็อกบนพื้นข้างๆ เมื่อโตเต็มที่ หากขุดเก็บ Melon Blocks และต้นพืชเจริญเติบโตเต็มที่อีกครั้ง ก็สามารถโตเป็นแตงโมเพิ่มได้อีก",
+      "title": "Melons"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=0]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=1]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=2]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=3]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=4]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=5]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=6]",
+            "P": "minecraft:air"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              " CP",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ]
+          ],
+          "mapping": {
+            "G": "tfc:farmland/loam",
+            "0": "tfc:farmland/loam",
+            "C": "tfc:crop/melon[age=7]",
+            "P": "tfc:melon"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "red_bell_pepper",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 60 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Red Bell Peppers เป็นพืชผลที่สามารถเด็ดผลได้ เมื่อใกล้โตเต็มที่ สามารถเก็บเกี่ยวได้โดยใช้ $(item)$(k:key.use)$() เพื่อรับ Green Bell Peppers การเก็บเกี่ยวด้วย $(item)$(k:key.use)$() จะช่วยให้ต้นพืชเติบโตออกผลพริกเพิ่มได้อีกในอนาคตโดยไม่ทำลายต้นพืช",
+      "title": "Red Bell Peppers"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/red_bell_pepper[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "yellow_bell_pepper",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 60 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Yellow Bell Peppers เป็นพืชผลที่สามารถเด็ดผลได้ เมื่อใกล้โตเต็มที่ สามารถเก็บเกี่ยวได้โดยใช้ $(item)$(k:key.use)$() เพื่อรับ Green Bell Peppers การเก็บเกี่ยวด้วย $(item)$(k:key.use)$() จะช่วยให้ต้นพืชเติบโตออกผลพริกเพิ่มได้อีกในอนาคตโดยไม่ทำลายต้นพืช",
+      "title": "Yellow Bell Peppers"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/yellow_bell_pepper[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "onion",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 90 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Onions เป็นพืชผลบล็อกเดียว เมล็ด Onion สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Onions$() และ $(thing)Onion Seeds$()",
+      "title": "Onions"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/onion[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "soybean",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 40 - 100 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Soybean เป็นพืชผลบล็อกเดียว เมล็ด Soybean สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Soybean$() และ $(thing)Soybean Seeds$()",
+      "title": "Soybean"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/soybean[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "squash",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 23 - 95 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Squash เป็นพืชผลบล็อกเดียว เมล็ด Squash สามารถปลูกบน Farmland และจะให้ผลผลิตเป็น $(thing)Squash$() และ $(thing)Squash Seeds$()",
+      "title": "Squash"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/squash[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sugarcane",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 40 - 100 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Sugarcane เป็นพืชผลความสูงสองบล็อก เมล็ด Sugarcane สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(thing)Sugarcane$() และ $(thing)Sugarcane Seeds$() โดย Sugarcane สามารถนำไปใช้ทำ $(thing)Sugar$() ได้",
+      "title": "Sugarcane"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/sugarcane[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/sugarcane[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/sugarcane[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/sugarcane[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/sugarcane[age=4,part=top]",
+            "Y": "tfc:crop/sugarcane[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/sugarcane[age=5,part=top]",
+            "Y": "tfc:crop/sugarcane[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/sugarcane[age=6,part=top]",
+            "Y": "tfc:crop/sugarcane[age=6,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/sugarcane[age=7,part=top]",
+            "Y": "tfc:crop/sugarcane[age=7,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tomatoes",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 30 - 95 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Tomatoes เป็นพืชผลความสูงสองบล็อกแบบเลื้อย เมล็ด Tomato สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อกหากมีกิ่งไม้ (Stick) อยู่ และจะให้ผลผลิตเป็น $(thing)Tomatoes$() และ $(thing)Tomato Seeds$()",
+      "title": "Tomatoes"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "จำเป็นต้องใช้กิ่งไม้ (Stick) เพื่อให้พืชผลเติบโตเต็มที่",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=0,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=0,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=1,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=1,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=2,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=2,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=3,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=3,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=4,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=4,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=5,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=5,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=6,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=6,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/tomato[age=7,part=top,stick=true]",
+            "Y": "tfc:crop/tomato[age=7,part=bottom,stick=true]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "jute",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 25 - 100 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Jute เป็นพืชผลความสูงสองบล็อก เมล็ด Jute สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(thing)Jute$() และ $(thing)Jute Seeds$()",
+      "title": "Jute"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/jute[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/jute[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/jute[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/jute[age=3,part=top]",
+            "Y": "tfc:crop/jute[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/jute[age=4,part=top]",
+            "Y": "tfc:crop/jute[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/jute[age=5,part=top]",
+            "Y": "tfc:crop/jute[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "papyrus",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 70 - 100 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Papyrus เป็นพืชผลความสูงสองบล็อก เมล็ด Papyrus สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(l:mechanics/papermaking)Papyrus$() และ $(thing)Papyrus Seeds$()",
+      "title": "Papyrus"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/papyrus[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/papyrus[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfc:crop/papyrus[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/papyrus[age=3,part=top]",
+            "Y": "tfc:crop/papyrus[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/papyrus[age=4,part=top]",
+            "Y": "tfc:crop/papyrus[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:crop/papyrus[age=5,part=top]",
+            "Y": "tfc:crop/papyrus[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sunflower",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 20 - 80 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Sunflower เป็นพืชผลความสูงสองบล็อก เมล็ด Sunflower สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(item)Sunflower Caps$() ซึ่งสามารถนำไปแปรรูปเป็น $(thing)Seed Oil$() ได้ โดย Seed Oil สามารถใช้เป็นเชื้อเพลิงตะเกียง (Lamp Fuel) รวมถึงนำไปทำ $(thing)Bio Diesel$() ได้ในภายหลัง$(br)นอกจากนี้ Sunflower ยังนับเป็นดอกไม้เพื่อวัตถุประสงค์ของการเลี้ยงผึ้ง ($(l:firmalife/beekeeping)Beekeeping$()) อีกด้วย",
+      "title": "Sunflower"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:sunflower[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:sunflower[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:sunflower[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:sunflower[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:sunflower[age=4,part=top]",
+            "Y": "tfg:sunflower[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:sunflower[age=5,part=top]",
+            "Y": "tfg:sunflower[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:sunflower[age=6,part=top]",
+            "Y": "tfg:sunflower[age=6,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Sunflowers$() เจริญเติบโตระหว่าง 5 ถึง 40°C และปริมาณน้ำฝน 100 ถึง 450mm เมล็ดของมันยังสามารถนำไปคั่วและรับประทานได้อีกด้วย!"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "canola",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 10 - 60 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Canola เป็นพืชผลความสูงสองบล็อก เมล็ด Canola สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(item)Canola Ovules$() ซึ่งสามารถนำไปแปรรูปเป็น $(thing)Seed Oil$() ได้ โดย Seed Oil สามารถใช้เป็นเชื้อเพลิงตะเกียง (Lamp Fuel) รวมถึงนำไปทำ $(thing)Bio Diesel$() ได้ในภายหลัง$(br)นอกจากนี้ Canola ยังนับเป็นดอกไม้เพื่อวัตถุประสงค์ของการเลี้ยงผึ้ง ($(l:firmalife/beekeeping)Beekeeping$()) อีกด้วย",
+      "title": "Canola"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:rapeseed[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:rapeseed[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:rapeseed[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:rapeseed[age=3,part=top]",
+            "Y": "tfg:rapeseed[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:rapeseed[age=4,part=top]",
+            "Y": "tfg:rapeseed[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:rapeseed[age=5,part=top]",
+            "Y": "tfg:rapeseed[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:rapeseed[age=6,part=top]",
+            "Y": "tfg:rapeseed[age=6,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Canola$() หรือที่รู้จักกันในชื่อ $(thing)Rapeseed$() เจริญเติบโตระหว่าง -7 ถึง 25°C และปริมาณน้ำฝน 50 ถึง 350mm",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "flax",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 15 - 65 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Flax เป็นพืชผลความสูงสองบล็อก เมล็ด Flax สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(item)Flax Stems$() ซึ่งสามารถนำไปแปรรูปเป็น $(thing)Linen$() หรือ $(thing)Burlap$() ได้$(br)นอกจากนี้ Flax ยังนับเป็นดอกไม้เพื่อวัตถุประสงค์ของการเลี้ยงผึ้ง ($(l:firmalife/beekeeping)Beekeeping$()) อีกด้วย",
+      "title": "Flax"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:flax[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:flax[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:flax[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:flax[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:flax[age=4,part=top]",
+            "Y": "tfg:flax[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:flax[age=5,part=top]",
+            "Y": "tfg:flax[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:flax[age=6,part=top]",
+            "Y": "tfg:flax[age=6,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Flax$() เจริญเติบโตระหว่าง -5 ถึง 23°C และปริมาณน้ำฝน 175 ถึง 475mm"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cucumber",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 70 - 100 %$(br)$(bold)สารอาหาร$(): Nitrogen$(br2)Cucumbers เป็นพืชผลความสูงสองบล็อก เมล็ด Cucumber สามารถปลูกบน Farmland จะเติบโตสูงสองบล็อก และจะให้ผลผลิตเป็น $(item)Cucumbers$() ซึ่งให้โภชนาการประเภท $(thing)Vegetable$()$(br)$(bold)Cucumber จำเป็นต้องใช้กิ่งไม้ (Stick) เพื่อให้เติบโตเต็มที่$()",
+      "title": "Cucumber"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:cucumber[age=0,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "minecraft:air",
+            "Y": "tfg:cucumber[age=1,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:cucumber[age=2,part=top]",
+            "Y": "tfg:cucumber[age=2,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:cucumber[age=3,part=top]",
+            "Y": "tfg:cucumber[age=3,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:cucumber[age=4,part=top]",
+            "Y": "tfg:cucumber[age=4,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfg:cucumber[age=5,part=top]",
+            "Y": "tfg:cucumber[age=5,part=bottom]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Cucumber$() เจริญเติบโตระหว่าง 15 ถึง 40°C และปริมาณน้ำฝน 350 ถึง 500mm",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "radish",
+      "title": "Radish",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 15 - 65 %$(br)$(bold)สารอาหาร$(): Potassium$(br2)Radishes สามารถรับประทานเพื่อรับโภชนาการประเภท $(thing)Vegetable$() ได้ หากคุณต้องการพืชที่สามารถรอดชีวิตในอุณหภูมิที่หนาวเย็นกว่า Radishes เป็นตัวเลือกที่ดี"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=0]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=1]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=2]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=3]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=4]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:radish[age=5]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Radishes$() เจริญเติบโตระหว่าง -16 ถึง 4°C และปริมาณน้ำฝน 75 ถึง 325mm",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "lentil",
+      "title": "Lentil",
+      "text": "$(bold)$(l:the_world/climate#temperature)อุณหภูมิ$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)ระดับน้ำในร่างกาย$(): 50 - 100 %$(br)$(bold)สารอาหาร$(): Phosphorus$(br2)Lentils สามารถรับประทานเพื่อรับโภชนาการประเภท $(thing)Vegetable$() ได้ แม้ว่าจะแนะนำให้ปรุงสุกก่อนก็ตาม Lentils เป็นอีกหนึ่งตัวเลือกที่ดีสำหรับการทำฟาร์มในสภาพอากาศที่หนาวเย็น"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=0]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=1]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=2]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=3]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=4]",
+            "Z": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "Y"
+            ],
+            [
+              "Z"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "Y": "tfg:lentil[age=5]",
+            "Z": "tfc:farmland/loam"
+          }
+        }
+      ],
+      "text": "$(thing)Wild Lentils$() เจริญเติบโตระหว่าง -18 ถึง 2°C และปริมาณน้ำฝน 250 ถึง 425mm",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:seeds/barley": 8,
+    "tfc:food/barley": 8,
+    "tfc:seeds/oat": 10,
+    "tfc:food/oat": 10,
+    "tfc:seeds/rye": 12,
+    "tfc:food/rye": 12,
+    "tfc:seeds/maize": 14,
+    "tfc:food/maize": 14,
+    "tfc:seeds/wheat": 16,
+    "tfc:food/wheat": 16,
+    "tfc:seeds/rice": 18,
+    "tfc:food/rice": 18,
+    "tfc:seeds/beet": 20,
+    "tfc:food/beet": 20,
+    "tfc:seeds/cabbage": 22,
+    "tfc:food/cabbage": 22,
+    "tfc:seeds/carrot": 24,
+    "tfc:food/carrot": 24,
+    "tfc:seeds/garlic": 26,
+    "tfc:food/garlic": 26,
+    "tfc:seeds/green_bean": 28,
+    "tfc:food/green_bean": 28,
+    "tfc:seeds/potato": 30,
+    "tfc:food/potato": 30,
+    "tfc:seeds/pumpkin": 32,
+    "tfc:seeds/melon": 34,
+    "tfc:seeds/red_bell_pepper": 36,
+    "tfc:seeds/yellow_bell_pepper": 38,
+    "tfc:seeds/onion": 40,
+    "tfc:food/onion": 40,
+    "tfc:seeds/soybean": 42,
+    "tfc:food/soybean": 42,
+    "tfc:seeds/squash": 44,
+    "tfc:food/squash": 44,
+    "tfc:seeds/sugarcane": 46,
+    "tfc:food/sugarcane": 46,
+    "tfc:seeds/tomato": 48,
+    "tfc:food/tomato": 48,
+    "tfc:seeds/jute": 50,
+    "tfc:jute": 50,
+    "tfc:seeds/papyrus": 52,
+    "tfc:papyrus": 52,
+    "tfg:sunflower_seeds": 54,
+    "tfg:sunflower_product": 54,
+    "tfg:rapeseed_seeds": 56,
+    "tfg:rapeseed_product": 56,
+    "tfg:flax_seeds": 58,
+    "tfg:flax_product": 58,
+    "tfg:cucumber_seeds": 60,
+    "tfg:cucumber_product": 60,
+    "tfg:radish_seeds": 62,
+    "tfg:radish_product": 62,
+    "tfg:lentil_seeds": 64,
+    "tfg:lentil_product": 64
+  }
+}

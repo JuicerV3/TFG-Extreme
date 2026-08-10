@@ -1,0 +1,48 @@
+{
+  "name": "รถปูถนน",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Paving Cart$() เป็นรถลากเฉพาะทางที่ใช้สำหรับปูพื้นผิวถนนได้อย่างรวดเร็วและมีประสิทธิภาพ สามารถบรรจุวัสดุทำถนนและ $(thing)Crushed Base Course$() เพื่อสร้างถนน นอกจากนี้ รถลากยังสามารถเติมบล็อก base course ที่มีอยู่ได้อีกด้วย"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "รถปูถนน",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "สไลเดอร์ปรับความกว้าง",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png" ],
+      "border": true,
+      "text": "รถลากช่วยให้คุณปรับความกว้างของเส้นทางได้ในหน้าต่าง GUI"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "เส้นทางที่มีความกว้างปรับได้",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ปุ่มสุ่มลวดลาย",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png" ],
+      "border": true,
+      "text": "รถลากมีโหมดที่จะปูวัสดุในลักษณะลวดลายแบบสุ่ม"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "เส้นทางวัสดุแบบสุ่ม",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 23
+}

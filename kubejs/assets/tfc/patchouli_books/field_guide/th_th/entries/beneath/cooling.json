@@ -1,0 +1,55 @@
+{
+	"name": "การจัดการอุณหภูมิ",
+	"category": "tfc:beneath",
+	"icon": "minecraft:ice",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "เดอะบีเนธ (The Beneath) นั้นร้อนมาก! อุณหภูมิเริ่มต้นที่ 20°C ที่บริเวณชั้นบนสุด และจะยิ่งร้อนขึ้นเรื่อยๆ เมื่อคุณลงไปลึกขึ้น$(br2)เสื้อผ้าจาก $(item)ผ้ากระสอบ$(), $(item)ผ้าลินิน$() และ $(item)ผ้าไหม$() จะช่วยคุณได้ แต่นี่คือวิธีอื่นๆ ในการรักษาความเย็น!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:water_bucket",
+			"title": "น้ำ",
+			"text": "สามารถพบน้ำได้ทั่วไปในชั้นบนของเดอะบีเนธ การลงไปแช่น้ำแป๊บเดียวจะช่วยลดความร้อนของคุณได้อย่างรวดเร็ว!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "น้ำแข็ง",
+			"item": "minecraft:packed_ice",
+			"text": "พก $(thing)น้ำแข็ง$() ติดตัวไปด้วย! การยืนอยู่ใกล้น้ำแข็งจะช่วยลดอุณหภูมิโดยรอบลงได้ สามารถเก็บเกี่ยวน้ำแข็งบนพื้นผิวได้โดยใช้ $(item)เลื่อย$() และนำเศษน้ำแข็งที่ได้ไปทำเป็น $(item)Packed Ice$() โดยน้ำแข็งแบบ $(thing)Packed$() และ $(thing)Blue$() จะไม่ละลาย"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket",
+			"title": "Liquid Ice Slush",
+			"text": "อ่าาา ชื่นใจจริงๆ! ช่วยลดอุณหภูมิของคุณลงได้ 4°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "อุปกรณ์ Blue Steel",
+			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"text": "กำลังมองหาสิ่งที่ถาวรกว่านี้อยู่ใช่ไหม? $(thing)ชุดดำน้ำ Blue Steel$() จะช่วยลดอุณหภูมิของคุณลงอย่างมาก และยังช่วยให้คุณว่ายน้ำในลาวาได้อีกด้วย!$(br2)สามารถรับ $(item)หนังสัตว์กันลาวา$() ได้จากสัตว์ท้องถิ่นอย่าง $(thing)Red Elk$() หรือค้นหาได้จากหีบใน Bastion"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_backtank",
+			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_boots",
+			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+		}
+	],
+	"read_by_default": true
+}

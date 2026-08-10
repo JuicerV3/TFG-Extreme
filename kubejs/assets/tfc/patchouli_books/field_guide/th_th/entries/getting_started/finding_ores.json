@@ -1,22 +1,90 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "แร่ โลหะ และการหล่อ",
+  "name": "แร่ โลหะ และการหล่อโลหะ",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
-    {"type": "patchouli:text", "text": "นอกจากกิ่งไม้ เศษไม้ และก้อนหินบนพื้นแล้ว ในระหว่างการเดินทาง คุณอาจพบเศษแร่ชิ้นเล็กๆ กระจัดกระจายอยู่ตามพื้น สิ่งเหล่านี้มีความสำคัญมาก เนื่องจากเป็นหนึ่งในไม่กี่แหล่งของแร่และโลหะก่อนที่คุณจะมีพลั่วขุด"},
-    {"type": "patchouli:multiblock", "multiblock": {"pattern": [["    ", "  0 ", "    "], ["ABCD", "EFGH", "IJKL"], ["XXXX", "XXXX", "XXXX"]], "mapping": {"X": "tfc:grass/loam", "A": "tfc:ore/small_native_copper", "B": "tfc:ore/small_native_gold", "C": "tfc:ore/small_hematite", "D": "tfc:ore/small_native_silver", "E": "tfc:ore/small_cassiterite", "F": "tfc:ore/small_bismuthinite", "G": "tfc:ore/small_garnierite", "H": "tfc:ore/small_malachite", "I": "tfc:ore/small_magnetite", "J": "tfc:ore/small_limonite", "K": "tfc:ore/small_sphalerite", "L": "tfc:ore/small_tetrahedrite"}}, "name": "", "text": "Small Ores ทั้งหมด", "enable_visualize": false},
-    {"type": "patchouli:text", "text": "เศษ Small Ores เหล่านี้มีประโยชน์สองประการ: สามารถเป็นแหล่งของโลหะได้ และที่สำคัญกว่านั้น พวกมันจะบ่งบอกถึงการมีอยู่ของสายแร่ขนาดใหญ่ในบริเวณใกล้เคียง ซึ่งน่าจะอยู่ใต้ดินและใกล้กับพื้นผิว อย่าลืมบันทึกจุดที่คุณพบ Small Ores เพราะตำแหน่งของสายแร่จะมีประโยชน์ในภายหลังระหว่าง$(l:mechanics/prospecting)การสำรวจแร่$()$(br2)ชนิดของ Small Ores ทั้งสิบสองชนิด และโลหะที่สามารถนำไปหลอมได้นั้นแสดงไว้ในหน้าถัดไป"},
-    {"type": "patchouli:text", "text": "$(li)Native Copper ($(thing)Copper$())$(li)Native Gold ($(thing)Gold$())$(li)Hematite ($(thing)Cast Iron$())$(li)Native Silver ($(thing)Silver$())$(li)Cassiterite ($(thing)Tin$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garnierite ($(thing)Nickel$())$(li)Malachite ($(thing)Copper$())$(li)Magnetite ($(thing)Cast Iron$())$(li)Limonite ($(thing)Cast Iron$())$(li)Sphalerite ($(thing)Zinc$())$(li)Tetrahedrite ($(thing)Copper$())", "title": "Small Ores"},
-    {"type": "patchouli:text", "anchor": "casting", "text": "ใน TerraFirmaCraft แร่แต่ละชนิดจะมีปริมาณของโลหะที่สามารถสกัดออกมาได้ตามจำนวน $(thing)ยูนิต$() หรือ $(thing)mB (มิลลิบัคเก็ต)$() Small Ores ที่พบบนพื้นผิวเช่นนี้จะมีคุณภาพต่ำที่สุด และให้โลหะเพียง $(thing)16 mB$() เท่านั้น ในการสกัดโลหะนี้ มันจำเป็นต้องถูก$(thing)หลอม$() และนำมาทำเป็นเครื่องมือโดยกระบวนการที่เรียกว่า $(thing)การหล่อ$()", "title": "การหล่อ"},
-    {"type": "patchouli:text", "text": "คุณจะต้องมี:$(br)$(li)$(l:getting_started/pottery#vessel)Small Vessel$() หนึ่งใบ$(li)วัตถุดิบที่เพียงพอสำหรับ $(l:getting_started/pit_kiln)Pit Kiln$()$(li)$(l:getting_started/pottery#mold)Mold(s)$() หนึ่งชิ้นหรือมากกว่าเพื่อใช้เทหลอมโลหะเหลว$(li)และสุดท้าย โลหะที่เหมาะสมสำหรับการหล่อรวมกันอย่างน้อย 144 mB: $(thing)Copper$() ในรูปแบบแร่ชนิดใดชนิดหนึ่งหรือหลายชนิดจากสามชนิด$(br2)$(br)$(italic)หมายเหตุ: การหล่อสามารถทำได้ด้วย $(l:getting_started/primitive_alloys)โลหะผสม$() บางชนิดเช่นกัน"},
-    {"type": "patchouli:text", "text": "ขั้นแรก ให้เปิด $(thing)Small Vessel$() แล้วใส่แร่ลงไป คำนวณปริมาณโลหะรวมในแร่อย่างระมัดระวัง! ภาชนะนี้สามารถบรรจุโลหะเหลวได้สูงสุดเพียง 3024mB ส่วนเกินจะสูญหายไป จากนั้น คุณต้องสร้าง $(l:getting_started/pit_kiln)Pit Kiln$() โดยใส่ภาชนะที่บรรจุแร่ไว้ข้างใน เมื่อภาชนะร้อนขึ้น แร่ข้างในจะละลาย และคุณจะได้ภาชนะที่บรรจุโลหะเหลว"},
-    {"type": "patchouli:crafting", "recipe": "tfchotornot:crafting/tongs/wood", "text": "ระวัง ภาชนะจะร้อนมาก! คราฟต์ $(thing)Wooden Tongs$() ด้วยกิ่งไม้สองชิ้นและมีด แล้วถือไว้ในมือข้างที่ไม่ถนัดเพื่อจับภาชนะที่ร้อนได้อย่างปลอดภัย"},
-    {"type": "patchouli:image", "images": ["tfc:textures/gui/book/gui/casting.png"], "text": "ถือภาชนะแล้วกด $(item)$(k:key.use)$() เพื่อเปิดอินเทอร์เฟซ $(thing)Casting$()", "border": false},
-    {"type": "patchouli:text", "text": "เมื่ออินเทอร์เฟซ Casting เปิดขึ้น ให้วาง Mold ที่เผาแล้วและยังว่างอยู่ลงในช่องตรงกลาง มันจะค่อยๆ เติมจนเต็มตราบเท่าที่ภาชนะยังเป็นของเหลว (หากภาชนะแข็งตัว สามารถนำไปเผาซ้ำใน Pit Kiln อีกแห่งได้) เมื่อ Mold เต็มแล้ว สามารถถอดออกและปล่อยให้เย็นลง เมื่อเย็นลงแล้ว สามารถนำ Mold และสิ่งที่อยู่ข้างในออกมาได้โดยการกดใช้งาน Mold หรือวางลงในช่องคราฟต์"},
-    {"type": "patchouli:crafting", "recipe": "gtceu:shaped/pickaxe_copper", "text": "ตอนนี้คุณสามารถคราฟต์พลั่วเล่มแรกของคุณได้แล้ว! หา Copper ให้เพียงพอสำหรับทำหัวพลั่ว เผาแม่พิมพ์หัวพลั่ว และหลอมแร่โดยใช้ Pit Kiln จากนั้นทำการเทหล่อหัวเครื่องมือ นำมาประกอบกับด้ามไม้ เท่านี้ก็เรียบร้อย! ตอนนี้คุณสามารถขุดหา $(l:tfg_ores/index)แร่$() ได้แล้ว"},
-    {"type": "patchouli:spotlight", "item": "tfc:metal/chisel/copper", "text": "ยังมีเครื่องมือโลหะที่สำคัญอีกสองสามอย่างสำหรับการก้าวหน้าในเกมเช่นกัน $(l:mechanics/chisel)สิ่ว$() มีประโยชน์สำหรับการจัดการกับบล็อกหินเพื่อการก่อสร้างและคราฟต์สูตรอื่นๆ"},
-    {"type": "patchouli:spotlight", "item": "gtceu:copper_saw", "text": "เลื่อยช่วยให้คุณสามารถเปลี่ยนท่อนไม้ให้กลายเป็น $(l:mechanics/support_beams)คานค้ำยัน$() และ $(thing)ไม้แปรรูป$() ซึ่งสามารถนำไปคราฟต์ต่อเป็นแผ่นไม้ โต๊ะคราฟต์ ถังไม้ และหีบ รวมไปถึงสิ่งอื่นอีกมากมาย นอกจากนี้ยังมีประโยชน์สำหรับการทำ $(l:firmaciv/canoe)เรือแคนู$() อีกด้วย"}
+    {
+      "type": "patchouli:text",
+      "text": "นอกจากกิ่งไม้ กิ่งไม้เล็ก และก้อนหินบนพื้นแล้ว ในระหว่างการเดินทางคุณอาจพบชิ้นส่วนแร่ขนาดเล็กกระจัดกระจายอยู่ตามพื้น สิ่งเหล่านี้มีความสำคัญมาก เนื่องจากเป็นหนึ่งในแหล่งแร่และโลหะเพียงไม่กี่แห่งก่อนที่จะได้รับ pickaxe"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [ [ "    ", "  0 ", "    " ], [ "ABCD", "EFGH", "IJKL" ], [ "XXXX", "XXXX", "XXXX" ] ],
+        "mapping": {
+          "X": "tfc:grass/loam",
+          "A": "tfc:ore/small_native_copper",
+          "B": "tfc:ore/small_native_gold",
+          "C": "tfc:ore/small_hematite",
+          "D": "tfc:ore/small_native_silver",
+          "E": "tfc:ore/small_cassiterite",
+          "F": "tfc:ore/small_bismuthinite",
+          "G": "tfc:ore/small_garnierite",
+          "H": "tfc:ore/small_malachite",
+          "I": "tfc:ore/small_magnetite",
+          "J": "tfc:ore/small_limonite",
+          "K": "tfc:ore/small_sphalerite",
+          "L": "tfc:ore/small_tetrahedrite"
+        }
+      },
+      "name": "",
+      "text": "ชิ้นส่วนแร่ขนาดเล็กทั้งหมด",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ชิ้นส่วนแร่ขนาดเล็กเหล่านี้มีประโยชน์สองอย่าง: พวกมันสามารถเป็นแหล่งโลหะได้ และที่สำคัญกว่านั้นคือ พวกมันบ่งบอกถึงการมีอยู่ของสายแร่ขนาดใหญ่ในบริเวณใกล้เคียง ซึ่งน่าจะอยู่ใต้ดินและใกล้กับพื้นผิว อย่าลืมจดบันทึกตำแหน่งที่คุณพบแร่ขนาดเล็กไว้ เพราะตำแหน่งของสายแร่จะมีประโยชน์ในภายหลังระหว่าง$(l:mechanics/prospecting)การสำรวจแร่ (Prospecting)$().$(br2)แร่ขนาดเล็กทั้ง 12 ชนิดและโลหะที่สามารถนำไปถลุงได้จะแสดงไว้ในหน้าถัดไป"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Native Copper ($(thing)Copper$())$(li)Native Gold ($(thing)Gold$())$(li)Hematite ($(thing)Cast Iron$())$(li)Native Silver ($(thing)Silver$())$(li)Cassiterite ($(thing)Tin$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garnierite ($(thing)Nickel$())$(li)Malachite ($(thing)Copper$())$(li)Magnetite ($(thing)Cast Iron$())$(li)Limonite ($(thing)Cast Iron$())$(li)Sphalerite ($(thing)Zinc$())$(li)Tetrahedrite ($(thing)Copper$())",
+      "title": "แร่ขนาดเล็ก"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "casting",
+      "text": "ใน TerraFirmaCraft แร่แต่ละชนิดจะบรรจุโลหะจริงจำนวนหนึ่งเป็น $(thing)units$() หรือ $(thing)mB (millibuckets)$() ที่สามารถสกัดออกมาได้ แร่ขนาดเล็กเช่นนี้ที่พบบนพื้นผิวจะเป็นคุณภาพต่ำที่สุด และให้โลหะเพียง $(thing)16 mB$() เท่านั้น ในการสกัดโลหะนี้ จะต้องนำไป$(thing)หลอมเหลว (melted)$() และทำเป็นเครื่องมือโดยใช้กระบวนการที่เรียกว่า $(thing)การหล่อ (casting)$()",
+      "title": "การหล่อโลหะ"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "คุณจะต้องมี:$(br)$(li)$(l:getting_started/pottery#vessel)Small Vessel$() 1 ใบ$(li)วัตถุดิบเพียงพอสำหรับ $(l:getting_started/pit_kiln)Pit Kiln$()$(li)$(l:getting_started/pottery#mold)Mold$() หนึ่งชิ้นหรือมากกว่าเพื่อหล่อโลหะที่หลอมเหลว$(li)และสุดท้าย โลหะรวมอย่างน้อย 144 mB ที่เหมาะสมสำหรับการหล่อ: $(thing)Copper$() ในรูปแบบแร่ชนิดใดชนิดหนึ่งหรือมากกว่าจากสามชนิด$(br2)$(br)$(italic)หมายเหตุ: การหล่อสามารถทำได้กับ $(l:getting_started/primitive_alloys)Alloys$() บางชนิดด้วยเช่นกัน"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "แรกเริ่ม ให้เปิด $(thing)Small Vessel$() แล้วใส่แร่ลงไปข้างใน คำนวณปริมาณโลหะรวมในแร่อย่างระมัดระวัง! ภาชนะสามารถบรรจุโลหะหลอมเหลวได้สูงสุดเพียง 3024mB ส่วนที่เกินจะสูญหาย จากนั้น คุณต้องสร้าง $(l:getting_started/pit_kiln)Pit Kiln$() โดยวาง Small Vessel ที่บรรจุแร่ไว้ข้างใน เมื่อภาชนะร้อนขึ้น แร่ข้างในจะหลอมเหลว และคุณจะได้ภาชนะที่บรรจุโลหะหลอมเหลว"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "ระวัง ภาชนะจะร้อนมาก! คราฟต์ $(thing)Wooden Tongs$() ด้วย sticks สองอันและ knife แล้วถือไว้ในมือผู้ช่วย (off hand) เพื่อจัดการกับภาชนะที่ร้อนได้อย่างปลอดภัย"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [ "tfc:textures/gui/book/gui/casting.png" ],
+      "text": "ถือภาชนะแล้วกด $(item)$(k:key.use)$() เพื่อเปิดหน้าต่าง $(thing)Casting$()",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เมื่อหน้าต่าง casting เปิดอยู่ ให้วาง mold ที่เผาแล้วซึ่งว่างเปล่าลงในช่องตรงกลาง มันจะถูกเติมจนเต็มตราบใดที่โลหะในภาชนะยังเป็นของเหลว (หากภาชนะแข็งตัว สามารถนำไปเผาซ้ำใน pit kiln อีกครั้งได้) เมื่อ mold เต็มแล้ว สามารถถอดออกและปล่อยให้เย็นลง เมื่อเย็นลงแล้ว สามารถสกัด mold และสิ่งที่อยู่ข้างในออกได้โดยการใช้ mold หรือวางลงในช่องคราฟต์"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/pickaxe_copper",
+      "text": "ตอนนี้คุณสามารถคราฟต์ pickaxe เล่มแรกของคุณได้แล้ว! หา copper ให้เพียงพอสำหรับทำ pickaxe head, เผา pickaxe mold และหลอมแร่โดยใช้ pit kiln จากนั้นหล่อ head นำไปประกอบเข้ากับ stick แล้วเรียบร้อย! ตอนนี้คุณสามารถขุดหา $(l:tfg_ores/index)แร่ (ore)$() ได้แล้ว"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/chisel/copper",
+      "text": "นอกจากนี้ยังมีเครื่องมือโลหะที่สำคัญอีกสองสามอย่างที่ใช้สำหรับการปลดล็อกความก้าวหน้า $(l:mechanics/chisel)Chisel$() มีประโยชน์สำหรับการทำงานกับบล็อกหินสำหรับการก่อสร้างและสูตรคราฟต์อื่น ๆ"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:copper_saw",
+      "text": "saw (เลื่อย) ช่วยให้คุณเปลี่ยนท่อนไม้ (wood logs) เป็น $(l:mechanics/support_beams)support beams$() และ $(thing)lumber$() ซึ่งสามารถนำไปคราฟต์ต่อเป็น planks, crafting bench, barrels และ chests รวมถึงสิ่งอื่น ๆ นอกจากนี้ยังมีประโยชน์ในการทำ $(l:firmaciv/canoe)canoe$() อีกด้วย"
+    }
   ],
   "read_by_default": true,
   "sortnum": 4

@@ -1,0 +1,22 @@
+{
+  "__credits__": "หน้านี้สร้างขึ้นโดยอัตโนมัติโดย OresToFieldGuide.",
+  "name": "ดรรชนีแร่ Venus",
+  "icon": "vintageimprovements:sulfur",
+  "category": "tfc:tfg_ores",
+  "read_by_default": true,
+  "secret": false,
+  "pages": [
+    {
+      "Type": "patchouli:text",
+      "text": "นี่คือ $(thing)Ore Index (ดรรชนีแร่)$() สำหรับ $(thing)Venus (ดาวศุกร์)$() แร่ทั้งหมดจัดเรียงตามลำดับอักษรภาษาอังกฤษ และเรียงจากประเภทสายแร่ที่มีความสมบูรณ์มากที่สุดไปจนถึงน้อยที่สุด คุณสามารถคลิกที่ชื่อแร่เพื่อเรียนรู้ข้อมูลเพิ่มเติมเกี่ยวกับสายแร่แต่ละแห่ง",
+      "title": "ดรรชนีแร่ Venus",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(li)Halite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lepidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumene: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Sylvite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
+      "type": "patchouli:text"
+    }
+  ],
+  "sortnum": 8
+}

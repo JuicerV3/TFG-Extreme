@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Cheese (ชีส)",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "การทำ $(thing)Cheese$() (ชีส) ใน Firmalife มีขั้นตอนซับซ้อนกว่าใน TFC ดั้งเดิมเล็กน้อย โดยมีนมชนิดใหม่สองประเภท ได้แก่ $(thing)Yak Milk$() (นมจามรี) และ $(thing)Goat Milk$() (นมแพะ) ซึ่งได้จากการรีดนม $(l:mechanics/animal_husbandry#yak)Yak$() (จามรี) และ $(l:mechanics/animal_husbandry#goat)Goat$() (แพะ) ตามลำดับ ส่วนการรีดนม $(l:mechanics/animal_husbandry#cow)Cow$() (วัว) จะยังคงได้นมแบบเดิม"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ตามปกติแล้ว นมจะต้องถูก $(thing)Curdled$() (หมักให้ตกตะกอนเป็นเคิร์ด) เสียก่อน ในการทำให้นมตกตะกอน คุณจำเป็นต้องใช้ $(thing)Rennet$() (เรนเนต) ซึ่ง Rennet ได้มาจากกระเพาะของสัตว์กลุ่ม $(thing)Ruminant$() (สัตว์เคี้ยวเอื้อง) เช่น $(l:mechanics/animal_husbandry#yak)Yak$() (จามรี), $(l:mechanics/animal_husbandry#cow)Cow$() (วัว), $(l:mechanics/animal_husbandry#sheep)Sheep$() (แกะ), $(l:mechanics/animal_husbandry#goat)Goat$() (แพะ) และ $(l:mechanics/animal_husbandry#musk_ox)Musk Ox$() (มัสก์ออกซ์) การทำให้นมตกตะกอน ทำได้โดยผนึกนมไว้ใน $(l:mechanics/barrels)Barrel$() (ถังไม้) พร้อมกับ Rennet เป็นเวลา 4 ชั่วโมง"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "นมที่ตกตะกอนแล้วจะต้องถูกเปลี่ยนเป็น $(thing)Curds$() (เคิร์ด) โดยผนึกไว้ในถังไม้พร้อมกับ $(thing)Cheesecloth$() (ผ้ากรองชีส) ทั้งนี้ Cheesecloth ไม่สามารถนำกลับมาใช้ซ้ำได้"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "คุณสามารถเริ่มทำ $(thing)Dry Cheese$() (ชีสแบบแห้ง) ได้ตามต้องการ โดยสามารถทำ $(thing)Rajya Metok$() จาก $(thing)Yak Curds$() (เคิร์ดนมจามรี), ทำ $(thing)Chevre$() จาก $(thing)Goat Curds$() (เคิร์ดนมแพะ) และทำ $(thing)Cheddar$() จาก $(thing)Milk Curds$() (เคิร์ดนมวัว)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อีกทางเลือกหนึ่งคือการทำ $(thing)Wet Cheeses$() (ชีสแบบเปียก) ซึ่งทำได้โดยผนึกเคิร์ดไว้ในถังไม้ที่บรรจุ $(thing)Salt Water$() (น้ำเกลือ) คุณสามารถทำ $(thing)Shosha$() จาก $(thing)Yak Curds$() (เคิร์ดนมจามรี), ทำ $(thing)Feta$() จาก $(thing)Goat Curds$() (เคิร์ดนมแพะ) และทำ $(thing)Gouda$() จาก $(thing)Milk Curds$() (เคิร์ดนมวัว)"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "ก้อนชีส (Cheese wheel) เป็นบล็อกที่ควรนำไปวางเพื่อช่วยยืดอายุการเก็บรักษา ในการปรับปรุงคุณภาพและอายุการเก็บรักษา ควรนำก้อนชีสไป $(thing)Aged$() (บ่ม) ไว้ใน $(l:firmalife/cellar)Cellar (ห้องใต้ดิน)$() หากต้องการตัดแบ่งชีสออกมารับประทาน ให้กด $(item)$(k:key.use)$() โดยถือ $(thing)Knife$() (มีด) อยู่ในมือ แต่หากขุดทำลายบล็อกชีสตรงๆ ค่าการบ่มที่ทำไว้จะสูญหายทันที!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "ระยะการบ่มของก้อนชีส Gouda: $(thing)Fresh$() (ชีสสด), $(thing)Aged$() (ชีสบ่ม) และ $(thing)Vintage$() (ชีสบ่มนาน)",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

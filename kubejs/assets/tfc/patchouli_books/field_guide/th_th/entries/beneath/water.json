@@ -1,0 +1,21 @@
+{
+	"name": "การรักษาความชุ่มชื้น",
+	"category": "tfc:beneath",
+	"icon": "beneath:juicer",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "ต่างจาก Nether น้ำจะไม่ระเหยกลายเป็นไอในทันทีเมื่อคุณอยู่ใน Beneath อย่างไรก็ตาม คุณยังมีตัวเลือกในการคราฟต์ $(thing)Juicer$() ได้อีกด้วย"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/juicer",
+			"text": "Juicer คือภาชนะสำหรับดื่มที่ช่วยคั้นอัด $(thing)Mushrooms$() และ $(thing)Fruit$() ออกมาเป็นน้ำ อินเทอร์เฟซผู้ใช้แบบช่องเดียวจะประมวลผลเห็ดที่ใส่เข้าไปให้กลายเป็นน้ำโดยอัตโนมัติ"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "เห็ดเหล่านี้เกิดอยู่ทั่วไปใน Beneath ผลไม้สด (เช่น $(thing)Glow Berries$()) สามารถนำมาคั้นเป็นน้ำได้เช่นกัน$(br2)คุณยังสามารถพบแหล่งน้ำและ $(thing)Hot Springs$() ได้ในบริเวณส่วนบนและส่วนกลางของ Beneath"
+		}
+	],
+	"read_by_default": true
+}

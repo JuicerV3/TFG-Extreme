@@ -1,0 +1,52 @@
+{
+	"name": "การจัดการช่องเก็บของ",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:chest",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "การจัดการช่องเก็บของ",
+			"text": "เมื่อคุณมี $(l:getting_started/pottery#vessel)Vessels$() เล็กน้อย และสร้าง $(item)Wooden Chests$() ขึ้นมาแล้ว แต่ยังมีไอเทมมากมายจนไม่รู้จะจัดการอย่างไร ต่อไปควรทำอะไรดี?$(br2)$(thing)Backpack$() สามารถขยายช่องเก็บของติดตัวคุณได้สองเท่าในระดับเริ่มต้น และการอัปเกรดกระเป๋าเป้ในระดับสูงขึ้นจะยิ่งเพิ่มความจุได้มากขึ้นไปอีก!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:sophisticated_backpacks/shaped/backpack",
+			"text": "Backpack สามารถแบกไอเทมน้ำหนักมากได้หลายชิ้นโดยไม่ทำให้คุณเคลื่อนที่ช้าลง รวมถึงไอเทมขนาดใหญ่อย่างสแต็กท่อนไม้$(br2)คุณยังสามารถอัปเกรดด้วย $(thing)Crafting Upgrade$() เพื่อให้มี Crafting Table ติดตัวไปได้ทุกที่"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Crates",
+			"anchor": "crates",
+			"text": "สำหรับการจัดเก็บไอเทม GregTech มี $(item)Crates$() ซึ่งสามารถเก็บไอเทมขนาดใหญ่ได้ทั้งหมดเช่นเดียวกับกระเป๋าเป้ และในเทียร์ที่สูงขึ้นจะเก็บไอเทมได้มากยิ่งขึ้น$(br2)Crates ยังสามารถติดตั้ง $(thing)Item Filters$() และ $(thing)Item Tag Filters$() ได้ หากคุณต้องการสร้างระบบคัดแยกไอเทมเบื้องต้น$(br2)อย่างไรก็ตาม $(thing)Item Pipes$() ไม่สามารถดึงไอเทมได้ด้วยตัวเอง คุณจึงจำเป็นต้องใช้ $(thing)Chute$() หรือ $(thing)Hopper$() ในการดันไอเทมเข้าไป"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/wooden_crate",
+			"recipe2": "gtceu:shaped/bronze_crate"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Drums",
+			"anchor": "drums",
+			"text": "สำหรับการจัดเก็บของเหลว GregTech มี $(item)Drums$() ซึ่งสามารถบรรจุของเหลวชนิดเดียวได้เป็นจำนวนมาก และในเทียร์ที่สูงขึ้นจะบรรจุได้มากขึ้น เช่นเดียวกับ Crates$(br2)ข้อแตกต่างจาก Crates คือ Drums จะยังคงเก็บของเหลวไว้ภายในเมื่อถูกทุบทำลาย ทำให้เหมาะอย่างยิ่งสำหรับการขนย้ายของเหลว$(br2)Drums สามารถดันของเหลวออกทางด้านล่างโดยอัตโนมัติได้ เพียงคลิกขวาที่ตัวถังด้วย $(thing)Soft Mallet$() หรือ $(thing)Screwdriver$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/bronze_drum",
+			"text": "วาง Drum ในคราฟติ้งกริดเพื่อล้างของเหลวทั้งหมดที่อยู่ข้างในออก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_super_chest,gtceu:lv_super_tank",
+			"title": "Super Storage",
+			"text": "คุณกำลังผลิตไอเทมในระดับอุตสาหกรรมอยู่หรือเปล่า? $(thing)Super Chests$() และ $(thing)Super Tanks$() ของ GregTech สามารถเก็บไอเทมหรือของเหลวชนิดเดียวได้ในปริมาณมหาศาล และยังสามารถทำลายส่วนที่ล้นออกมาทิ้งได้อีกด้วย"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Applied Energistics 2",
+			"item": "ae2:drive",
+			"text": "เมื่อปลดล็อกได้ในช่วงท้ายของเทียร์ $(thing)HV$() ม็อด AE2 จะมอบทุกสิ่งที่คุณต้องการสำหรับการจัดเก็บและระบบโลจิสติกส์"
+		}
+	]
+}

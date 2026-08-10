@@ -1,0 +1,40 @@
+{
+	"name": "Piglins (พิกคลิน)",
+	"category": "tfc:beneath",
+	"icon": "minecraft:gold_ingot",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Piglin Bartering (การแลกเปลี่ยนกับพิกคลิน)",
+			"text": "ตามที่คุณคาดไว้ คุณสามารถแลกเปลี่ยนกับ $(thing)Piglins$() (พิกคลิน) ได้ในลักษณะเดียวกับการแลกเปลี่ยนในเกมเวอร์ชันดั้งเดิม โดยใช้ $(item)Gold Ingots$() (แท่งทองคำ)"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "Piglin (พิกคลิน)",
+			"text": "คุณสามารถพบ Piglins ได้ในแทบทุกไบโอมทั่วทั้งมิติ Beneath"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Trade Results (ผลลัพธ์การแลกเปลี่ยน)",
+			"text": "$(li)1 Copper Ingot (ทองแดง)$(li)1 Tin Ingot (ดีบุก)$(li)1 Silver Ingot (เงิน)$(li)1 Bronze Ingot (สำริด)$(li)1 Bismuth Bronze Ingot (บิสมัทสำริด)$(li)1 Cast Iron Ingot (เหล็กหล่อ)$(li)1 Zinc Ingot (สังกะสี)$(li)1 Brass Ingot (ทองเหลือง)$(li)1 Bismuth Ingot (บิสมัท)$(li)1 Nickel Ingot (นิกเกิล)$(li)2-4 Redstone Dust (ผงเรดสโตน)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1-2 Leather (หนัง)$(li)6-12 Silk Thread (ด้ายไหม)$(li)4-6 Nether Quartz (เนเธอร์ควอตซ์)$(li)4-6 Cooked Venison (เนื้อกวางปรุงสุก)$(li)4-6 Ghost Peppers (พริกโกสต์)$(li)4-6 Gunpowder (ดินปืน)$(li)4-8 Charcoal (ถ่านไม้)$(li)6-12 Arrows (ลูกธนู)$(li)6-12 Flux (ฟลักซ์)$(li)2-3 Ruby Gems (ทับทิม)$(li)2-3 Emerald Gems (มรกต)$(li)2-3 Sapphire Gems (ไพลิน)$(li)2-3 Green Sapphire Gems (ไพลินเขียว)$(li)1 Ender Dust (ผงเอนเดอร์)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Bastions (ป้อมปราการ Bastion)",
+			"text": "การบุกปล้น $(thing)Bastion$() (ป้อมปราการ Bastion) อาจมีความอันตรายเป็นอย่างมาก แต่ก็ให้ผลตอบแทนที่คุ้มค่าเช่นกัน! คุณสามารถพบสิ่งต่างๆ เช่น:$(li)แท่งโลหะ Gold, Rose Gold, Pig Iron, Black Bronze และ Silver$(li)อาวุธ เครื่องมือ และชุดเกราะ Black Bronze$(li)Kaolin clay (ดินเหนียวคาโอริน) และ graphite (แกรไฟต์)$(li)Lanterns (ตะเกียง)$(li)ผ้า หนัง เมล็ดพันธุ์ และอาหาร$(li)และสมบัติต่างๆ อีกมากมาย!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "Piglin Disguise (ชุดปลอมตัวเป็นพิกคลิน)",
+			"text": "หากคุณต้องการให้การแลกเปลี่ยนเป็นไปอย่างง่ายดาย--หรือเพียงแค่ต้องการปะปนกับชาวเมืองในพื้นที่--สวมใส่ $(thing)Piglin Disguise$() (ชุดปลอมตัวเป็นพิกคลิน) เพื่อป้องกันไม่ให้ $(thing)Piglins$() (พิกคลิน) แสดงความอาฆาตใส่คุณตั้งแต่แรกเห็น แต่ระวังให้ดี! พวกเขายอมอดทนได้เพียงระดับหนึ่งเท่านั้น..."
+		}
+	],
+	"read_by_default": true
+}

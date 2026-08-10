@@ -1,0 +1,390 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "สัตว์ป่า",
+	"category": "tfc:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "โลกของ TFC เต็มไปด้วยสิ่งมีชีวิตจำพวกสัตว์ สัตว์บางชนิดอยู่ที่นี่เพื่อช่วยคุณ ในขณะที่บางชนิดก็เป็นอันตรายอย่างยิ่ง หมวดหมู่นี้เกี่ยวกับสัตว์ป่า หากต้องการข้อมูลเกี่ยวกับสัตว์เลี้ยงในฟาร์ม ซึ่งเป็นสัตว์ที่สามารถให้ไอเทมที่คุณจำเป็นต้องใช้ โปรดดูที่หน้า $(l:mechanics/animal_husbandry)การเลี้ยงสัตว์$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "สัตว์สามารถแบ่งออกเป็นหมวดหมู่ต่างๆ ได้แก่ $(l:the_world/wild_animals#predators)สัตว์ผู้ล่า$(), $(l:the_world/wild_animals#prey)เหยื่อ$() และสัตว์ $(l:the_world/wild_animals#aquatic)ครึ่งน้ำครึ่งบกและสัตว์น้ำ$()$(br2)ในหน้าถัดๆ ไปจะอธิบายรายละเอียดของสัตว์แต่ละหมวดหมู่นี้"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "predators",
+			"text": "$(thing)สัตว์ผู้ล่า$() คือสัตว์ที่สามารถโจมตีผู้เล่นได้ พวกมันอาจเป็นสัตว์ $(thing)หากินกลางคืน$() ที่ออกล่าเฉพาะในเวลากลางคืน หรือเป็นสัตว์ $(thing)หากินกลางวัน$() ที่ออกล่าเฉพาะในเวลากลางวัน สัตว์ผู้ล่าอาจเป็นมิตรชั่วคราวหรือเป็นศัตรู ขึ้นอยู่กับว่าพวกมันเพิ่งสังหารเหยื่อไปเมื่อเร็วๆ นี้หรือไม่ สัตว์ผู้ล่ามีอาณาเขตบ้านของตนเองที่จะปกป้อง หากคุณวิ่งหนีออกไปไกลพอ สัตว์ผู้ล่าจะหยุดไล่ตามและกลับไปยังถิ่นของมัน",
+			"title": "สัตว์ผู้ล่า"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:polar_bear",
+			"scale": 0.55,
+			"name": "หมีขั้วโลก",
+			"text": "หมีขั้วโลกจะเกิดเฉพาะในภูมิภาคที่หนาวที่สุดเท่านั้น โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน 10°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 100mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:grizzly_bear",
+			"scale": 0.55,
+			"name": "หมีกริซลีย์",
+			"text": "หมีกริซลีย์จะเกิดในป่าภูมิอากาศปานกลาง โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() ในช่วง -15 ถึง 15°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 200mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:black_bear",
+			"scale": 0.55,
+			"name": "หมีดำ",
+			"text": "หมีดำจะเกิดในป่าภูมิอากาศอบอุ่นและชื้น โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() 5 ถึง 20°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 250mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:cougar",
+			"scale": 0.6,
+			"name": "เสือคูการ์",
+			"text": "เสือคูการ์ชอบภูมิอากาศปานกลางเป็นส่วนใหญ่ โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() ตั้งแต่ -10 ถึง 21°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 150mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:panther",
+			"scale": 0.6,
+			"name": "เสือดำ",
+			"text": "เสือดำชอบภูมิอากาศปานกลางเป็นส่วนใหญ่ โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() ตั้งแต่ -10 ถึง 21°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 150mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:lion",
+			"scale": 0.55,
+			"name": "สิงโต",
+			"text": "สิงโตจะเกิดในทุ่งกว้างที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() เฉลี่ยอย่างน้อย 16°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 50 ถึง 300mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:tiger",
+			"scale": 0.55,
+			"name": "เสือโคร่ง",
+			"text": "เสือโคร่งจะเกิดในป่าที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() เฉลี่ยอย่างน้อย 13°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() มากกว่า 100mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:sabertooth",
+			"scale": 0.6,
+			"name": "เสือเขี้ยวดาบ",
+			"text": "เสือเขี้ยวดาบจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่มากกว่า 0°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() มากกว่า 250mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:wolf",
+			"scale": 0.7,
+			"text": "หมาป่าจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 22°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 70 ถึง 480mm พวกมันออกล่าเป็นฝูง การให้อาหารหมาป่ามากพอจะทำให้มันเชื่องกลายเป็น $(l:mechanics/pets)สุนัข$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:direwolf",
+			"scale": 0.7,
+			"text": "ไดร์วูลฟ์จะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่าจุดเยือกแข็ง และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 150 ถึง 420mm พวกมันออกล่าเป็นฝูง พวกมันมีขนาดใหญ่กว่าหมาป่าทั่วไป และไม่สามารถทำให้เชื่องได้"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:hyena",
+			"scale": 0.7,
+			"text": "ไฮยีนาจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่อุ่นกว่า 15°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 80 ถึง 380mm พวกมันออกล่าเป็นฝูง และไม่สามารถทำให้เชื่องได้"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.7,
+			"name": "จระเข้",
+			"text": "จระเข้จะเกิดใกล้กับแม่น้ำ ทะเลสาบ และหนองบึงใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่อุ่นกว่า 15°C และ $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ทุกระดับ พวกมันหากินกลางคืน และอันตรายที่สุดเมื่ออยู่ในน้ำ"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:ocelot",
+			"scale": 0.7,
+			"text": "เสือดาวหิมะ/โอเซล็อตจะโจมตีสัตว์ขนาดเล็ก เกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ตั้งแต่ 15 ถึง 30°C และ $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 300 ถึง 500mm ในป่า การให้อาหารมันมากพอจะทำให้มันเชื่องกลายเป็น $(l:mechanics/pets)แมว$() โอเซล็อตสามารถกินปลาดิบได้"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ramming_prey",
+			"text": "$(thing)สัตว์พุ่งชน$() จะพยายามพุ่งชนสิ่งมีชีวิตในบริเวณใกล้เคียงเป็นครั้งคราว รวมถึงผู้เล่น การโจมตีของพวกมันรุนแรงแต่สามารถหลบหลีกได้ พวกมันจะพุ่งชนบ่อยขึ้นหากถูกโจมตี",
+			"title": "สัตว์พุ่งชน"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:boar",
+			"scale": 0.7,
+			"name": "หมูป่า",
+			"text": "หมูป่าจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ต่ำกว่า 25°C และสูงกว่า -5°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 130 ถึง 400mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:moose",
+			"scale": 0.7,
+			"name": "กวางมูส",
+			"text": "กวางมูสจะเกิดในป่าที่ $(l:the_world/climate#temperature)อุณหภูมิ$() ต่ำกว่า 10°C และสูงกว่า -15°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 150 ถึง 300mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:wildebeest",
+			"scale": 0.7,
+			"name": "ไวล์เดอบีสต์",
+			"text": "ไวล์เดอบีสต์จะเกิดในทุ่งกว้างใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่สูงกว่า 13°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 90 ถึง 380mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:bison",
+			"scale": 0.7,
+			"name": "ไบซอน",
+			"text": "ไบซอนจะเกิดในทุ่งกว้างที่ $(l:the_world/climate#temperature)อุณหภูมิ$() ต่ำกว่า 15°C และสูงกว่า -10°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 160 ถึง 420mm"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "prey",
+			"text": "$(thing)เหยื่อ$() คือสัตว์ที่เกรงกลัวผู้เล่นและสัตว์ผู้ล่า พวกมันชำนาญในการหลบหนีจากอันตราย แต่โดยทั่วไปจะไม่สามารถต่อสู้กลับได้ สัตว์ที่เป็นเหยื่อบางชนิดชอบแอบกินพืชผล",
+			"title": "เหยื่อ"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:rabbit",
+			"scale": 0.7,
+			"name": "กระต่าย",
+			"text": "กระต่ายขึ้นชื่อเรื่องการเคี้ยวแครอทและกะหล่ำปลี พวกมันมีอยู่ทั่วไปในโลก และจะเปลี่ยนขนตามสภาพภูมิอากาศ พวกมันต้องการ $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() เพียง 15mm ในการเกิด"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:fox",
+			"scale": 0.7,
+			"name": "สุนัขจิ้งจอก",
+			"text": "สุนัขจิ้งจอกชอบกินผลเบอร์รีจากพุ่มไม้ สามารถพบได้ในป่าที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() ต่ำกว่า 25°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 130 ถึง 400mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:deer",
+			"scale": 0.7,
+			"text": "กวางจะเกิดในป่าที่ $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 25°C และสูงกว่า -15°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 130 ถึง 400mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:caribou",
+			"scale": 0.6,
+			"name": "คาริบู",
+			"text": "คาริบูจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า -9°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 110 ถึง 500mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:gazelle",
+			"scale": 0.7,
+			"text": "ละมั่งกาเซลล์จะเกิดในทุ่งกว้างใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่สูงกว่า 12°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 90 ถึง 380mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:bongo",
+			"scale": 0.9,
+			"name": "บองโก",
+			"text": "กวางบองโกจะเกิดในป่าใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่สูงกว่า 15°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 230 ถึง 500mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:grouse",
+			"scale": 0.7,
+			"text": "นกสนูป (Grouse) จะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 13°C และสูงกว่า -12°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 150 ถึง 400mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:pheasant",
+			"scale": 0.7,
+			"text": "นกกระทาฟ้า/นกฟ้าซ่า (Pheasant) จะเกิดในป่าใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 17°C และสูงกว่า -5°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 100 ถึง 300mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:turkey",
+			"scale": 0.7,
+			"text": "ไก่งวงจะเกิดในป่าใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 17°C และสูงกว่า 0°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 250 ถึง 450mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:peafowl",
+			"scale": 0.6,
+			"name": "นกยูง",
+			"text": "นกยูงจะเกิดในป่าใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่สูงกว่า 14°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 190 ถึง 500mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:lemming",
+			"scale": 1.5,
+			"offset": -0.2,
+			"name": "เลมมิ่ง",
+			"text": "เลมมิ่งจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า -3°C และสูงกว่า -12°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 160 ถึง 500mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:jerboa",
+			"scale": 1.2,
+			"name": "เจอร์บัว",
+			"text": "เจอร์บัวจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่ต่ำกว่า 25°C และสูงกว่า -3°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ต่ำกว่า 160mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:mongoose",
+			"scale": 0.8,
+			"name": "พังพอน",
+			"text": "พังพอนจะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() ใดก็ได้ที่สูงกว่า 12°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ระหว่าง 160 ถึง 500mm"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aquatic",
+			"text": "$(thing)สัตว์น้ำ$() เป็นหมวดหมู่กว้างๆ ซึ่งครอบคลุมพฤติกรรมที่หลากหลาย พวกมันอาจเป็น $(thing)สัตว์อาศัยตามชายฝั่ง$(), $(thing)ปลา$(), $(thing)สัตว์มีเปลือก$() หรือ $(thing)สัตว์น้ำขนาดใหญ่$()",
+			"title": "สัตว์น้ำ"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)สัตว์ชายฝั่ง$() จะเกิดเฉพาะบนชายหาดทะเลเท่านั้น และใช้เวลาบางส่วนของวันในการว่ายน้ำ และบางส่วนเดินบนชายหาด พวกมันเป็นสิ่งมีชีวิตที่มีความอยากรู้อยากเห็น และจะเดินตามผู้เล่นไปรอบๆ แต่ไม่สามารถทำให้เชื่องได้"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:penguin",
+			"scale": 0.7,
+			"name": "นกเพนกวิน",
+			"text": "นกเพนกวินจะเกิดเฉพาะบนชายหาดที่หนาวที่สุดเท่านั้น โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน -14°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 75mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:turtle",
+			"scale": 0.7,
+			"name": "เต่าทะเล",
+			"text": "เต่าทะเลชอบน้ำอุ่น จะเกิดใน $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 21°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 250mm"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)ปลา$() เป็นสิ่งมีชีวิตขนาดเล็กที่ว่ายอยู่ในน้ำ ส่วนใหญ่สามารถ $(l:mechanics/fishing)ตกปลา$() ได้ บางชนิดชอบมหาสมุทร แม่น้ำ หรือทะเลสาบ",
+			"title": "ปลา"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:cod",
+			"scale": 0.7,
+			"name": "ปลาคอด",
+			"text": "ปลาคอดชอบมหาสมุทรที่หนาวเย็นกว่า โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน 18°C สามารถตกปลาชนิดนี้ได้"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:pufferfish",
+			"scale": 0.7,
+			"name": "ปลาปักเป้า",
+			"text": "ปลาปักเป้าอาศัยอยู่ในมหาสมุทรใดก็ได้ที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 10°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:jellyfish",
+			"scale": 0.7,
+			"name": "แมงกะพรุน",
+			"text": "แมงกะพรุนอาศัยอยู่ในมหาสมุทรที่อุ่นกว่า โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 18°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:tropical_fish",
+			"scale": 0.7,
+			"name": "ปลาเขตร้อน",
+			"text": "ปลาเขตร้อนชอบมหาสมุทรที่อุ่นกว่า โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 18°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:salmon",
+			"scale": 0.7,
+			"name": "ปลาแซลมอน",
+			"text": "ปลาแซลมอนจะเกิดในแม่น้ำหรือทะเลสาบใดก็ได้ที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย -5°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:bluegill",
+			"scale": 0.7,
+			"name": "ปลาบลูกิลล์",
+			"text": "ปลาบลูกิลล์จะเกิดในแม่น้ำหรือทะเลสาบใดก็ได้ที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย -10°C และไม่เกิน 26°C"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shellfish",
+			"text": "$(thing)สัตว์มีเปลือก$() เป็นสัตว์ขนาดเล็กที่อาศัยอยู่บนพื้นท้องน้ำ ไม่สามารถตกได้ด้วยคันเบ็ด แต่จะดรอปเปลือกที่สามารถนำมากินหรือทำเป็น $(l:mechanics/flux)น้ำประสานทอง$() ได้ สัตว์มีเปลือกสามารถใช้เป็น $(l:mechanics/fishing)เหยื่อล่อ$() ปลาได้",
+			"title": "สัตว์มีเปลือก"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:isopod",
+			"scale": 0.7,
+			"name": "ไอโซพอด",
+			"text": "ไอโซพอดจะเกิดในส่วนที่ลึกกว่าของมหาสมุทรที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน 14°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:lobster",
+			"scale": 0.7,
+			"name": "กุ้งมังกร",
+			"text": "กุ้งมังกรจะเกิดในมหาสมุทรใดก็ได้ที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน 21°C"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crayfish",
+			"scale": 0.7,
+			"name": "กุ้งเครย์ฟิช",
+			"text": "กุ้งเครย์ฟิชเหมือนกับกุ้งมังกร แต่จะเกิดในแม่น้ำและทะเลสาบ ต้องการ $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 5°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 125mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:horseshoe_crab",
+			"scale": 0.7,
+			"name": "แมงดาทะเล",
+			"text": "แมงดาทะเลจะเกิดในมหาสมุทรภูมิอากาศปานกลาง มี $(l:the_world/climate#temperature)อุณหภูมิ$() ระหว่าง 10 ถึง 21°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() สูงสุดไม่เกิน 400mm"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)สัตว์น้ำขนาดใหญ่$() เป็นสัตว์ขนาดใหญ่ที่อาศัยอยู่ในแหล่งน้ำขนาดใหญ่ บางชนิดล่าปลาเป็นอาหาร พวกมันจะดรอป $(l:mechanics/lamps#tallow)ไขวาฬ$() ซึ่งสามารถนำไปทำเป็นเชื้อเพลิงตะเกียงได้",
+			"title": "สัตว์น้ำขนาดใหญ่"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:orca",
+			"scale": 0.25,
+			"name": "วาฬเพชฌฆาต",
+			"text": "วาฬเพชฌฆาตอาศัยอยู่ในมหาสมุทรลึกที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน 19°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 100mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:dolphin",
+			"scale": 0.4,
+			"name": "โลมา",
+			"text": "โลมาอาศัยอยู่ในมหาสมุทรลึกที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 10°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 200mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:manatee",
+			"scale": 0.25,
+			"name": "พะยูน",
+			"text": "พะยูนอาศัยอยู่ในทะเลสาบน้ำอุ่นทุกแห่งที่มี $(l:the_world/climate#temperature)อุณหภูมิ$() อย่างน้อย 20°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() ไม่เกิน 300mm"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:leopard_seal",
+			"scale": 0.5,
+			"name": "แมวน้ำเสือดาว",
+			"text": "แมวน้ำเสือดาวจะเกิดเฉพาะบนชายหาดที่หนาวที่สุดเท่านั้น โดยมี $(l:the_world/climate#temperature)อุณหภูมิ$() สูงสุดไม่เกิน -9°C และมี $(l:the_world/climate#rainfall)ปริมาณน้ำฝน$() อย่างน้อย 105mm พวกมันล่าเพนกวินเป็นอาหารและถูกวาฬเพชฌฆาตล่า"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "หมึกสามารถเกิดได้ในมหาสมุทรลึกทุกแห่ง พวกมันจะดรอป $(thing)ถุงหมึก$() และจะพ่นหมึกใส่ผู้เล่นทุกคนที่เข้าใกล้เกินไป มีคนกล่าวว่าหมึกที่อยู่ในถ้ำลึกที่ยังไม่ได้รับการสำรวจมีคุณสมบัติที่น่าประหลาดใจ",
+			"title": "หมึก"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 6
+}

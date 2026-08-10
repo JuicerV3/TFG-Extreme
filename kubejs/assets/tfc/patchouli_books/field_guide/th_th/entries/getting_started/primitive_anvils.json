@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "ทั่งยุคเริ่มต้น",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ทางเลือกอื่นนอกเหนือจากการหล่อเครื่องมือโดยตรงในช่วงต้นเกม และเป็นข้อกำหนดสำหรับโลหะระดับที่สูงขึ้น คือการใช้ $(thing)ทั่ง$() ทั่งเป็นบล็อกที่ใช้ได้สองกระบวนการที่แตกต่างกัน ได้แก่ $(l:mechanics/anvils#working)การตีแปรรูป$() และ $(l:getting_started/primitive_anvils#welding)การเชื่อมโลหะ$() ทั่งสามารถเชื่อมแท่งโลหะคู่ของประเภทโลหะที่จำเป็นสำหรับการสร้างทั่งระดับถัดไป ซึ่งจำเป็นสำหรับการตีแปรรูปไอเทมอื่น ๆ จากโลหะชนิดนั้น"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ขั้นแรก คุณต้องตามหาบล็อก $(thing)หินธรรมชาติ$() ที่เป็น $(thing)หินอัคนีพุ$() (ไรโอไลต์, บาซอลต์, แอนดีไซต์ หรือ เดไซต์) หรือ $(thing)หินอัคนีแทรกซอน$() (แกรนิต, ไดโอไรต์ หรือ แกบโบร) คุณสามารถหาและใช้บล็อกที่โผล่พ้นดินในโลก หรือคุณสามารถ $(l:getting_started/primitive_anvils#raw_rock)สกัดบล็อกหินออกมา$() จากหินโดยรอบได้"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "คุณยังต้องใช้ $(thing)ค้อน$() วัสดุใดก็ได้ ในการทำทั่ง เพียงคลิกขวาที่ด้าน $(thing)บน$() ของบล็อกหินธรรมชาติบล็อกใดบล็อกหนึ่งด้วย $(thing)ค้อน$() ของคุณ และแล้ว! ทั่งก็จะถูกสร้างขึ้น$(br2)ทั่งมี $(l:mechanics/anvils#tiers)ระดับ$() และทั่งหินคือระดับ 0 ซึ่งเป็นระดับต่ำสุด โดยสามารถใช้ $(l:getting_started/primitive_anvils#welding)เชื่อม$() แท่งโลหะระดับ I ได้เท่านั้น",
+      "title": "ทั่งหิน"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "การเปลี่ยนหินธรรมชาติก้อนกลางให้กลายเป็นทั่ง",
+      "multiblocks": [ { "pattern": [ [ " 0 " ], [ "RRR" ] ], "mapping": { "0": "AIR", "R": "tfc:rock/raw/gabbro" } }, "tfc:rock_anvil" ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "ในการรับบล็อกหินธรรมชาติโดยไม่แตกเป็นหินก้อนเล็ก จำเป็นต้อง $(thing)สกัดบล็อกหิน$() ออกมา คุณต้องขุดบล็อกทั้งหกด้านรอบ ๆ บล็อกหินธรรมชาติ เมื่อถูกล้อมรอบด้วยอากาศครบทุกด้าน บล็อกนั้นจะหลุดออกมาเป็นไอเทมที่สามารถเก็บได้",
+      "title": "การรับหินธรรมชาติ"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "ขุดหินธรรมชาติทั้งหกด้านรอบ ๆ - เมื่อเสร็จสิ้น บล็อกตรงกลางจะหลุดออกมาเป็นไอเทม",
+      "multiblocks": [
+        {
+          "pattern": [ [ "   ", " R ", "   " ], [ " R ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ " R ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " RR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " RR", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " R ", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " R ", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "AIR", "R": "tfc:rock/raw/gabbro" }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "การเชื่อมโลหะคือกระบวนการที่เชื่อมหลอมไอเทมสองชิ้นเข้าด้วยกันเพื่อสร้างไอเทมชิ้นใหม่ การเชื่อมโลหะทำงานเหมือนกันไม่ว่าจะทำบน $(l:getting_started/primitive_anvils)ทั่งหิน$() หรือ $(l:mechanics/anvils)ทั่งโลหะ$()$(br2)ขั้นแรก คุณต้องวางไอเทมสองชิ้นที่ต้องการเชื่อมลงบนทั่ง คุณสามารถทำได้โดยใช้ไอเทมกับทั่งโดยตรง หรือเปิดหน้าต่างอินเทอร์เฟซของทั่งแล้วใส่ไอเทมลงในช่องซ้ายสุดสองช่อง",
+      "title": "การเชื่อมโลหะ"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "คุณจำเป็นต้องมี $(l:mechanics/flux)ฟลักซ์$() อย่างน้อยหนึ่งชิ้นในทั่งเพื่อช่วยในกระบวนการเชื่อม จากนั้น ขณะที่ไอเทมทั้งสองชิ้น $(l:mechanics/heating)ร้อนพอ$() ที่จะเชื่อมได้ - ทูลทิปจะแสดงคำว่า \"Can Weld\" - คุณต้องใช้ $(thing)ค้อน$() ชนิดใดก็ได้กับทั่ง หรือกดปุ่มเชื่อมบนหน้าต่างอินเทอร์เฟซของทั่ง คุณจะได้ยินเสียงทุบด้วยค้อนและไอเทมจะถูกเชื่อมเข้าด้วยกัน"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

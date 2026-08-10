@@ -1,0 +1,76 @@
+{
+	"name": "อภิธานศัพท์เอฟเฟกต์ม็อบ",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:splash_potion",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "หมวดนี้อธิบายถึงเอฟเฟกต์ม็อบแบบกำหนดเองใน $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Cooling$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Warming$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Quenched$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Detoxify$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Freezing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Blazing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Instant Radiation$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$()"
+		},
+        {
+            "type": "patchouli:empty"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "cooling",
+			"text": "$(bold)$(9)Cooling$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะช่วย$(l:beneath/cooling)ลดอุณหภูมิ$()ของผู้เล่นลงเรื่อยๆ จนถึงขั้นต่ำ $(n)5°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "warming",
+			"text": "$(bold)$(9)Warming$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะช่วย$(l:beneath/cooling)เพิ่มอุณหภูมิ$()ของผู้เล่นขึ้นเรื่อยๆ จนถึงสูงสุด $(n)25°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quenched",
+			"text": "$(bold)$(9)Quenched$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะป้องกันการลดลงตามธรรมชาติของ$(l:getting_started/food_and_water#thirst)ความกระหายน้ำ$() แต่จะไม่ป้องกันเอฟเฟกต์ Thirsty จากการลดหลอดความกระหายน้ำของคุณ$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_parasites",
+			"text": "$(bold)$(9)Cure Parasites$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะค่อยๆ ขจัด$(l:getting_started/food_and_water#parasites)การปนเปื้อนพยาธิ$() ในอัตราประมาณ 1% ทุกๆ 10s ในระดับพื้นฐาน$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_toxins",
+			"text": "$(bold)$(9)Detoxify$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะค่อยๆ ขจัด$(l:getting_started/food_and_water#toxins)การปนเปื้อนสารพิษ$() ในอัตราประมาณ 1% ทุกๆ 10s ในระดับพื้นฐาน$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_microplastics",
+			"text": "$(bold)$(9)Filter Microplastics$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะค่อยๆ ขจัด$(l:getting_started/food_and_water#microplastics)การปนเปื้อนไมโครพลาสติก$() ในอัตราประมาณ 1% ทุกๆ 10s ในระดับพื้นฐาน$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freezing",
+			"text": "$(bold)$(c)Freezing$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะ$(l:beneath/cooling)ลดอุณหภูมิ$()ของผู้เล่นลงเรื่อยๆ จนถึงระดับต่ำอันตรายที่ $(n)-20°C$() แนะนำให้สวมใส่อุปกรณ์ป้องกันเพื่อให้อยู่รอดในสภาวะนี้"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blazing",
+			"text": "$(bold)$(c)Blazing$()$(li)ขณะที่เอฟเฟกต์นี้ทำงาน จะ$(l:beneath/cooling)เพิ่มอุณหภูมิ$()ของผู้เล่นขึ้นเรื่อยๆ จนถึงระดับสูงอันตรายที่ $(n)60°C$() แนะนำให้สวมใส่อุปกรณ์ป้องกันเพื่อให้อยู่รอดในสภาวะนี้"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "instant_radiation",
+			"text": "$(bold)$(c)Instant Radiation$()$(li)เอฟเฟกต์นี้จะสร้างความเสียหายต่อผู้เล่นอย่างรวดเร็วด้วย $(l:tfg_ores/hazards#Radioactive_materials)ความเสียหายจากรังสี$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "final_moments",
+			"text": "$(bold)$(c)Final Moments$()$(li)เอฟเฟกต์นี้จะเริ่มนับถอยหลังช่วงเวลาไม่กี่นาทีสุดท้ายของคุณ เมื่อเวลาหมดลงคุณจะเสียชีวิต"
+		},
+        {
+            "type": "patchouli:relations",
+            "title": "การอ่านเพิ่มเติม",
+            "anchor": "relations",
+            "entries": [
+                "tfc:getting_started/food_and_water",
+				"tfc:beneath/cooling",
+                "tfc:tfg_ores/hazards"
+            ]
+        }
+	]
+}

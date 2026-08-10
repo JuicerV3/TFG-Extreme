@@ -1,0 +1,152 @@
+{
+    "name": "คู่มือการใช้งาน Anvil",
+    "icon": "gtceu:red_steel_hammer",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "priority": false,
+    "pages":
+    [
+        {
+            "type": "patchouli:text",
+            "title": "Working with Anvils",
+            "text": "$(l:mechanics/anvils#working)Working$() ใน $(l:mechanics/anvils)Anvils$() เป็นกระบวนการสำคัญใน $(thing)TerraFirmaGreg$() เนื่องจากงานส่วนใหญ่ของคุณเพื่อก้าวสู่ $(thing)Steam and Mechanical ages$() จะต้องใช้ Anvil$(br)คู่มือนี้แบ่งออกเป็นสองส่วน ได้แก่ $(l:tfg_tips/anvil_working_guide#ui_explained)Understanding the UI$() และ $(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)ม็อดแพ็กนี้มี $(thing)Resource Pack$() พิเศษที่ชื่อว่า $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() ซึ่งคุณจำเป็นต้องเปิดใช้งานเพื่อให้เข้าใจคู่มือนี้ได้อย่างถูกต้อง$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"],
+            "border": false,
+            "text": "หน้าต่าง UI ของ Anvil เมื่อเปิดใช้งาน TFC Anvil Helper"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false,
+            "anchor": "ui_explained",
+            "tile": "The UI and You",
+            "text": "หน้าต่าง UI ของ Anvil เมื่อเปิดใช้งาน TFC Anvil Helper โดยมีการจำแนกตามสี"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.$() ไอเทมที่คุณเลือกที่จะ Create ใน Anvil โดยไอเทมแต่ละชนิดจะมีชุดของ $(#be00ff)Steps$() และ $(#ff6b00)Work Amount$() ที่กำหนดไว้โดยเฉพาะ $(br)$(#ff00c6)2.$() ไอเทม Input ที่คุณกำลังทำงานอยู่ ณ ปัจจุบัน $(br)$(#be00ff)3.$() ลำดับของ Steps ที่จำเป็นต้องทำตาม Order ให้เสร็จสมบูรณ์ก่อนที่ไอเทมจะถือว่าเสร็จสมบูรณ์ โดยมีทั้งหมด 4 Order ที่แตกต่างกัน (ดูหน้าถัดไป):"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "(หมายเหตุ: X คือ wild-card สำหรับ Step ทุกประเภท)$(br)$(li)x_Any: Step สามารถเกิดขึ้นในตำแหน่งใดก็ได้ของ 3 แอ็กชันสุดท้าย$()$(li)x_Last: ต้องเป็น Step สุดท้ายที่ทำ$()$(li)x_Not Last: Step นี้ต้องไม่ใช่ Step สุดท้ายที่ทำ$()$(li)x_Second Last: ต้องเป็น Step รองสุดท้ายที่ทำ$()$(li)x_Third Last: ต้องเป็น Step อันดับที่สามนับจากสุดท้ายที่ทำ$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.$() ประเภทของ Steps โดย Step แต่ละประเภทจะลบหรือบวกค่า Work ปัจจุบัน ซึ่งเรียงจากซ้ายไปขวา และจากบนลงล่างดังนี้:$(li)Light Hit: -3$()$(li)Medium Hit: -6$()$(li)Punch: +2$()$(li)Bend: +7$()$(li)Hard Hit: -9$()$(li)Draw: -15$()$(li)Upset: +13$()$(li)Shrink: +16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() สล็อตสำหรับใส่ Hammer และ Flux หากคุณกำลังทำการ Welding$(br)$(#00ff26)6. $()ค่า Work ปัจจุบันของไอเทม การทำ Steps ที่ต่างกันจะเพิ่มหรือลดค่า Work ของไอเทม$(br)$(#fff400)7. $()ค่า Target Work โดยค่า $(#00ff26)Work$() จะต้องตรงกับ Target Work อย่างแม่นยำ และต้องทำตาม $(#ff00c6)Required Steps$() ให้ครบถ้วน ไอเทมจึงจะถือว่าเสร็จสมบูรณ์$(br)$(#ff6b00)8. $()Work Bar ใช้สำหรับการปรับค่า Work ให้ตรงกับค่า Target Work"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "How to Perfectly Forge",
+            "text": "การ $(thing)Perfectly Forging$() ไอเทมที่สามารถเสียหายได้ เช่น $(thing)Tool Heads$(), $(thing)Weapons$() และ $(thing)Armor$() จะทำให้ไอเทมได้รับโบนัสความทนทานและประสิทธิภาพทั่วไป ยิ่งคุณใช้จำนวนขั้นตอนรวมในการ forge น้อยลงเท่าใด การทำค่า Work ให้เสร็จด้วยขั้นตอนที่น้อยที่สุดจะทำให้ไอเทมเป็น Perfectly Forged ซึ่งนอกจากจะมอบโบนัสให้แก่ไอเทมที่เสร็จแล้ว ยังช่วยลดความสึกหรอของ Hammer อีกด้วย"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"],
+            "border": false,
+            "text": "Wrought Iron Pickaxe Head ที่ถูก Perfectly Forged"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Guide to Forging",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "ส่วนนี้ของคู่มือจะครอบคลุมวิธี Perfectly Forge ไอเทมทุกชนิด โดยเริ่มต้นด้วย Wrought Iron Pickaxe Head$(br2)$(bold)$(italic)DISCLAIMER:$()$(br)แม้ว่า Required Steps และ Orders สำหรับไอเทมจะเป็นค่าเดียวกันในทุกๆ โลกของ TerraFirmaGreg แต่ค่า Target Work จะแตกต่างกันเพราะคำนวณจาก Seed ของโลกคุณ ดังนั้น คู่มือนี้จะสมมติให้ค่า Target Work ของ Wrought Iron Pickaxe Head เท่ากับ $(bold)83$()"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 1",
+            "text": "ขั้นตอนแรกในการ Forging ของคุณคือการหาผลรวมโดยนำค่าของ Required Step ทั้งหมดมาบวกกัน สำหรับ Pickaxe Head คุณต้องใช้ Steps ดังต่อไปนี้:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)เมื่อนำค่าที่อยู่ด้านล่างของแต่ละ Step มาบวกกัน เราจะได้ค่าที่เรากำลังหาอยู่ สมมติเรียกค่านี้ว่า \"requiredWork\"$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/steps.png"],
+            "text": "Steps ที่จำเป็นสำหรับ Pickaxe"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 2",
+            "text": "แม้ว่าเป้าหมายหลักของ Work Amount คือการปรับให้ตรงกับ Target Work แต่เราต้องมั่นใจว่าทั้งข้อกำหนดนั้นและข้อกำหนดของ Steps ได้รับการตอบสนองครบถ้วน ดังนั้น การปรับ Work Amount ให้ตรงกับ Target Work โดยตรงจะไม่ให้ผลลัพธ์ตามที่ต้องการ แต่เราสามารถคำนวณค่าที่ได้มาจาก Target Work และ \"requiredWork\" แทนได้"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "ค่านี้สามารถหาได้ตามเครื่องหมายของ \"requiredWork\" (คือเป็นค่าลบหรือค่าบวก)$(li)หาก \"requiredWork\" เป็นค่าบวก$()$(li2)นำค่าสัมบูรณ์ของ \"requiredWork\" ไปลบออกจาก \"Target Work\"$()$(li3)83 - 6 == $(bold)77$()$()$(li)หาก \"requiredWork\" เป็นค่าลบ$()$(li2)นำค่าสัมบูรณ์ของ \"requiredWork\" ไปบวกเข้ากับ \"Target Work\"$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "เนื่องจาก \"requiredWork\" ของไอเทมเราคือ -6 ค่าที่เรากำลังตามหาคือ $(bold)89$().$(br)คุณอาจสงสัยว่าจะดูค่าตัวเลขที่แน่นอนของ Target Work ได้อย่างไร? Anvil UI มี Work Bar แสดงให้เราเห็น แม้จะแสดงเฉพาะพหุคูณของ 20 แต่เราก็รู้ตัวเลขอื่นๆ ได้ง่ายจากเส้นสีต่างๆ:$(li)Light Gray: แทนจำนวนพหุคูณของ 5$()$(li)Gray: แทนจำนวนคี่$()$(li)Dark Gray: แทนจำนวนคู่$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png", "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 3",
+            "text": "เมื่อได้ค่าที่คำนวณจาก \"Target Work\" และ \"requiredWork\" แล้ว ตอนนี้เราต้องทำค่า Work ให้ไปถึงค่านั้น ซึ่งทำได้ทั้งการบวกตัวเลขของแต่ละ Step ด้วยตนเอง หรือใช้ cheat sheet ในแถบ UI โดยแต่ละสีจะแทนประเภท Step ใน UI$(br)เช่น: Red == Shrink (+16)"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 4",
+            "text": "เมื่อเรารู้ Steps ที่จำเป็นแล้ว ถึงเวลาปรับค่าให้ถึงค่าที่คำนวณจาก \"Target Work\" และ \"requiredWork\" สำหรับ Pickaxe Head ที่มีค่า TotalWork เท่ากับ 83 เราต้องทำค่าให้ถึง 89 ดังนั้นเราจึงทำ: (Shrink x 5) -> Bend -> Punch.$(br2)เมื่อค่า Work ถึงค่าที่ต้องการแล้ว เพียงทำตาม Required Steps ซึ่งสำหรับ Pickaxe Head คือ: Draw -> Bend -> Punch เท่านี้คุณก็จะได้ไอเทมที่ Perfectly Forged แล้ว!"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png", "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png", "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"],
+            "text": "Ingot ที่ยังไม่มี Work->ทำค่า Work ถึงระดับที่ต้องการ->ทำตาม Required Steps สำหรับไอเทม"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Examples",
+            "text": "ลองดูกระบวนการนี้กับไอเทมอื่น เช่น Plate หรือ Rod ขอย้ำอีกครั้งว่า Target Work จะแตกต่างกันตาม Seed ของโลก ดังนั้นค่าต่างๆ จะแตกต่างกันในโลกของคุณ$(br)Plate Target Value: $(bold)111$()$(br)Required Steps: Hit x 3, Any Order.$(br)\"requiredWork\": -3 x 3 = -9$(br)Derived Value: 111 + 9 = 120.$(br)Reaching the Value: (Shrink x 5)->(Upset x 2)->(Punch x 2)$(br)Getting the Item: 120 - (Light Hit x 3) == $(bold)111$() ครบถ้วนทั้งสองเงื่อนไข"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw->Draw->Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5)->(Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Other Tidbits",
+            "text": "หากหนึ่งใน Required Steps เป็นช่องว่าง หมายความว่ามันคือ Wild Card สามารถใช้ Step ใดก็ได้$(br2)หากคุณคำนวณผิดพลาด คุณสามารถนำไอเทมกลับไปหลอมและหล่อใหม่เป็น Ingot ได้เสมอ ซึ่งจะลบแท็ก \"worked\" ของไอเทมออก ทำให้คุณสามารถลอง Perfectly Forge ใหม่อีกครั้ง"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "ยินดีด้วยที่คุณอ่านมาถึงตอนจบ หากคุณเป็น contributor ที่ต้องการถ่ายภาพประกอบในคู่มือนี้ใหม่ Seed ที่ใช้ขณะเขียนคือ $(bold)-7291708953208913102$() คุณยังสามารถสร้างโลกโหมด Creative เพื่อทดสอบอัลกอริทึมได้ด้วยตนเอง!$(br2)$(br)นอกจากนี้... ในเมื่อคุณอ่านมาถึงตรงนี้ หากไม่อยากเสียเวลาคำนวณทั้งหมดด้วยตนเอง คุณก็สามารถใช้ $(l:https://adrianmiller99.github.io/tfg-anvil-calculator/src/index.html)TFC Anvil Calculator$() ได้เสมอ..."
+        }
+    ]
+}

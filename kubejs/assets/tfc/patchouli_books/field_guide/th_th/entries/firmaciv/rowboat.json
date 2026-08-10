@@ -1,0 +1,152 @@
+{
+  "name": "Rowboats",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:rowboat_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "คุณก้าวเข้าสู่ยุค Bronze Age แล้วและต้องการอัปเกรดใช่ไหม? Rowboat ลำนี้เหมาะสำหรับคุณ มันมี 3 ที่นั่ง สามารถบรรจุผู้เล่นได้ 3 คน หรือสัตว์ได้สูงสุด 2 ตัว รวมถึงม้าด้วย! และเหมือนเช่นเคย คุณสามารถเปลี่ยนที่นั่ง (ยกเว้นที่นั่งคนขับ) เป็นภาชนะจัดเก็บที่คุณต้องการได้ นอกจากนี้ยังสามารถวางภาชนะจัดเก็บเพิ่มเติมได้อีก 2 ใบที่บริเวณท้ายเรือ"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/rowboat_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ใน Rowboat ต่างจากเรือลำอื่น คุณจะหันหลังนั่งขณะพายเรือ ซึ่งช่วยให้เกิดความได้เปรียบทางกลทำให้คุณออกแรงพายได้อย่างเต็มที่! คุณสามารถพายในมุมมองบุคคลที่หนึ่งได้ แต่คุณอาจพบว่ามุมมองบุคคลที่สามที่หันหน้าเข้าหาตัวเองนั้นใช้งานง่ายและเข้าใจได้ชัดเจนกว่า"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/watercraft_frame_angled",
+      "text": "ในการสร้าง Rowboat คุณจะต้องเริ่มด้วย Shipwright's Scaffolding ซึ่งจะช่วยยึดวัสดุสร้างเรือให้อยู่กับที่ขณะที่คุณสร้าง$(br2)จากนั้นให้วางพวกมันหันหน้าเข้าหากันในพื้นที่ขนาด 2 คูณ 3"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+          "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+          "0": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+          "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+          "5": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+          "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
+        }
+      },
+      "name": "Rowboat Scaffolding",
+      "text": "จัดวาง Shipwright's Scaffolding ตามลำดับเพื่อสร้าง Rowboat",
+      "enable_visualize": true
+    },
+
+    {
+      "type": "patchouli:text",
+      "text": "ถัดไป คุณจะต้องเพิ่มแผ่นไม้แปรรูปจากไม้ Hardwood ที่แข็งแรงพอ:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=3]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=3]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=3]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=3]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=3]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
+        }
+      },
+      "name": "Rowboat Scaffolding",
+      "text": "เพิ่มแผ่นไม้ 4 แผ่นลงในนั่งร้านแต่ละชิ้นเรียบร้อยแล้ว",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
+        }
+      },
+      "name": "Rowboat Scaffolding",
+      "text": "ใช้ค้อนในมือรอง เพิ่ม Copper Bolts 4 ตัวลงในนั่งร้านแต่ละชิ้น Copper Bolts ขึ้นรูปได้จากการตี Copper Ingots",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " LR",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]",
+          "L": "alekiships:oarlock[facing=north]",
+          "R": "alekiships:oarlock[facing=south]"
+        }
+      },
+      "name": "Rowboat Scaffolding",
+      "text": "สุดท้าย เพิ่ม Oarlocks ไว้ตรงกลางเรือ สิ่งเหล่านี้ขึ้นรูปได้จากการตี Bronze Double Ingots ชนิดใดก็ได้",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "alekiships:crafting/oar",
+      "text": "จากนั้น เพิ่มไม้พายด้วยการกด $(item)$(k:key.use)$() เท่านี้คุณก็พร้อมออกเดินทางแล้ว!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

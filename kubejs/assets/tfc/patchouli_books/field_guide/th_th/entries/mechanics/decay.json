@@ -1,0 +1,96 @@
+{
+  "name": "การถนอมอาหาร",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:rotten_flesh",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ใน TerraFirmaCraft ไม่มีอาหารชนิดใดคงอยู่ตลอดไป! อาหารจะ $(thing)หมดอายุ$() ตามเวลาและเน่าเสีย อาหารที่เน่าเสียจะไม่ช่วยฟื้นฟูความหิวใดๆ และมีโอกาสให้สถานะผลเสียแก่คุณ เช่น $(thing)Hunger$() หรือ $(thing)Poison$()!$(br2)โชคดีที่มีหลากหลายวิธีในการยืดอายุอาหารให้คงอยู่ได้นานขึ้นโดยการ $(thing)ถนอมอาหาร$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เมื่อคุณนำเมาส์ไปชี้เหนืออาหาร คุณจะเห็นทูลทิปซึ่งแสดงระยะเวลาที่เหลืออยู่ก่อนที่อาหารจะเน่าเสีย โดยอาจมีลักษณะดังนี้:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)การใช้กลไกการถนอมอาหารแบบต่างๆ จะสามารถยืดวันหมดอายุนั้นออกไป ทำให้คุณมีเวลามากขึ้นก่อนที่อาหารจะเน่าเสีย"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "small_vessels",
+      "text": "หนึ่งในวิธีง่ายที่สุดในการถนอมอาหารคือการใช้ $(thing)Vessel$() โดย $(thing)Large Vessels$() เป็นบล็อกที่สามารถจัดเก็บไอเทมได้สูงสุดเก้าชิ้น และเมื่อ $(thing)sealed$() ไอเทมข้างในจะได้รับสถานะ $(5)$(bold)Preserved$() ซึ่งจะยืดอายุการเก็บรักษาที่เหลืออยู่ขึ้นเป็น 2 เท่า$(br2)$(thing)Small Vessels$() เป็นไอเทมที่สามารถจัดเก็บไอเทมอื่นได้สูงสุดสี่ชิ้น และจะปรับใช้สถานะ $(5)$(bold)Preserved$() แก่ของที่อยู่ข้างในเช่นกัน",
+      "title": "Vessels"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "large_vessels",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ceramic/large_vessel[sealed=true]"
+        }
+      },
+      "name": "",
+      "text": "Large Vessel ที่ปิดผนึกแล้ว",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อีกหนึ่งวิธีในการถนอมอาหารบางประเภทได้อย่างง่ายดายคือการนำไปปรุงสุก $(thing)Meats$() ทั้งหมดจะหมดอายุช้าลงเมื่อปรุงสุกแล้วเมื่อเทียบกับตอนที่ยังดิบ$(br2)นอกจากนี้ สิ่งสำคัญคือต้องใช้อุปกรณ์ที่ถูกต้องในการปรุงอาหาร อุปกรณ์บางชนิดที่ให้ความร้อนสูงมาก เช่น $(l:mechanics/charcoal_forge)Charcoal Forge$() หรือ $(l:mechanics/crucible)Crucible$() นั้น $(bold)ไม่เหมาะ$() สำหรับการปรุงอาหาร ซึ่งจะทำให้อาหารหมดอายุเร็วขึ้น!",
+      "title": "การปรุงอาหาร"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/mutton",
+      "text": "ในทางกลับกัน การใช้ $(l:getting_started/firepit)Firepit$() หรือ $(l:mechanics/grill)Grill$() ยังสามารถมอบบัฟจากการใช้งานได้อีกด้วย! ตัวอย่างเช่น การปรุง Mutton (ตามภาพด้านบน) ใน $(thing)Firepit$() จะเพิ่มอายุการเก็บรักษาเป็น 1.33 เท่า และการปรุงใน $(thing)Grill$() จะเพิ่มอายุการเก็บรักษาเป็น 1.66 เท่า!"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "salting",
+      "text": "$(thing)Salting$() เป็นวิธีทำให้เนื้อสัตว์อยู่ได้นานขึ้น ในการหมักเกลือเนื้อสัตว์ จะต้องนำไปคราฟต์ร่วมกับ $(thing)Salt$() ในช่องคราฟต์ เฉพาะเนื้อดิบเท่านั้นที่สามารถหมักเกลือได้ หลังจากนั้น การปรุงสุกหรือการถนอมอาหารด้วยวิธีอื่นจะไม่ทำให้คุณสมบัติการหมักเกลือสูญหายไป",
+      "title": "การหมักเกลือ"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "recipe": "tfg:quern/salt",
+      "text": "หนึ่งในวิธีรับ Salt คือการ $(l:mechanics/quern)บด$() $(l:the_world/ores_and_minerals#halite)Halite$() ซึ่งเป็นแร่ธาตุ"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:groundcover/salt_lick"
+        }
+      },
+      "name": "Salt Licks",
+      "text": "Salt สามารถพบได้ตามธรรมชาติในป่า สามารถวางลงและเก็บกลับขึ้นมาได้",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "vinegar",
+      "text": "$(thing)Vinegar Preservation$() เป็นวิธีทำให้ผลไม้ ผัก และเนื้อสัตว์อยู่ได้นานขึ้น$(br2)$(thing)Vinegar$() ทำขึ้นใน $(l:mechanics/barrels)Barrel$() โดยการปิดผนึกผลไม้ร่วมกับ Alcohol ปริมาณ 250mB ในการถนอมอาหารใน Vinegar นั้น อาหารจะต้องถูก $(thing)Pickled$() ใน $(thing)Brine$() เสียก่อน Brine ทำขึ้นในถัง Barrel โดยใช้ $(thing)Vinegar$() 1 ส่วน และ $(thing)Salt Water$() 9 ส่วน"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เมื่ออาหารได้รับการ Pickled แล้ว สามารถนำไปปิดผนึกใน Barrel ที่มี Vinegar ได้ หากมี Vinegar ปริมาณ 125mB ต่ออาหารดองหนึ่งชิ้น อาหารจะอยู่ได้นานขึ้น"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "pests",
+      "text": "อาหารควรเก็บไว้ใน Large Vessels ที่ปิดผนึกแล้ว หรือใน $(l:getting_started/pottery#vessel)Small Vessels$() อาหารที่ถูกวางทิ้งไว้ในหีบหรืออุปกรณ์อื่นสามารถดึงดูด $(thing)Rats$() ได้ Rats สามารถเปิดภาชนะและกินอาหารข้างในได้ แต่พวกมันจะหายไป (despawn) หากไม่พบสิ่งใดเลยเป็นเวลาสองสามนาที คุณจะได้รับการแจ้งเตือนถึงการมีอยู่ของหนูด้วยข้อความ $(thing)'This container has a foul smell'$() สิ่งสำคัญที่ต้องจำไว้คือ การเปิดผนึกและปิดผนึก Large Vessel ใหม่ก่อนที่คุณจะออกจากหน้าจอ จะไม่ดึงดูดศัตรูพืชและสัตว์รบกวนอย่างแน่นอน"
+    }
+  ],
+  "read_by_default": true
+}

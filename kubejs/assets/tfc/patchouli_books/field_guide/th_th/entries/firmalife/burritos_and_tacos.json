@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "เบอร์ริโตและทาโก",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ขั้นตอนการทำ $(thing)ตอร์ติญ่า$() เป็นกระบวนการที่ยาวนานแต่คุ้มค่า โดยเริ่มจาก $(thing)เมล็ดข้าวโพด$() ต้มในหม้อที่มี $(thing)น้ำปูนใส$() แล้วนำไปปิดผนึกในถังหมักน้ำเพื่อทำ $(thing)นิกซ์ทามาล$() จากนั้นนำไปบดใน $(thing)โม่หิน$() เพื่อทำเป็น $(thing)แป้งมาซ่า$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "คราฟต์แป้งมาซ่าคู่กับถังน้ำจะได้ $(thing)มาซ่า$() ซึ่งก็คือแป้งโดสำหรับทำตอร์ติญ่า ซึ่งสามารถนำไปผ่านความร้อนเพื่อทำเป็น $(thing)ตอร์ติญ่าข้าวโพด$() และหากนำตอร์ติญ่าไปอบในเตาอบก็จะได้เป็น $(thing)แผ่นทาโก้กรอบ$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "ใช้มะเขือเทศ ผักชี เกลือ และมีด จะทำให้คุณได้ $(thing)ซัลซ่า$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "$(thing)เบอร์ริโต$() ทำมาจากเนื้อสัตว์ปรุงสุก $(l:firmalife/pizza#shredded_cheese)ชีสฝอย$() $(l:firmalife/pizza#tomato_sauce)ซอสมะเขือเทศ$() ผัก และซัลซ่า"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "$(thing)ทาโก้$() ทำขึ้นจากวัตถุดิบชนิดเดียวกัน เพียงแต่เปลี่ยนมาใช้ $(thing)แผ่นทาโก้กรอบ$() แทน"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}
