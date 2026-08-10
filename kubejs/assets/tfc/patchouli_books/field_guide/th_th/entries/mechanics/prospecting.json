@@ -1,0 +1,92 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "การสำรวจหาแร่",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/propick/wrought_iron",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "คุณยังจำได้ใช่ไหมว่าคุณเก็บ$(l:getting_started/finding_ores)ก้อนแร่โลหะขนาดเล็ก$()พวกนั้นมาจากไหน? การหาแร่เพิ่มเติมอาจต้องใช้การสำรวจและการทำเหมืองอย่างกว้างขวาง คุณควรรู้จักกับ$(l:tfg_ores/earth_ore_index)แร่และแร่ธาตุ$()เป็นอย่างดี หากคุณต้องการทรัพยากรเฉพาะ คุณจะต้องค้นหาประเภทของหินที่แร่นั้นเกิด ซึ่งอาจอยู่ใต้เท้าของคุณหรือกระจัดกระจายอยู่ทั่วโลก"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เมื่อการเก็บก้อนแร่ขนาดเล็กเริ่มไม่เพียงพอ ถึงเวลาแล้วที่จะเริ่มการสำรวจหาแร่เพื่อค้นหาสายแร่:$(br)$(li)ก้อนแร่ขนาดเล็ก, ดอกแร่บนพื้นผิว, และหินบนพื้นผิวจะปรากฏขึ้นเมื่อมีสายแร่อยู่ด้านล่าง หากคุณพบจุดศูนย์กลางของกลุ่มก้อนแร่ มีโอกาสสูงที่สายแร่อยู่ใต้เท้าคุณ$(li)แร่ที่โผล่พ้นพื้นผิวสามารถพบได้ตามหน้าผาและแหล่งน้ำ ซึ่งอาจมองเห็นได้จากระยะไกล"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "propick",
+      "item": "tfc:metal/propick/copper",
+      "title": "พิกแอ็กซ์สำรวจแร่",
+      "link_recipes": false,
+      "text": "หากคุณกำลังมองหาสายแร่ และไม่สามารถค้นหาสายแร่ได้ด้วยการคาดเดา ถึงเวลาที่จะนำ$(item)พิกแอ็กซ์สำรวจแร่$()ออกมาใช้ หากคุณคุ้นเคยกับพิกแอ็กซ์สำรวจแร่พื้นฐานใน $(thing)TFC$() คุณอาจประหลาดใจเมื่อพบว่ามันทำงานแตกต่างกันอย่างมากใน $(thing)TerraFirmaGreg$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การคลิกขวาด้วยพิกแอ็กซ์สำรวจแร่ใน $(thing)TFG$() จะส่งรังสีค้นหาไปตามทิศทางที่คุณมอง ความกว้างและความลึกของรังสีขึ้นอยู่กับเทียร์ของพิกแอ็กซ์ซึ่งระบุไว้ในทูลทิป พิกแอ็กซ์สำรวจแร่ตามแต่ละเทียร์ยังสามารถบอกจำนวนปริมาณแร่ และยังสามารถแสดงตัวบ่งชี้แบบ $(thing)X-Ray$() ของสายแร่ได้อีกด้วย"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "พิกแอ็กซ์สำรวจแร่สามารถแสดงข้อมูลต่อไปนี้เมื่อใช้งาน:$(br)$(li)ในช่องแชต พิกแอ็กซ์สามารถแสดง$(thing)ปริมาณรวม$()ของสายแร่, $(thing)ส่วนประกอบ$()ของสายแร่, และ$(thing)ปริมาณตามชนิดแร่$()ของสายแร่$(li)พิกแอ็กซ์สำรวจแร่$(thing)เหล็กกล้าสี$()ยังสามารถแสดงพาร์ทิเคิล X-Ray ขนาดใหญ่ ณ $(thing)ศูนย์กลาง$()ของสายแร่ หรือแสดง$(thing)พาร์ทิเคิลต่อบล็อกแร่$()ได้ด้วย"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "มุมมองการสำรวจแร่",
+      "images": [
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+      ],
+      "border": true,
+      "text": "การใช้งานพิกแอ็กซ์สำรวจแร่จะมีลักษณะดังนี้ พาร์ทิเคิลเครื่องหมาย $(bold)\"!\"$() ขนาดใหญ่มาจาก x-ray แบบแสดงตามสายแร่ ส่วนอันที่เล็กกว่ามาจาก x-ray แบบแสดงตามบล็อก"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/propick_head_mold",
+      "text": "ในการสร้างพิกแอ็กซ์สำรวจแร่ คุณสามารถ$(l:getting_started/pottery)กะเทาะ$()แม่พิมพ์ดินเหนียวที่ยังไม่ได้เผาได้ดังที่แสดงไว้ด้านบน"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/propick_head_mold",
+      "text": "เมื่อแม่พิมพ์ถูก$(l:getting_started/pottery)กะเทาะ$()แล้ว จำเป็นต้องนำไป$(l:mechanics/heating)เผา$()เพื่อสร้าง$(item)propick head mold.$()$(br2)ในการสร้างหัวเครื่องมือ ให้$(l:getting_started/finding_ores#casting)หล่อ$()โลหะเหลวลงในแม่พิมพ์"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/copper_propick_head",
+      "text": "หัวพิกแอ็กซ์สำรวจแร่สามารถ$(l:mechanics/anvils#working)ตีขึ้นรูป$()ได้จาก$(item)แท่งโลหะ$()ของโลหะทำเครื่องมือชนิดใดก็ได้บน$(l:mechanics/anvils)ทั่ง$()$(br2)จากนั้นสร้างพิกแอ็กซ์สำรวจแร่โดยการคราฟต์หัวเครื่องมือคู่กับกิ่งไม้"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "สถิติและคุณลักษณะส่วนใหญ่ของพิกแอ็กซ์สำรวจแร่สามารถปรับแต่งได้ในไฟล์คอนฟิกของเซิร์ฟเวอร์ของคุณ"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "prospector",
+      "item": "gtceu:prospector.lv",
+      "title": "เครื่องสำรวจแร่ดิจิทัล",
+      "link_recipes": false,
+      "text": "เทคโนโลยีมาถึงแล้ว! และมาพร้อมกับวิธีใหม่ๆ ในการค้นหาสายแร่ของคุณ!$(br)$(item)Ore Prospector's$() คือทางออกของ $(thing)GregTech's$() ในการค้นหาสายแร่และแหล่งของเหลวในโลกของคุณ ขนาดและความสามารถของเครื่องสำรวจแร่ขึ้นอยู่กับ$(#ff1100)เทียร์แรงดันไฟฟ้า$()"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "เครื่องสำรวจแร่",
+      "images": [
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+      ],
+      "border": true,
+      "text": "ตัวอย่างสิ่งที่คุณอาจเห็นเมื่อใช้งานเครื่องสำรวจแร่ระดับ $(#e373ff)LuV$()"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:metal/propick/bismuth_bronze": 2,
+    "tfc:metal/propick/black_bronze": 2,
+    "tfc:metal/propick/bronze": 2,
+    "tfc:metal/propick/copper": 2,
+    "tfc:metal/propick/wrought_iron": 2,
+    "tfc:metal/propick/steel": 2,
+    "tfc:metal/propick/black_steel": 2,
+    "tfc:metal/propick/blue_steel": 2,
+    "tfc:metal/propick/red_steel": 2,
+    "gtceu:prospector.lv": 10,
+    "gtceu:prospector.hv": 10,
+    "gtceu:prospector.luv": 10
+  }
+}

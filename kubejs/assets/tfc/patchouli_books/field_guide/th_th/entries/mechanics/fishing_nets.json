@@ -1,0 +1,22 @@
+{
+	"name": "Fishing Nets",
+	"icon": "tfg:fishing_net/brass",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Fishing Nets",
+			"item": {
+				"tag": "forge:tools/fishing_nets"
+			},
+			"text": "เหนื่อยกับการไล่ล่าปลาด้วยหอกแล้วหรือยัง? หรือทำปลาหลุดมือขณะ$(l:mechanics/fishing)การตกปลา$()? คราฟต์ $(thing)Fishing Net$() เพื่อช้อนอาหารเย็นของคุณขึ้นมา$(br)วิธีใช้ Fishing Net ให้คลิกขวาที่เอนทิตีปลาเพื่อจับปลานั้นเข้าสู่อินเวนทอรีของคุณ Fishing Net แต่ละเทียร์ทำงานเหมือนกันทั้งหมด แต่มีความทนทานแตกต่างกัน"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Wood Fishing Net",
+			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+			"text": "$(item)Wood Fishing Net$() แบบพื้นฐาน"
+		}
+	]
+}

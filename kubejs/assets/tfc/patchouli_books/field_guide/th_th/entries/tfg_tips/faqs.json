@@ -1,0 +1,43 @@
+{
+	"name": "คำถามที่พบบ่อย",
+	"icon": "minecraft:spyglass",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"priority": true,
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "FAQs",
+			"text": "ติดปัญหาตรงไหนหรือเปล่า? ลองค้นหาในหนังสือเล่มนี้และในเควสต์ดูก่อน แต่หากยังแก้ปัญหาไม่ได้ คุณสามารถเข้าไปสอบถามใน $(l:https://discord.com/invite/AEaCzCTUwQ)Discord$() หรือ $(l:https://www.reddit.com/r/TerraFirmaGreg)Subreddit$() ของเราได้!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:tfg_tips/faqs#boats)ทำไมเรือของฉันถึงจม?$()$(li)$(l:tfg_tips/faqs#dried_fruit)ทำหัวเชื้อยีสต์อย่างไร?$()$(li)$(l:tfg_tips/faqs#dried_fruit)ทำเส้นใยสับปะรดอย่างไร?$()$(li)$(l:tfg_tips/faqs#resin)ทำ Rubber อย่างไร?$()$(li)$(l:tfg_tips/faqs#chunks)ฟอร์ซโหลดชังก์หรือเพิ่มโควตาชังก์อย่างไร?$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boats",
+			"text": "$(italic)ทำไมเรือของฉันถึงจม?$()$(br2)สร้างเรือของคุณบนบก จากนั้นผลักเรือลงน้ำหรือใช้ $(item)Lead$() ในการปล่อยเรือ หากมันจมไปแล้ว ก็เสียใจด้วยนะ คุณต้องสร้างใหม่ขึ้นมาอีกอัน"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dried_fruit",
+			"text": "$(italic)ทำหัวเชื้อยีสต์หรือเส้นใยสับปะรดอย่างไร?$()$(br2)ตากผลไม้ให้แห้งก่อนโดยใช้ $(item)Drying Mat$() จากนั้นทำตามขั้นตอนที่เหลือสำหรับ $(l:firmalife/bread)ขนมปัง$() หรือ $(l:firmalife/berry_bushes)หนังสับปะรด$()."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chunks",
+			"text": "$(italic)ฟอร์ซโหลดชังก์อย่างไร?$()$(br2)เปิดแผนที่ของคุณด้วย $(item)$(k:key.ftbchunks.claim_manager)$() แล้วกด Shift + คลิกซ้ายที่ชังก์ กด Shift + คลิกขวาเพื่อยกเลิกการเคลม$(br2)หากต้องการเพิ่มจำนวนชังก์ที่ฟอร์ซโหลด ให้ใช้คำสั่ง $(item)/ftbchunks admin extra_force_load_chunks @p set X$() โดยที่ X คือจำนวนขีดจำกัดใหม่"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "resin",
+			"text": "$(italic)ทำ Rubber อย่างไร?$()$(br2)Sticky Resin ไม่ใช่สิ่งที่คุณกำลังตามหาอีกต่อไป! ขั้นแรก ให้ปลูกต้นไม้ที่ผลิต $(thing)Latex$() และคราฟต์ $(thing)Tree Taps$() ติดตั้ง Tree Tap ไว้ที่ลำต้นของแต่ละต้น (การติด Tap เพิ่มเติมบนต้นเดียวจะเป็นเพียงการแบ่งผลผลิต) คุณสามารถเก็บ Latex ที่ไหลออกมาได้โดยใช้ $(l:mechanics/barrels)Barrel$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "วิธีที่เร็วที่สุดในการต้ม Latex คือการใช้ $(l:firmalife/oven_appliances#vat)Vat$() โดยผสม Latex กับผง $(item)Sulfur$() ลงใน Vat (นำผงเตา GregTech ไปบดใน Quern เพื่อให้ได้ผงที่ต้องการ) ให้ความร้อน แล้ว$(bold)ปิดฝา$() Vat ด้วย $(item)$(k:sneak)$() + $(item)$(k:use)$() คุณจะได้ $(thing)Vulcanized Latex$() ซึ่งสามารถนำไปผ่านกระบวนการสุญญากาศใน $(thing)Vacuum Chamber$() เพื่อให้ได้ Rubber ที่รอคอย!$(br2)ในภายหลัง $(thing)LV Centrifuge$() จะช่วยให้คุณได้รับ $(thing)Raw Rubber Pulp$() จากท่อนไม้ของต้นไม้ที่ผลิต Latex ได้โดยตรง"
+		}
+	]
+}

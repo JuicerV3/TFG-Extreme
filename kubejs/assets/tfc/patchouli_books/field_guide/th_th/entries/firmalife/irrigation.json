@@ -1,0 +1,28 @@
+{
+	"name": "การชลประทาน",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Sprinkler$() คืออุปกรณ์ที่พ่นละอองน้ำในพื้นที่ขนาด 5x6x5 โดยมีจุดศูนย์กลางอยู่ที่บล็อกใต้บล็อกสปริงเกลอร์ คุณจะรู้ว่ามันกำลังทำงานเมื่อมีอนุภาคหยดน้ำโปรยลงมา Sprinkler ที่วางหันหน้าขึ้นบนจะส่งน้ำชลประทานไปยังพื้นที่ขนาด 5x6x5 ด้านบนเช่นเดียวกัน"
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "Sprinkler สร้างขึ้นด้วย $(thing)Copper Plate$()"
+		},
+		{
+			"title": "ระบบท่อ",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Sprinklers จำเป็นต้องเชื่อมต่อกับระบบท่อที่ส่งน้ำเข้ามาเพื่อให้ทำงานได้ โดยการเชื่อมต่อชุด $(thing)Fluid Pipes$() เข้ากับพวกมัน คุณสามารถสูบน้ำเข้าสู่ท่อได้ด้วย $(thing)Mechanical Pump$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "คุณสามารถคลิกขวาที่ท่อด้วย GregTech Frame (เช่น $(thing)Copper Frame$()) เพื่อทำให้ท่อเรียบเนียนไปกับผนัง หรือใช้ Greenhouse Port จากนั้นคุณก็สามารถติดสปริงเกลอร์ของคุณเข้ากับท่อโดยตรงได้! คลิกขวาที่ท่อของเหลวด้วย wrench เพื่อเปลี่ยนทิศทางของท่อ และย่อตัวคลิกขวาด้วย $(thing)empty offhand$() เพื่อทำให้ท่อเป็นแบบทางเดียว"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

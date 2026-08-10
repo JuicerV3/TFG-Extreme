@@ -1,0 +1,82 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Glassworking",
+  "category": "tfc:mechanics",
+  "icon": "tfc:silica_glass_bottle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Glassworking คือกระบวนการเปลี่ยนทรายให้กลายเป็นแก้ว ในการเริ่มต้น คุณต้องสร้าง $(thing)Glass Batch$() ซึ่งมีทั้งหมดสี่ประเภท:$(br)$(br) 1. $(thing)Silica$() จากทรายขาว$(br) 2. $(thing)Hematitic$() จากทรายเหลือง แดง หรือชมพู$(br) 3. $(thing)Olivine$() จากทรายเขียว หรือน้ำตาล$(br) 4. $(thing)Volcanic$() จากทรายดำ"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Silica Glass Batch",
+      "recipe": "tfc:crafting/silica_glass_batch",
+      "text": "Glass batches สามารถคราฟต์ได้โดยใช้ทรายในสีที่กล่าวไปข้างต้น สีใดสีหนึ่ง ร่วมกับ $(l:mechanics/glassworking#lime)Lime$() และชนิดของ $(l:mechanics/glassworking#potash)Potash$()"
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "lime",
+      "recipe": "tfg:smelting/lime",
+      "text": "$(thing)Lime$() เป็นหนึ่งในส่วนผสมที่จำเป็นในการทำ glass batches เป็นผงที่ได้จากการ $(l:mechanics/heating)เผาความร้อน$() $(l:mechanics/flux)Flux$()"
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "potash",
+      "recipe": "tfg:smelting/dried_seaweed_to_soda",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda",
+      "text": "ชนิดของ $(thing)Potash$() หรือสิ่งที่เทียบเท่าก็เป็นสิ่งจำเป็นสำหรับ glass batches เช่นกัน โดยสามารถใช้ $(thing)Soda Ash$() ซึ่งเป็นผงที่ได้จากการเผา $(thing)Dried Seaweed$() หรือ $(thing)Kelp$() ได้ และยังสามารถใช้ $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() ได้ด้วยเช่นกัน"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Glassworking ทำได้โดยเริ่มต้นจาก glass batch แล้วดำเนินตามขั้นตอนเป็นซีรีส์ ขั้นตอนเหล่านี้อาจต้องใช้เครื่องมือเฉพาะทาง:$(br)$(li)$(l:mechanics/glassworking#blowpipe)Blowpipe$() สำหรับ $(thing)Blow$() และ $(thing)Stretch$()$(li)$(l:mechanics/glassworking#paddle)Paddle$() สำหรับ $(thing)Flatten$()$(li)$(l:mechanics/glassworking#jacks)Jacks$() สำหรับ $(thing)Pinch$()$(li)$(l:mechanics/glassworking#saw)Gem Saw$() สำหรับ $(thing)Saw$()",
+      "title": "เครื่องมือการทำงาน"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "blowpipe",
+      "recipe": "tfc:clay_knapping/blowpipe",
+      "text": "เครื่องมือที่สำคัญที่สุดคือ $(thing)Blowpipe$() สามารถ $(thing)กะเทาะ (knapped)$() ได้จากดินเหนียว แล้วนำไปเผาเป็น $(thing)Ceramic Blowpipe$()"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/blowpipe",
+      "text": "Ceramic blowpipes เปราะบางและมีโอกาสแตกหักเมื่อใช้งาน blowpipe ที่ทนทานกว่าสามารถนำมา $(l:mechanics/anvils#working)ตีขึ้นรูป$() ได้จาก $(thing)Brass Rod$() บนทั่ง"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "paddle",
+      "recipe": "tfc:crafting/paddle",
+      "text": "การทำงาน $(thing)Flatten$() สามารถทำได้ด้วย $(thing)Paddle$() ซึ่งคราฟต์ขึ้นจากไม้"
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "anchor": "jacks",
+      "recipe": "tfc:welding/jacks",
+      "text": "การทำงาน $(thing)Pinch$() สามารถทำได้ด้วย $(thing)Jacks$() ที่ทำจากการเชื่อม brass rod สองอันเข้าด้วยกัน"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "saw",
+      "recipe": "tfc:crafting/gem_saw",
+      "text": "การทำงาน $(thing)Saw$() สามารถทำได้ด้วย $(thing)Gem Saw$() โดย gem saw ยังใช้สำหรับทำลายทั้ง $(thing)Glass Blocks$() และ $(thing)Glass Panes$() เพื่อเก็บพวกมันขึ้นมาอีกด้วย"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อันดับแรก แก้วบน blowpipe จะต้องได้รับการเผาความร้อนจนถึงระดับ $(4)$(bold)Faint Red$() จากนั้น ให้ถือ blowpipe ไว้ใน $(thing)มือรอง (offhand)$() แล้วกด $(item)$(k:key.use)$() ค้างไว้เพื่อดำเนินแต่ละขั้นตอน$().$(br)กด $(item)$(k:key.swapOffhand)$() เพื่อหยิบ blowpipe ที่ร้อนมาไว้ในมือรองของคุณ$(br2)$(bold)Blow$()$(br)ใช้ $(thing)Blowpipe$() ขณะหันหน้าไปทางด้านหน้าตรง$(br2)$(bold)Stretch$()$(br)ใช้ $(thing)Blowpipe$() ขณะหันหน้าลงด้านล่างตรง",
+      "title": "วิธีการทำแก้ว"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)Flatten$()$(br)ใช้ $(thing)Blowpipe$() ขณะถือ $(l:mechanics/glassworking#paddle)Paddle$() ไว้ในมือหลักของคุณ$(br2)$(bold)Pinch$()$(br)ใช้ $(thing)Blowpipe$() ขณะถือ $(l:mechanics/glassworking#jacks)Jacks$() ไว้ในมือหลักของคุณ$(br2)$(bold)Saw$()$(br)ใช้ $(thing)Blowpipe$() ขณะถือ $(l:mechanics/glassworking#saw)Gem Saw$() ไว้ในมือหลักของคุณ$(br2)$(bold)Roll$()$(br)ใช้ $(thing)Blowpipe$() ร่วมกับ $(l:mechanics/weaving#wool_cloth)Wool Cloth$() ในมือหลักของคุณ"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:powder/lime": 2,
+    "tfc:powder/soda_ash": 3,
+    "tfc:paddle": 7,
+    "tfc:jacks": 8,
+    "tfc:gem_saw": 9
+  }
+}

@@ -1,0 +1,48 @@
+{
+	"name": "ดรรชนีเห็ดแห่งดาวอังคาร",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "นี่คือ รายชื่อของเห็ดยักษ์ทุกชนิดบนดาวอังคาร และสภาพภูมิอากาศที่พวกมันเจริญเติบโต$(br2)กำลังมองหาก้านเห็ดชนิดใดชนิดหนึ่งเพื่อนำไปตกแต่งฐานของคุณอยู่ใช่ไหม? รายชื่อนี้จะช่วยให้คุณค้นหามันได้ โดยรายการนี้เรียงลำดับตามตัวอักษรของชนิดก้านเห็ด$(br2)นอกจากนี้ อย่าลืมไปลองดู $(l:tfc:arborfirmacraft/earth_tree_index)ดรรชนีต้นไม้แห่งโลก$() ด้วย"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aeronos",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)เห็ด Aeronos$()$(br)$(thing)อุณหภูมิ$(): -100°C ขึ้นไป$(br)พบได้บ่อยกว่าทางทิศตะวันออก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alphacene",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)เห็ด Alphacene$()$(br)$(thing)อุณหภูมิ$(): -85°C ขึ้นไป$(br)พบได้ทั้งทางทิศตะวันออกและทิศตะวันตก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Crimson",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)เห็ด Crimson$()$(br)$(thing)อุณหภูมิ$(): -109 — -13°C$(br)พบได้บ่อยกว่าทางทิศตะวันออก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Glacian",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)เห็ด Glacian$()$(br)$(thing)อุณหภูมิ$(): -107°C หรือต่ำกว่า$(br)พบได้ทั้งทางทิศตะวันออกและทิศตะวันตก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Strophar",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)เห็ด Strophar$()$(br)$(thing)อุณหภูมิ$(): -100°C ขึ้นไป$(br)พบได้บ่อยกว่าทางทิศตะวันตก"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Warped",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)เห็ด Warped$()$(br)$(thing)อุณหภูมิ$(): -109 — -13°C$(br)พบได้บ่อยกว่าทางทิศตะวันตก"
+		}
+	]
+}

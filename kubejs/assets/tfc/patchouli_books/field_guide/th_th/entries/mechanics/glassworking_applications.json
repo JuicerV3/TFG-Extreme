@@ -1,0 +1,434 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "ผลิตภัณฑ์แก้ว",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:glass",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ผลิตภัณฑ์แก้วอย่างง่ายที่สุดคือ $(thing)Glass Panes$() และ $(thing)Glass Blocks$() ในการคราฟต์สิ่งเหล่านี้ คุณต้องเริ่มต้นด้วย $(l:mechanics/glassworking#blowpipe)Blowpipe$() ร่วมกับ $(thing)Glass Batch$() จากนั้นทำการ $(thing)เทหล่อ (Pour)$()$(br)$(li)$(bold)Table Pours$() ใช้สำหรับสร้าง $(thing)Glass Panes$()$(li)$(bold)Basin Pours$() ใช้สำหรับสร้าง $(thing)Glass Blocks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "แก้วยังสามารถ $(thing)ย้อมสี$() ก่อนที่จะเทหล่อเพื่อสร้างแก้วสีได้ สีจะขึ้นอยู่กับชนิดของ Glass Batch และผงแร่ใดๆ ที่ถูกเพิ่มเข้าไป$(br2)$(thing)Glass Batch$() แต่ละชนิดจะมีสีธรรมชาติของแก้วที่แตกต่างกันไป $(thing)Silica$() Glass Batch สามารถทำเป็นสีต่างๆ ได้มากมาย ขณะที่ $(thing)Olivine$() และ $(thing)Volcanic$() Glass สามารถทำเป็นสีได้ค่อนข้างน้อย"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Glass Panes$() สร้างขึ้นด้วย $(thing)Table Pour$() โต๊ะเทหล่อแก้วทำขึ้นโดยวาง $(thing)Kaolin Clay Blocks$() หรือ $(thing)Brass Plated Blocks$() เชื่อมต่อกันสูงสุดสิบหกบล็อกในพื้นที่ต่อเนื่อง$(br2) 1. ใส่ $(l:mechanics/glassworking)Glass Batch$() ลงใน $(thing)Blowpipe$()$(br) 2. ให้ความร้อนแก่ Blowpipe จนถึงระดับ $(4)$(bold)Faint Red$()$(br) 3. $()$(item)$(k:key.use)$() $(thing)Blowpipe$() ที่ด้านบนของโต๊ะ$(br) 4. สุดท้าย $(item)$(k:key.use)$() ด้วย $(l:mechanics/glassworking#paddle)Paddle$() เพื่อรีดแก้วให้แบน",
+      "title": "Table Pour"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_pouring_table",
+          "0": "#tfc:glass_pouring_table"
+        },
+        "pattern": [
+          [
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
+          ]
+        ]
+      },
+      "text": "เมื่อแก้วเย็นตัวลงแล้ว สามารถใช้ $(l:mechanics/glassworking#saw)Gem Saw$() ขุดทำลายเพื่อเก็บไอเทมออกมาได้",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Glass Blocks$() สร้างขึ้นด้วย $(thing)Basin Pour$() แอ่งเทหล่อแก้วทำขึ้นโดยล้อมรอบบล็อกอากาศทุกด้านยกเว้นด้านบนด้วย $(thing)Kaolin Clay Blocks$() หรือ $(thing)Brass Plated Blocks$()$(br2) 1. ใส่ $(l:mechanics/glassworking)Glass Batch$() ลงใน $(thing)Blowpipe$()$(br) 2. ให้ความร้อนแก่ Blowpipe จนถึงระดับ $(4)$(bold)Faint Red$()$(br) 3. $(item)$(k:key.use)$() $(thing)Blowpipe$() ที่ด้านบนของโต๊ะ",
+      "title": "Basin Pour"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_basin_blocks",
+          "0": "#tfc:glass_basin_blocks"
+        },
+        "pattern": [
+          [
+            " C ",
+            "C C",
+            " C "
+          ],
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ]
+        ]
+      },
+      "text": "เมื่อแก้วเย็นตัวลงแล้ว สามารถใช้ $(l:mechanics/glassworking#saw)Gem Saw$() ขุดทำลายเพื่อเก็บไอเทมออกมาได้",
+      "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Glassworking Blocks",
+      "recipe": "tfc:crafting/white_kaolin_clay",
+      "text": "$(thing)Brass plated blocks$() สามารถสร้างขึ้นได้โดยถือ $(thing)brass plate$() แล้วกด $(item)$(k:key.use)$() บน $(thing)stone brick$() บล็อกใดๆ"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "coloring",
+      "text": "แก้วมีสีธรรมชาติโดยอิงตามประเภทของ $(l:mechanics/glassworking)Glass Batch$() ที่ใช้ สามารถทำสีอื่นๆ ได้โดยใช้ $(l:mechanics/bowls)Bowl$()$(br2)วิธีการใช้งาน ให้วาง $(l:mechanics/bowls)Bowl$() ลงบนพื้น จากนั้นกด $(item)$(k:key.use)$() ใส่ $(thing)Powder$() ที่ต้องการ ก่อนการ $(thing)เทหล่อ (Pouring)$() ให้ใช้ $(thing)Blowpipe$() กดที่ชามเพื่อเติมผงแร่ลงใน Batch",
+      "title": "การเปลี่ยนสีแก้ว"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(7)White$(): Silica หรือ Hematitic Glass + $(thing)Soda Ash$()$(li)$(bold)$(0)Black$(): Glass ชนิดใดก็ได้ + $(thing)Graphite$()$(li)$(bold)$(8)Gray$(): ชนิดใดก็ได้ + $(thing)Graphite$() + $(thing)Soda Ash$()$(li)$(bold)$(7)Light Gray$(): ชนิดใดก็ได้ + $(thing)Graphite$() + 2x $(thing)Soda Ash$()$(li)$(bold)$(5)Purple$(): ชนิดใดก็ได้ + $(thing)Iron$() + $(thing)Copper$()$(li)$(bold)$(#964b00)Brown$(): ชนิดใดก็ได้ + $(thing)Nickel$()$(li)$(bold)$(3)Cyan$(): Non-Volcanic Glass + $(thing)Copper$() + $(thing)Sapphire$()$(li)$(bold)$(2)Green$(): Silica หรือ Hematitic Glass + $(thing)Iron$()",
+      "title": "สีสีย้อม"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(a)Lime$(): Silica หรือ Hematitic Glass + $(thing)Iron$() + $(thing)Soda Ash$()$(li)$(bold)$(b)Light Blue$(): Silica Glass + $(thing)Lapis Lazuli$()$(li)$(bold)$(1)Blue$(): Silica Glass + $(thing)Copper$()$(li)$(bold)$(4)Red$(): Silica หรือ Hematitic Glass + $(thing)Tin$()$(li)$(bold)$(6)Yellow$(): Silica หรือ Hematitic Glass + $(thing)Silver$()$(li)$(bold)$(#ef8e38)Orange$(): Silica Glass + $(thing)Pyrite$()$(li)$(bold)$(5)Magenta$(): Silica หรือ Hematitic Glass + $(thing)Ruby$()$(li)$(bold)$(d)Pink$(): Silica Glass + $(thing)Gold$()$(li)$(bold)$(0)Tinted$(): Non-Silica Glass + $(thing)Amethyst$()"
+    },
+    {
+      "type": "tfc:table_small",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "T"
+        },
+        {
+          "fill": "0xff42f2"
+        },
+        {
+          "fill": "0x8af3ff"
+        },
+        {
+          "fill": "0x526cff"
+        },
+        {
+          "fill": "0xe3e3e3"
+        },
+        {
+          "fill": "0xe69407"
+        },
+        {
+          "fill": "0xc738c9"
+        },
+        {
+          "fill": "0xffe81c"
+        },
+        {
+          "fill": "0x48ff1f"
+        },
+        {
+          "fill": "0xe01414"
+        },
+        {
+          "fill": "0x0c9400"
+        },
+        {
+          "fill": "0x188a9e"
+        },
+        {
+          "fill": "0x7d4f00"
+        },
+        {
+          "fill": "0x6e059c"
+        },
+        {
+          "fill": "0x7d7d7d"
+        },
+        {
+          "fill": "0xbdbdbd"
+        },
+        {
+          "fill": "0x000000"
+        },
+        {
+          "text": "Silica"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Hematitic"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Olivine"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Volcanic"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        }
+      ],
+      "text": "ระดับการรองรับสีของแก้วแต่ละประเภท 'C' คือแก้วใส (Clear), 'T' คือแก้วกรองแสง (Tinted) บางสีสามารถคราฟต์ได้เฉพาะกับ Glass Batch บางชนิดเท่านั้น",
+      "title": "ระดับการรองรับสีแก้ว",
+      "legend": [
+        {
+          "text": "สามารถคราฟต์ได้",
+          "color": "0x3eb340"
+        },
+        {
+          "text": "ไม่สามารถคราฟต์ได้",
+          "color": "0xb33e3e"
+        },
+        {
+          "text": "สีเริ่มต้น",
+          "color": "0x3d42a8"
+        }
+      ],
+      "columns": 18,
+      "first_column_width": 35,
+      "column_width": 10,
+      "row_height": 10,
+      "left_buffer": 5,
+      "top_buffer": 15,
+      "draw_background": true
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
+      "text": "$(thing)Lamp Glass$() เป็นส่วนประกอบที่จำเป็นในการคราฟต์ $(l:mechanics/lamps)Lamps$()"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "jar",
+      "recipe": "tfc:glassworking/jar",
+      "text": "$(l:mechanics/jarring)Jars$() ทำมาจากแก้วเป่าเช่นกัน แต่ใช้ได้เฉพาะ Silica หรือ Hematitic Glass เท่านั้น"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "glass_bottle",
+      "recipe": "tfc:glassworking/silica_bottle",
+      "text": "$(thing)Glass Bottles$() สามารถสร้างขึ้นได้เช่นกัน คุณภาพของขวดแก้วขึ้นอยู่กับชนิดของแก้วที่ใช้ทำ"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "tfc:glassworking/lens",
+      "text": "$(thing)lens$() ใช้สำหรับคราฟต์ $(thing)spyglass$(), $(thing)compass$() และไอเทมอื่นๆ"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:glass_batches": 1,
+    "tag:forge:glass": 2
+  }
+}

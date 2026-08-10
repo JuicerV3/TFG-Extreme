@@ -1,0 +1,37 @@
+{
+    "name": "เรือดาวอังคาร",
+    "category": "tfc:firmaciv",
+    "icon": "beneath:wood/sapling/crimson",
+    "flag": "mod:beneath",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "ในดินแดนอันห่างไกลบนดาวอังคาร คุณสามารถพบทั้งไม้ Crimson และไม้ Warped เพื่อนำมาสร้าง $(l:firmaciv/watercraft)เรือ$() ที่ค่อนข้างหรูหราสะดุดตาได้"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ไม้เนื้ออ่อน",
+            "text": "ไม้เนื้ออ่อนมีเนื้อไม้และเปลือกที่นุ่มพอ เหมาะอย่างยิ่งสำหรับใช้สร้าง $(l:firmaciv/canoe)เรือแคนูขุด$()",
+            "item": "beneath:wood/stripped_log/crimson"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Crimson$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ไม้เนื้อแข็ง",
+            "text": "โดดเด่นในเรื่องความทนทานเป็นพิเศษ ต้นไม้เนื้อแข็งจึงเหมาะอย่างยิ่งสำหรับสร้างยานพาหนะทางน้ำขนาดใหญ่และซับซ้อนขึ้น เช่น $(l:firmaciv/rowboat)เรือพาย$() และ $(l:firmaciv/sloop)เรือสลุป$()",
+            "item": "beneath:wood/planks/warped"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Warped$()"
+        }
+    ]
+}

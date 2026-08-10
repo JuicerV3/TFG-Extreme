@@ -1,0 +1,256 @@
+{
+    "name": "อาหารและน้ำ",
+    "category": "tfc:getting_started",
+    "icon": "tfc:textures/item/food/orange.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "ดรรชนี",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)พื้นฐาน (Basics)$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)ความกระหาย (Thirst)$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)หน้าจอโภชนาการ (Nutrition Screen)$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)สารอาหาร (Nutrients)$()$(li2)$(l:getting_started/food_and_water#fruit)ผลไม้ (Fruit)$()$(li2)$(l:getting_started/food_and_water#vegetables)ผัก (Vegetables)$()$(li2)$(l:getting_started/food_and_water#protein)โปรตีน (Protein)$()$(li2)$(l:getting_started/food_and_water#grain)ธัญพืช (Grain)$()$(li2)$(l:getting_started/food_and_water#dairy)ผลิตภัณฑ์นม (Dairy)$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)สารปนเปื้อน (Contaminants)$()$(li2)$(l:getting_started/food_and_water#toxins)สารพิษ (Toxins)$()$(li2)$(l:getting_started/food_and_water#parasites)พยาธิ (Parasites)$()$(li2)$(l:getting_started/food_and_water#microplastics)ไมโครพลาสติก (Microplastics)$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "พื้นฐาน",
+            "anchor": "basics",
+            "text": "ใน TerraFirmaCraft ไม่เพียงแต่คุณต้องจัดการความหิวของคุณเท่านั้น แต่คุณยังต้องจัดการความกระหายของคุณด้วย ความหิวทำงานคล้ายกับเวอร์ชันดั้งเดิม (vanilla) อาหารส่วนใหญ่จะฟื้นฟูแถบความหิวประมาณหนึ่งในห้า อาหารบางชนิดอาจฟื้นฟูได้น้อยกว่าเล็กน้อย เช่น $(thing)Cattail Roots$() การกินอาหารยังช่วยฟื้นฟู $(thing)Saturation$() (ความอิ่ม) ซึ่งคิดได้ว่าเป็นระดับความอิ่มของคุณ การหมดลงของอาหารหรือน้ำจะส่งผลให้การเคลื่อนที่เชื่องช้าและได้รับความเสียหาย การตายจะไม่รีเซ็ตสารอาหารหรือสารปนเปื้อนของคุณ"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "อาหารบางชนิดอิ่มมาก จึงช่วยป้องกันไม่ให้คุณสูญเสียความหิวได้นานขึ้น ในขณะที่อาหารบางชนิดมีผลสั้นๆ$(br2)คุณจะสูญเสียความหิวจากการเล่นเกมตามปกติ ความหิวจะลดลงเร็วขึ้นหากคุณทำสิ่งต่างๆ เช่น วิ่งพรวดพราด, ว่ายน้ำ หรือตกอยู่ในภาวะ $(l:getting_started/size_and_weight#overburdening)Overburdened$() (แบกน้ำหนักเกิน) ข้อมูลเกี่ยวกับ $(thing)Saturation$(), $(thing)Water$() รวมไปถึง $(thing)Nutrients$() ที่ได้จากอาหาร สามารถดูได้โดยการวางเมาส์เหนืออาหารในช่องเก็บของ การใช้ $(item)$(k:key.sneak)$() จะแสดงทูลทิปแบบเต็ม"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "อาหารทั้งหมดมีทูลทิปพร้อมข้อมูลนี้ ทูลทิปรวมถึง $(l:mechanics/decay)Decay Date$() (วันหมดอายุ) ของอาหาร ซึ่งสามารถยืดอายุได้ด้วยการถนอมอาหาร เมื่อดูข้อมูลนี้ สิ่งสำคัญคือต้องตระหนักว่าไม่อาหารทุกชนิดจะมีคุณค่าทางโภชนาการ ตัวอย่างเช่น $(l:mechanics/bread)Dough$() (แป้งโด) เป็นอาหาร แต่ไม่มีค่าคุณค่าทางอาหาร, Saturation หรือ Water การกินมันจะไม่เกิดประโยชน์มากนัก"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "ทูลทิปของอาหารอาจมีลักษณะดังนี้:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thirst",
+            "text": "Thirst (ความกระหาย) คือระดับน้ำในร่างกายของคุณ มันจะลดลงในอัตราที่คล้ายกับความหิว ที่อุณหภูมิสูงหรือการใช้ความหิวในระดับสูง ความกระหายของคุณจะลดลงเร็วขึ้น โชคดีที่การดื่ม $(thing)Fresh Water$() จะช่วยเติมเต็มความกระหาย สามารถทำได้โดยคลิก $(item)$(k:key.use)$() บนบล็อกน้ำ การดื่มน้ำเค็มจะทำให้คุณสูญเสียความกระหาย และยังมีโอกาสได้รับเอฟเฟกต์ $(thing)Thirst$() ซึ่งจะทำให้คุณกระหายน้ำมากยิ่งขึ้น",
+            "title": "ความกระหาย"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "minecraft:air",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "ความปลอดภัยของน้ำ",
+            "text": "เพื่อหลีกเลี่ยงน้ำเค็มหรือน้ำโคลน ให้มองหาแม่น้ำ ทะเลสาบ และพืชน้ำจืดอย่าง $(thing)Cattails$()",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/jug",
+            "text": "การ $(l:getting_started/pottery)Knapping$() และเผา $(l:getting_started/pottery#jug)jug$() เป็นวิธีพกพาน้ำไปกับคุณ เติมน้ำเหมือนถังด้วยการกด $(item)$(k:key.use)$() การกด $(item)$(k:key.use)$() ค้างไว้จะเป็นการดื่มน้ำ"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "คุณยังสามารถดื่มจากภาชนะอื่นๆ ได้ เช่น $(l:waterflasks)Flasks$() หรือ $(l:mechanics/glassworking)Glass Bottles$() อ่านเพิ่มเติมเกี่ยวกับภาชนะบรรจุเครื่องดื่มและเอฟเฟกต์เครื่องดื่ม $(l:mechanics/drinks#containers)ได้ที่นี่$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrition_screen",
+            "text": "ใน $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() หน้าจอโภชนาการจะแสดงข้อมูลอันกว้างขวางเกี่ยวกับสุขภาพของคุณ $(li)มีกราฟหลักที่แสดง $(l:getting_started/food_and_water#nutrients)Nutrients$() ของคุณ$()$(li)กราฟข้างที่แสดง $(l:getting_started/food_and_water#contaminants)Contaminants$() ของคุณ$()$(li)ตารางแสดงสถิติสุขภาพของคุณ$()$(li)และมุมมองแบบสลับเพื่อตรวจสอบโภชนาการของทีมคุณ$()$(br)$(item)กด $(k:key.sneak)$() ค้างไว้$() บนองค์ประกอบบนหน้าจอเพื่อดูข้อมูลเพิ่มเติม",
+            "title": "หน้าจอโภชนาการ"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
+            ],
+            "text": "หน้าจอโภชนาการ พร้อมกราฟแสดงระดับของสารอาหารแต่ละชนิด",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrients",
+            "text": "มีสารอาหารห้าชนิด ทั้งหมดสามารถรับได้จากอาหาร: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$() และ $(l)$(5)Dairy$()$() การกินอาหารจะให้สารอาหารแก่คุณ อาหารมื้อหลัก เช่น $(l:mechanics/pot#soup)Soup$() จะรวมสารอาหารหลายอย่างไว้ในมื้อเดียว มื้ออาหารมักจะดึงสารอาหารมาจากวัตถุดิบโดยตรง สิ่งนี้สำคัญมาก เพราะมื้ออาหารที่คุณกินไปเมื่อนานมาแล้วจะไม่ถูกนับรวมในโภชนาการของคุณ",
+            "title": "สารอาหาร"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "average_nutrients",
+            "text": "มูลค่ารวมของสารอาหารจะเป็นตัวกำหนด HP สูงสุดของคุณ ที่ค่าสูงสุดคุณสามารถบรรลุ $(l)$(c)30 หัวใจ$()$() ในขณะที่ค่าต่ำสุดคือ $(l)$(c)3 หัวใจ$()$()$(br)สารอาหารเฉลี่ยของคุณยังส่งผลต่อสิ่งต่อไปนี้:$()$(li)$(bold)ค่าเฉลี่ย >55% ↴$()$()$(italic)$(li2)เพิ่มการฟื้นฟูสุขภาพแบบพาสซีฟขึ้น 50%$()$()$(italic)$(li2)ลดอัตราการดำเนินของ $(l:tfg_ores/hazards#medicine)Medical Condition$() ลง 25%$()$()$(italic)$(li2)เพิ่มอัตราการรักษาพาสซีฟของภาวะทางการแพทย์ขึ้น 50%$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)ค่าเฉลี่ย >85% ↴$()$()$(italic)$(li2)เพิ่มการฟื้นฟูสุขภาพแบบพาสซีฟขึ้น 100%$()$()$(italic)$(li2)ลดอัตราการดำเนินของ $(l:tfg_ores/hazards#medicine)Medical Condition$() ลง 50%$()$()$(italic)$(li2)เพิ่มอัตราการรักษาพาสซีฟของภาวะทางการแพทย์ขึ้น 100%$()$()"
+        },
+        {
+            "title": "ผลไม้ (Fruit)",
+            "type": "patchouli:text",
+            "anchor": "fruit",
+            "text": "สารอาหาร $(l)$(a)Fruit$()$() ส่วนใหญ่พบได้จาก $(l:the_world/wild_fruits)Fruiting Plants$() เช่น พุ่มเบอร์รี่ และต้นไม้ผล ข้อยกเว้นที่เด่นชัดคือ $(l:mechanics/crops#pumpkin)Pumpkins$() และ $(l:mechanics/crops#pumpkin)Melons$() ซึ่งในทางโภชนาการจัดเป็นผลไม้$(br2)การเพิ่มค่าผลไม้ของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่าเฉลี่ย >55% → $()$()$(italic)ลดการใช้ความกระหายลง 25%$()$(li)$(bold)ค่าเฉลี่ย >85% → $()$()$(italic)เพิ่มความเร็วในการขุดขึ้น 30%$()"
+        },
+        {
+            "title": "ผัก (Vegetables)",
+            "type": "patchouli:text",
+            "anchor": "vegetables",
+            "text": "$(l)$(2)Vegetables$()$() พบได้ใน $(l:mechanics/crops)Crop$() เกือบทุกชนิด$(br2)การเพิ่มค่าผักของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >55% → $()$()$(italic)ยกเลิกบทลงโทษความเร็วการขุดใต้น้ำ$()$(li)$(bold)ค่า >85% → $()$()$(italic)ให้เอฟเฟกต์การหายใจใต้น้ำ (respiration)$()"
+        },
+        {
+            "title": "โปรตีน (Protein)",
+            "type": "patchouli:text",
+            "anchor": "protein",
+            "text": "$(l)$(c)Protein$()$() สามารถหาได้จากเนื้อของ $(l:the_world/wild_animals)Animals$() นอกจากนี้ยังสามารถหาได้จากพืชบางชนิด เช่น $(thing)legumes$() (พืชตระกูลถั่ว)$(br2)การเพิ่มค่าโปรตีนของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >55% → $()$()$(italic)ลดตัวคูณความเหนื่อยล้าลง 25%$()$(li)$(bold)ค่า >85% → $()$()$(italic)ช่วยให้คุณแบกไอเทมขนาดใหญ่และหนักเพิ่มขึ้นได้อีกหนึ่งชิ้นโดยไม่ติดภาวะ $(l:getting_started/size_and_weight#overburdening)Overburdened$() (เช่น ถังไม้ปิดผนึก)$()"
+        },
+        {
+            "title": "ธัญพืช (Grain)",
+            "type": "patchouli:text",
+            "anchor": "grain",
+            "text": "$(l)$(6)Grain$()$() พบได้ในพืชตระกูลซีเรียล เช่น $(l:mechanics/crops#barley)Barley$() การแปรรูปธัญพืชอธิบายไว้ในหน้า $(l:firmalife/bread)Bread$() พืชหัวบางชนิดก็นับเป็นธัญพืชเช่นกัน$(br2)การเพิ่มค่าธัญพืชของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >55% → $()$()$(italic)บัฟความเร็ว 5%$()$(li)$(bold)ค่า >85% → $()$()$(italic)บัฟความเร็ว 15%$()"
+        },
+        {
+            "title": "ผลิตภัณฑ์นม (Dairy)",
+            "type": "patchouli:text",
+            "anchor": "dairy",
+            "text": "$(l)$(5)Dairy$()$() มาจาก $(thing)Milk$() ซึ่งได้มาจาก $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$() การแปรรูปและการดื่มนมครอบคลุมอยู่ในหน้า $(l:firmalife/cheese)Dairy$()$(br2)การเพิ่มค่าผลิตภัณฑ์นมของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >55% → $()$()$(italic)ให้เอฟเฟกต์ $(thing)Feather Falling I$()$()$(li)$(bold)ค่า >85% → $()$()$(italic)ให้เอฟเฟกต์ $(thing)Feather Falling IV$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "contaminants",
+            "text": "นอกจากสารอาหารแล้ว $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() ยังเพิ่มสารปนเปื้อนอีกด้วย สารปนเปื้อนมีสามชนิด ทั้งหมดได้รับจากอาหาร: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$() และ $(l)$(3)Microplastics$()$() สารปนเปื้อนสามารถส่งผ่านไปในไอเทมอาหารและสะสมในตัวผู้เล่นได้",
+            "title": "สารปนเปื้อน"
+        },
+        {
+            "title": "สารพิษ (Toxins)",
+            "type": "patchouli:text",
+            "anchor": "toxins",
+            "text": "$(l)$(d)Toxins$()$() มาจากพืชและเนื้อสัตว์ที่เป็นอันตรายโดยเฉพาะ สารพิษจะลดลงตามธรรมชาติในอัตรา 3%/วัน บริโภค $(item)Detox Capsules$() เพื่อ $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$() (ล้างสารพิษ)$(br2)การเพิ่มค่าสารพิษของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >0% → $()$()$(italic)เมื่อเพิ่มขึ้นใหม่ทุกครั้ง: โอกาส 25% ที่จะได้รับเอฟเฟกต์อันตรายแบบสุ่มเป็นเวลา 10 วินาที$()$(li)$(bold)ค่า >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)ความตาย$()"
+        },
+        {
+            "title": "พยาธิ (Parasites)",
+            "type": "patchouli:text",
+            "anchor": "parasites",
+            "text": "$(l)$(4)Parasites$()$() มาจากการกินเนื้อดิบบางชนิดหรือการดื่มน้ำโคลน บริโภค $(item)Parasiticide Capsules$() เพื่อ $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$() (กำจัดพยาธิ)$(br2)การเพิ่มค่าพยาธิของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >10% → $()$()$(italic)โอกาส 20% ที่จะเพิ่มขึ้น 10% ในแต่ละวันจนถึงสูงสุด 60%$()$(li)$(bold)ค่า >33% → $()$()$(italic)เพิ่มความเหนื่อยล้าพาสซีฟขึ้น 25%$()$(li)$(bold)ค่า >66% → $()$()$(italic)เพิ่มความเหนื่อยล้าพาสซีฟขึ้น 50%$()"
+        },
+        {
+            "title": "ไมโครพลาสติก (Microplastics)",
+            "type": "patchouli:text",
+            "anchor": "microplastics",
+            "text": "$(l)$(3)Microplastics$()$() มาจากการบริโภคอาหารที่บรรจุในพลาสติก ไมโครพลาสติกจะลดลงตามธรรมชาติในอัตรา 1%/วัน บริโภค $(item)Nanofiltration Capsules$() เพื่อ $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$() (กำจัดไมโครพลาสติก)$(br)การเพิ่มค่าไมโครพลาสติกของคุณจะให้เอฟเฟกต์ต่อไปนี้:$()$(li)$(bold)ค่า >33% → $()$()$(italic)เพิ่มตัวคูณการลดลงของความกระหายที่อุณหภูมิสูงขึ้น 25%$()$(li)$(bold)ค่า >66% ↴$()$()$(italic)$(li2)เพิ่มตัวคูณการลดลงของความกระหายที่อุณหภูมิสูงขึ้น 50%$()$()$(italic)$(li2)เมื่อเพิ่มขึ้นใหม่ทุกครั้ง: โอกาส 5% ที่จะได้รับ $(l:tfg_ores/hazards#Carcinogens)Cancer$() (โรคมะเร็ง)$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transient_effects",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() ยังเพิ่ม $(item)Transient Effects$() (เอฟเฟกต์ชั่วคราว) เอฟเฟกต์ชั่วคราวมีไว้เพื่อส่งผ่านบัฟ/เดอบัฟจากวัตถุดิบไปยังไอเทมอาหาร เอฟเฟกต์ชั่วคราวสามารถรวมกันและบริโภคได้ อย่างไรก็ตาม พวกมันจะไม่สะสมภายในตัวผู้เล่น—พวกมันจะถูกบริโภคทันที$(br)ความแรงของเอฟเฟกต์ขึ้นอยู่กับค่าของสารอาหาร อย่างไรก็ตาม วิธีการกำหนดความแรงนั้นไม่ได้เหมือนกันในทุกประเภท$()",
+            "title": "เอฟเฟกต์ชั่วคราว"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling_transient_effect",
+            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming_transient_effect",
+            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#warming)Warming$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenching_transient_effect",
+            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bolstering_transient_effect",
+            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)ให้เอฟเฟกต์ $(n)Absorption$() แก่ผู้เล่นเป็นเวลา 8 นาที โดยระดับแอมพลิฟายเออร์ปรับตามจำนวนแต้มสารอาหาร ระดับแอมพลิฟายเออร์สูงสุดคือ 5$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hearty_transient_effect",
+            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)ให้เอฟเฟกต์ $(n)Health Boost$() แก่ผู้เล่นเป็นเวลา 8 นาที โดยระดับแอมพลิฟายเออร์ปรับตามจำนวนแต้มสารอาหาร ระดับแอมพลิฟายเออร์สูงสุดคือ 5$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rejuvenating_transient_effect",
+            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)ให้เอฟเฟกต์ $(n)Regeneration$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 3 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_transient_effect",
+            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() แก่ผู้เล่น โดยมีระยะเวลา 5 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 วินาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing_transient_effect",
+            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() แก่ผู้เล่น โดยมีระยะเวลา 5 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 วินาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radiating_transient_effect",
+            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)ให้เอฟเฟกต์ $(n)Glowing$() แก่ผู้เล่นเป็นเวลา 24 วินาที$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() แก่ผู้เล่นเป็นเวลา 24 วินาที โดยระดับแอมพลิฟายเออร์ปรับตามจำนวนแต้มสารอาหาร ระดับแอมพลิฟายเออร์สูงสุดคือ 5$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nauseating_transient_effect",
+            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)ให้เอฟเฟกต์ $(n)Nausea$() แก่ผู้เล่น โดยมีระยะเวลา 5 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 12 วินาที$()$(li)ให้เอฟเฟกต์ $(n)Hunger VI$() แก่ผู้เล่น โดยมีระยะเวลา 10 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 วินาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parching_transient_effect",
+            "text": "🧂$(bold) Parching$()$(li)ให้เอฟเฟกต์ $(n)Thirsty$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 8 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadly_transient_effect",
+            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() แก่ผู้เล่นเป็นเวลา 8 นาที โดยแต้มสารอาหารที่เพิ่มขึ้นแต่ละแต้มจะลดระยะเวลาลงครึ่งหนึ่ง$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fulfilling_transient_effect",
+            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)ให้เอฟเฟกต์ $(n)Resistance$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 15 นาที$()$(li)ให้เอฟเฟกต์ $(n)Instant Health$() แก่ผู้เล่น โดยระดับแอมพลิฟายเออร์ปรับตามจำนวนแต้มสารอาหาร ระดับแอมพลิฟายเออร์สูงสุดคือ 2$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugary_transient_effect",
+            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)ให้เอฟเฟกต์ $(n)Weakness$() แก่ผู้เล่น โดยมีระยะเวลา 15 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 5 นาที$()$(li)ให้เอฟเฟกต์ $(n)Speed$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 นาที$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spicy_transient_effect",
+            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)ให้เอฟเฟกต์ $(n)Thirsty$() แก่ผู้เล่น โดยมีระยะเวลา 15 วินาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 5 นาที$()$(li)ให้เอฟเฟกต์ $(l:tfg_tips/mob_effects_glossary#warming)Warming$() แก่ผู้เล่น โดยมีระยะเวลา 1 นาทีต่อ 1 แต้มสารอาหาร โดยมีระยะเวลาสูงสุด 30 นาที$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "การอ่านเพิ่มเติม",
+            "anchor": "relations",
+            "entries": [
+                "tfc:getting_started/size_and_weight",
+                "tfc:mechanics/animal_husbandry",
+                "tfc:mechanics/crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:mechanics/drinks",
+                "tfc:mechanics/decay",
+                "tfc:firmalife/differences_from_tfc",
+                "tfc:beneath/beneath_crops",
+                "tfc:beneath/beneath_wild_fruits",
+                "tfc:tfg_ores/hazards"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10
+}

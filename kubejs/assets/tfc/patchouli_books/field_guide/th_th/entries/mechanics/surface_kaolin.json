@@ -1,0 +1,53 @@
+{
+  "name": "Kaolin Clay",
+  "icon": "tfc:kaolin_clay",
+  "category": "tfc:mechanics",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "kaolinite",
+      "text": "Kaolin Clay จำเป็นต้องใช้ในการทำ $(l:mechanics/fire_clay)Fire Clay$() มันสามารถพบเกิดได้ระหว่าง Y=75-110 ในพื้นที่ Plateaus, Rolling Hills และ Highlands (และใน$(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$() ของพื้นที่ดังกล่าว), Old Mountains และ Shield Volcanoes ที่มี$(l:the_world/climate#temperature)อุณหภูมิ$()อย่างน้อย 18°C และมี$(l:the_world/climate#rainfall)ปริมาณน้ำฝน$()อย่างน้อย 300mm ดอกไม้ $(thing)Blood Lily$() จะเติบโตอยู่บน Kaolin Clay ซึ่งอาจอยู่ลึกลงไปข้างใต้ได้ถึง 35 บล็อก"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "โดยทั่วไปแล้ว ให้เดินทางไปทาง $(thing)South East$() เพื่อเพิ่มอุณหภูมิและความชื้น",
+      "multiblocks": [
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:kaolin_clay_grass"
+          }
+        },
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:red_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:white_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:pink_kaolin_clay"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:powder/kaolinite",
+      "anchor": "powder",
+      "text": "มีเพียง $(thing)20%$() ของ Kaolin Clay เท่านั้นที่จะเปลี่ยนเป็น $(thing)Kaolinite Powder$() ดังนั้นจึงแนะนำให้เผา ณ จุดที่พบโดยใช้ $(l:getting_started/pit_kiln)Pit Kilns$() เพื่อประหยัดพื้นที่ช่องเก็บของ$(br2)นำ Kaolin Clay กลับบ้านประมาณ 20 $(thing)Blocks$() ด้วยเช่นกัน สำหรับใช้ใน $(l:mechanics/glassworking_applications)Glassworking$() ในภายหลัง"
+    }
+  ]
+}

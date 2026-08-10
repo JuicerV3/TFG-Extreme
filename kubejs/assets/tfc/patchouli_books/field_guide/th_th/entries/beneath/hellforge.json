@@ -1,0 +1,50 @@
+{
+	"name": "The Hellforge (เฮลล์ฟอร์จ)",
+	"category": "tfc:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Hellforge$() (เฮลล์ฟอร์จ) เป็นเตาเผาขนาดใหญ่พิเศษ ซึ่งมีความจุสูงสำหรับเชื้อเพลิง ผลิตภัณฑ์ และการให้ความร้อน โดยสามารถให้ความร้อนแก่ $(l:mechanics/crucible)Crucible (เบ้าหลอม)$() ได้สูงสุดถึงเก้าอันในเวลาเดียวกัน และไม่จำเป็นต้องเปิดโล่งสู่ท้องฟ้าอีกด้วย!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Hellforge (เฮลล์ฟอร์จ)",
+			"text": "",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Hellforge จำเป็นต้องใช้น้ำลาวาไหลในรางส่งน้ำ (aqueducts) ตรงมุมทั้งสี่ รวมถึงบล็อก hellbricks จำนวน 21 บล็อก บริเวณตรงกลางขนาด 3x3 ต้องเติมด้วย $(l:mechanics/charcoal_pit)Charcoal Piles (กองถ่าน)$() กองละ 7 charcoal ซึ่งจากนั้นสามารถจุดไฟเพื่อเริ่มทำงานเตาเผาได้"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ช่องใส่ไอเท็มของ Hellforge สามารถใส่เชื้อเพลิงหรือสิ่งที่ต้องการถลุงได้โดยไม่มีการแยกประเภท โปรดระมัดระวังสิ่งที่คุณใส่ลงไป! นอกจากนี้ยังมีช่องสำหรับหลอมละลายสิ่งต่างๆ เช่นเดียวกับเตาถ่าน (charcoal forge) เกจวัดลาวาบนหน้าจอจะแสดงระดับอุณหภูมิ"
+		}
+	],
+	"read_by_default": true
+}

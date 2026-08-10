@@ -1,0 +1,80 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Bloomery",
+	"category": "tfc:mechanics",
+	"icon": "tfc:bloomery",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Bloomery$() คืออุปกรณ์ที่ใช้ถลุง $(thing)Iron Ore$() ให้กลายเป็น $(thing)Iron Blooms$() ซึ่งสามารถนำไปตีขึ้นรูปเป็น $(thing)Wrought Iron$() ได้ แร่เหล็กทั่วไปบางชนิด ได้แก่ $(l:tfg_ores/earth_vein_index#normal_hematite)Hematite$(), $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$() และ $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite$() แร่เหล่านี้จะละลายกลายเป็น $(thing)Cast Iron$() แทนที่จะเป็น $(thing)Wrought Iron$() ไอเทมที่มีส่วนผสมของเหล็กทั้งหมดจะละลายเป็น Cast Iron การจะเปลี่ยนพวกมันให้เป็นเหล็กที่ใช้งานได้จึงจำเป็นต้องใช้ bloomery โดยสามารถใช้ไอเทมเหล็กใดก็ได้ใน bloomery รวมถึงเครื่องมือเหล็กและแท่งเหล็กหล่อ!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfc:crafting/bloomery",
+			"text": "Bloomery สร้างขึ้นจาก 8 $(thing)Bronze Double Plates$()"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock_id": "tfc:bloomery",
+			"name": "A Bloomery",
+			"text": "bloomery ขนาดเล็กที่สุด บล็อก bloomery จะเปิดและปิดได้ด้วยการกด $(item)$(k:key.use)$()",
+			"enable_visualize": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Bloomery สามารถจุไอเทม $(thing)Inputs$() ได้สูงสุด 48 ชิ้น โดยมี 16 ชิ้นต่อชั้นของปล่องไฟ หากต้องการเพิ่มชั้นของปล่องไฟ ให้วางบล็อกหินซ้อนกันขึ้นไปอีกสองชั้น$(br2)หากต้องการใส่ไอเทมลงใน bloomery ให้ปีนขึ้นไปด้านบนแล้วโยนไอเทมลงไปข้างใน ซึ่งควรจะมีเสาแร่สีเทาก่อตัวขึ้น$(br2)คุณสามารถใช้ $(item)Charcoal$() เป็นเชื้อเพลิงสำหรับ bloomery ได้เพียงอย่างเดียวเท่านั้น"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
+			],
+			"text": "Bloomery จะใช้ $(thing)1 Charcoal$() และ $(thing)144 mB of Cast Iron$() เพื่อผลิตหนึ่ง $(thing)Bloom$()",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "หากคุณไม่อยากคำนวณ เราขอแนะนำ $(item)25 metal ore dusts$() และ $(item)22 fuel items$()$(br2)หลังจากใส่ $(thing)Fuel$() และ $(thing)Ore$() ผสมกันลงใน bloomery แล้ว ให้จุดไฟที่ประตู bloomery และรอ 15 ชั่วโมงเพื่อให้ bloomery ทำการถลุง เมื่อ bloomery ดับลง มันจะทิ้งบล็อก $(thing)Bloom$() ไว้ ซึ่งภายในบรรจุ $(thing)Raw Iron Blooms$() ที่สามารถรับได้จากการขุดบล็อก $(thing)Bloom$() ซ้ำๆ ด้วยอีเตอร์"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "tfc:bloom[layers=8]"
+				}
+			},
+			"name": "The Bloom Block",
+			"text": "$(thing)Bloom$() ขนาดใหญ่",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/refined_iron_bloom",
+			"text": "$(thing)Raw Iron Bloom$() จะต้องถูกตีขึ้นรูปบน $(l:mechanics/anvils)anvil$() เพื่อสร้างเป็น $(thing)Refined Iron Bloom$()"
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/wrought_iron_from_bloom",
+			"text": "$(thing)Refined Iron Bloom$() จะต้องถูกตีขึ้นรูปบน $(l:mechanics/anvils)anvil$() เพื่อสร้างเป็น $(thing)Wrought Iron Ingots$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)หาก bloomery มีไอเทมบรรจุอยู่มากกว่าความจุของปล่องไฟ มันจะพยายามพ่นไอเทมเหล่านั้นสู่ออกทางด้านหน้า$()$(li)การนำไอเทมออกจาก bloomery ที่ยังไม่ได้จุดไฟ ห้ามทำลายเสาบล็อกหลอมเหลว แต่ให้ทำลายบล็อก bloomery แทน$()$(li)Blooms จะละลายเป็น cast iron เท่านั้น ไม่ใช่ wrought iron พวกมันจะต้องถูกนำไปตีขึ้นรูป!$()",
+			"title": "บันทึกของช่างตีเหล็ก"
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:bloom": 6,
+		"tfc:raw_iron_bloom": 7,
+		"tfc:refined_iron_bloom": 8
+	}
+}

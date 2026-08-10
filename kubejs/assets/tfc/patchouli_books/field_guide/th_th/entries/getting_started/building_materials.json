@@ -1,0 +1,138 @@
+{
+  "name": "วัสดุก่อสร้าง",
+  "category": "tfc:getting_started",
+  "icon": "tfc:wattle/unstained",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ในช่วงเริ่มต้นของเกม การสร้างสิ่งก่อสร้างอาจเป็นเรื่องท้าทาย เนื่องจากบล็อกก่อสร้างที่ทนทานหลายชนิดต้องใช้เครื่องมือโลหะในการเก็บเกี่ยว อย่างไรก็ตาม มีบล็อกก่อสร้างบางชนิดที่สามารถหาได้ด้วยเครื่องมือหินเท่านั้น$(br2)บล็อกก่อสร้างเพิ่มเติมสามารถดูได้ที่ $(l:mechanics/advanced_building_materials)วัสดุก่อสร้างขั้นสูง$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Thatch$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Mud Bricks$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Wattle and Daub$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Clay Blocks and Peat$()$(br)",
+      "title": "สารบัญ"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "thatch",
+      "text": "เพียงใช้ $(l:getting_started/introduction#knife)Stone Knife$() คุณก็สามารถรับ $(thing)Straw$() ได้จากการทำลายบล็อกที่คล้ายพืช สิ่งนี้สามารถใช้คราฟต์วัสดุก่อสร้างอย่างง่ายได้ นั่นคือ $(thing)Thatch$() โดย Thatch เป็นบล็อกน้ำหนักเบาที่ไม่ได้รับผลกระทบจากแรงโน้มถ่วง อย่างไรก็ตาม ผู้เล่นและสิ่งมีชีวิตอื่นๆ สามารถเดินทะลุผ่านมันได้! นอกจากนี้ยังสามารถคราฟต์กลับเป็น $(thing)Straw$() ได้อีกด้วยหากต้องการ",
+      "title": "Thatch"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/thatch",
+      "recipe2": "tfc:crafting/straw"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "mud_bricks",
+      "recipe": "tfc:crafting/soil/loam_drying_bricks",
+      "title": "Mud Bricks",
+      "text": "$(thing)Mud$() สามารถพบได้บนพื้นดิน ใต้แม่น้ำและทะเลสาบ หรือตามกลุ่มพื้นที่หนองน้ำระดับต่ำ ด้วย $(thing)Straw$() เล็กน้อย มันสามารถคราฟต์เป็น $()Wet Mud Bricks$() ได้"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "สิ่งเหล่านี้สามารถวางลงบนพื้นในสถานที่แห้ง และหลังจากผ่านไปหนึ่งวัน พวกมันจะแข็งตัวกลายเป็น $(thing)Mud Bricks$()",
+      "multiblocks": [
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+            "Y": "tfc:grass/loam"
+          }
+        },
+        {
+          "pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+          "mapping": {
+            "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+            "Y": "tfc:grass/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/soil/loam_mud_bricks",
+      "title": " ",
+      "text": "อิฐโคลนตากแห้งเหล่านี้สามารถนำไปคราฟต์เป็น $(thing)Mud Brick Blocks$() ได้ นอกจากนี้ยังสามารถทำเป็น $(thing)Stairs$(), $(thing)Slabs$() หรือ $(thing)Walls$() ได้อีกด้วยหากต้องการ"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [ [ "X" ], [ "0" ] ],
+        "mapping": {
+          "X": "#tfc:mud_bricks"
+        }
+      },
+      "name": "",
+      "text": "อิฐโคลนหลากหลายรูปแบบทั้งหมด",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wattle_and_daub",
+      "text": "$(thing)Wattle$() และ $(thing)Daub$() เป็นบล็อกก่อสร้างและตกแต่งที่หลากหลาย$(br2)$(thing)Wattle$() สามารถคราฟต์และวางได้ อย่างไรก็ตาม มันสามารถพังได้และยอมให้ผู้เล่นรวมถึงม็อบเดินผ่านได้ สามารถเสริมด้วย $(thing)Daub$() เพื่อทำให้มันแข็งเป็นบล็อกทึบได้",
+      "title": "Wattle and Daub"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wattle",
+      "text": "เพื่อทำให้ $(thing)Wattle$() แข็งเป็นบล็อกทึบ ก่อนอื่นต้องทอมันขึ้นมาก่อน ซึ่งต้องใช้การเพิ่มไม้สติ๊ก (sticks) เข้าไปในโครงสร้าง"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/daub",
+      "recipe2": "tfc:crafting/daub_from_mud",
+      "text": ""
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_weave.png"
+      ],
+      "text": "ต้องใช้ไม้สติ๊กสี่อันในการ $(thing)weave$() wattle",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "สามารถเพิ่มไม้สติ๊กตามแนวทแยง รวมทั้งด้านบนและด้านล่างได้ตลอดเวลา ถือ $(thing)Stick$() ชิ้นเดียวในมือแล้วกด $(item)$(k:key.use)$() เพื่อเพิ่มไม้สติ๊ก เปลี่ยนส่วนของ wattle ที่คุณกำลังเพิ่มไม้สติ๊กได้โดยการเลือกด้านหน้าของบล็อกที่แตกต่างกัน"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+      ],
+      "text": "การเพิ่มไม้สติ๊กเข้าไปใน wattle",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+      ],
+      "text": "การใช้ $(thing)Daub บน $(thing)Woven Wattle$() จะสร้างบล็อกทึบขึ้นมา",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_stained.png"
+      ],
+      "text": "จากนั้นสามารถนำไป $(thing)stained$() ได้โดยใช้ $(l:mechanics/dye)Dye$() บนบล็อก",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "clay_and_peat",
+      "text": "ดินเหนียวที่หาได้จากพื้นดินสามารถนำมาคราฟต์เป็นบล็อกดินเหนียวได้ เมื่อวางและขุดอีกครั้ง พวกมันจะกลับกลายเป็นดินเหนียว แม้จะไม่สวยงามแต่ก็หาได้ง่าย$(br2)Peat (พีต) จะเกิดตามธรรมชาติเป็นกระจุกตามแหล่งน้ำและสามารถขุดได้ด้วยเครื่องมือหิน พืชบางชนิดจะเติบโตบนมันได้$(br2)อย่างไรก็ตาม Peat ติดไฟได้ค่อนข้างง่าย",
+      "title": "Clay Blocks and Peat"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/clay_balls_to_block",
+      "title": "Clay Blocks"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

@@ -1,0 +1,43 @@
+{
+	"name": "เคล็ดลับ Blast Furnace",
+	"icon": "tfc:blast_furnace",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "เคล็ดลับ TerraFirmaCraft Blast Furnace",
+			"text": "ในที่สุดคุณก็พบ $(item)Kaolinite$() และคงตื่นเต้นที่จะได้สร้าง $(thing)Blast Furnace$() ขนาด 5 ชั้น ต่อไปนี้คือเคล็ดลับบางประการก่อนที่คุณจะเริ่มลุย!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:ceramic/unfired_fire_brick",
+			"text": "ก่อนที่คุณจะใช้ดินเหนียวทนไฟทั้งหมดไปกับอิฐทนไฟ 20 ก้อน โปรดทราบว่าเมื่อคุณเข้าสู่ยุคไอน้ำ คุณจะสามารถคราฟต์มันได้ถูกลงอย่างมาก วิธีนี้ช่วยให้คุณประหยัด $(item)Kaolinite$() และ $(item)Graphite$() ไว้ใช้กับ $(thing)Casting Tables$() ได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "การอุ่นโลหะล่วงหน้า",
+			"item": "tfc:firepit",
+			"text": "ในการแปลงเหล็กเป็นเหล็กกล้า Blast Furnace ต้องเพิ่มความร้อนให้เหล็กข้างในจนถึงระดับ $(thing)Brilliant White$() ในการทำงานรอบแรก โลหะจะร้อนขึ้นไปพร้อมๆ กับเตา Blast Furnace อย่างไรก็ตาม การทำงานในรอบถัดๆ ไปจะใช้เวลาใกล้เคียงกันแม้ว่าเตาจะร้อนอยู่แล้วก็ตาม เนื่องจากเตาจำเป็นต้องทำความร้อนให้โลหะตั้งแต่ยังเย็นอยู่"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "หากโลหะมีความร้อนอยู่แล้วก่อนใส่ลงใน Blast Furnace จะใช้เวลาน้อยลงในการบรรลุความร้อนระดับ Brilliant White ควรพิจารณาอุ่นโลหะของคุณใน $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() ก่อนใส่ลงในเตาที่ร้อนอยู่แล้วเพื่อประหยัดเวลา โดยเฉพาะเตา Blast Furnace ขนาดเล็กที่แปรรูปได้น้อยต่อรอบ"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ระบบอัตโนมัติ",
+			"item": "greate:steel_mechanical_pump",
+			"text": "คุณจะต้องใช้ $(item)Steel$() จำนวนมากสำหรับยุค $(thing)Steam$() และ $(thing)LV$() ต้องการเหล็กกล้าจำนวนมากจริงๆ ในขณะที่ $(thing)Electric Blast Furnace$() ยังอีกยาวไกล ดังนั้นจึงควรรีบคิดเรื่องการปรับปรุงประสิทธิภาพการผลิต Steel ของคุณ"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "คุณสามารถสูบของเหลวออกจาก Blast Furnace ได้โดยตรงด้วย $(item)Mechanical Pump$() ของ Create โดยสูบไปยัง $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() และดึงแท่งโลหะออกด้วย Hopper หรือ Chute: ระบบอัตโนมัติทำได้ง่ายๆ!$(br2)คุณยังสามารถทำระบบอัตโนมัติสำหรับ Bellows ได้ด้วย $(item)Deployer$() เช่นกัน! เพียงแต่ต้องระวัง เพราะการใช้ Bellows มากเกินไปจะสิ้นเปลืองเชื้อเพลิงมากขึ้นและทำให้ $(thing)tuyere$() พังเร็วขึ้น$(br2)คุณสามารถนำ $(item)Pig Iron$() และ $(item)High Carbon Steel$() ที่ได้ไปแปรรูปต่อใน $(thing)Forge Hammer$() หรือ $(thing)Helve Hammer$() ได้"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "คุณสามารถเปลี่ยน tuyere ที่พังได้โดยอัตโนมัติ ด้วยการใช้ Hopper หรือ Item Pipe หันหน้าเข้าสู่ Blast Furnace"
+		}
+	]
+}

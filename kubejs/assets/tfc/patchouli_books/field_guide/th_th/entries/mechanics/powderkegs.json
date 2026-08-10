@@ -1,0 +1,49 @@
+{
+  "name": "Powderkegs",
+  "category": "tfc:mechanics",
+  "icon": "tfc:powderkeg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Powderkegs$() เป็นอุปกรณ์ที่ใช้สำหรับการสร้างการระเบิด พวกมันมีช่องเก็บของ 12 สล็อต ซึ่งใส่ได้เฉพาะ $(thing)gunpowder$() เท่านั้น ความรุนแรงของการระเบิดจะแปรผันตามปริมาณของ gunpowder ที่บรรจุอยู่ข้างใน"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:powderkeg[sealed=true]"
+        }
+      },
+      "name": "The Powderkeg",
+      "text": "คล้ายกับ $(l:mechanics/barrels)Barrel$() ตัว powderkeg เป็นอุปกรณ์ที่สามารถปิดผนึกและเปิดผนึกได้ด้วย $(item)$(k:key.use)$() เฉพาะ powderkeg ที่ปิดผนึกแล้วเท่านั้นที่สามารถจุดชนวนได้",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การระเบิดจาก powderkeg จะส่งผลให้ powderkeg อื่นๆ จุดติดและระเบิดตาม บล็อกทั้งหมดที่ถูกทำลายจากการระเบิดจะดร็อปไอเทมออกมา แต่อาจไม่ได้ดร็อป ณ ตำแหน่งเดิมของบล็อกนั้นเสมอไป"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/powderkeg",
+      "text": "Powderkegs สามารถทำได้โดยการใส่ $(l:mechanics/dye)Red Dye$() และด้าย ลงในรูปแบบการคราฟต์ถังไม้ (barrel)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/gunpowder_tfc_style",
+      "recipe2": "tfg:shapeless/gunpowder_graphite"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gunpowder สามารถทำได้สองวิธี: สูตรแรกทำจากผง $(l:the_world/ores_and_minerals#saltpeter)Saltpeter$(), $(l:the_world/ores_and_minerals#saltpeter)Sulfur$() และ $(l:mechanics/charcoal_pit)Charcoal$() โดยผงทำได้โดยใช้ $(l:mechanics/quern)Quern$() และหากคุณเข้าถึง $(l:the_world/ores_and_minerals#graphite)Graphite$() ได้ คุณจะสามารถใช้สูตรที่มีประสิทธิภาพสูงกว่าได้"
+    }
+  ],
+  "read_by_default": true
+}

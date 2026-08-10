@@ -1,0 +1,217 @@
+{
+  "name": "เรือสลุป",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:sloop_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "เข้าสู่ยุคเหล็กแล้วหรือ? ถึงเวลาแล้วที่คุณควรสร้างเรือแบบจริงจัง เรือสลุปมีความกว้าง 4 บล็อก และยาวกว่า 8 บล็อก เป็นการอัปเกรดที่น่าประทับใจจากเรือพาย! สามารถบรรจุที่เก็บของได้ถึง 13 ชิ้น และผู้โดยสารสูงสุด 7 คน และสามารถแล่นได้เร็วมากขึ้นอยู่กับทิศทางลม อีกทั้งยังติดตั้งปืนใหญ่ได้ถึง 6 กระบอก!"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/sloop_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อย่างไรก็ตาม เรือสลุปนั้นมีราคาสูง ต้องใช้วัตถุดิบจำนวนมากทั้งเหล็กดัด ทองแดง ผ้าขนสัตว์ และวัสดุอื่นๆ แต่วัตถุดิบไม่ใช่สิ่งเดียวที่คุณต้องจ่าย! คุณจะต้องเรียนรู้วิธีการแล่นเรือด้วย ซึ่งต้องใช้การฝึกฝนพอสมควร! นอกจากนี้ คุณอาจต้องการสร้างท่าเรือและโครงสร้างพื้นฐานอื่นๆ หากมีแผนจะนำเรือเข้ามาใกล้ชายฝั่ง"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "นี่คือรายการวัตถุดิบสำหรับสร้างเรือสลุป:$(br2)แท่งเหล็กดัด (Wrought Iron Ingots) 12 แท่ง$(br)แท่งทองแดง (Copper Ingots) 24 แท่ง$(br)ไม้แปรรูป (Lumber) 648 ชิ้น$(br)ท่อนไม้ (Logs) 34 ท่อน$(br)ผ้าขนสัตว์ (Wool Cloth) 24 ผืน$(br)เชือก (String) 6 เส้น$(br)เส้นใยปอ (Jute Fiber) 72 ชิ้น"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "นั่งร้านต่อเรือ",
+      "recipe": "firmaciv:crafting/watercraft_frame_flat",
+      "text": "คล้ายกับเรือพาย คุณจะเริ่มจากโครงสร้างนั่งร้านช่างต่อเรือ อย่างไรก็ตาม คุณจะต้องใช้นั่งร้านแบบแบนรุ่นใหม่สำหรับเรือขนาดใหญ่ด้วย"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+          "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+          "3": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+          "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+          "5": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_right]",
+          "6": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_left]",
+          "7": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+          "8": "firmaciv:watercraft_frame_angled[facing=east,shape=straight]",
+          "9": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]",
+          "0": "firmaciv:watercraft_frame_flat",
+          "a": "firmaciv:watercraft_frame_flat"
+        }
+      },
+      "name": "นั่งร้านสร้างเรือสลุป",
+      "text": "นั่งร้านต่อเรือที่จัดวางตามลำดับเพื่อสร้างตัวเรือสลุป",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ถัดไป คุณจะต้องเพิ่มแผ่นไม้แปรรูปจากไม้เนื้อแข็งที่มีความแข็งแรงเหมาะสม:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=3]",
+          "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=3]",
+          "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=3]",
+          "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=3]",
+          "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=3]",
+          "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=3]",
+          "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=3]",
+          "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=3]",
+          "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=3]",
+          "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]",
+          "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
+        }
+      },
+      "name": "นั่งร้านสร้างเรือสลุป",
+      "text": "เพิ่มแผ่นไม้แปรรูป 4 แผ่นลงในแต่ละนั่งร้านแล้ว",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+          "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+          "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+          "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+          "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+          "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
+        }
+      },
+      "name": "นั่งร้านสร้างเรือสลุป",
+      "text": "ใช้ค้อนในมือรอง ถือ Copper 4 ตัวเพื่อใส่เข้าไปในแต่ละนั่งร้าน Copper สามารถตีขึ้นรูปได้จากแท่งทองแดง",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            " L  R",
+            "     ",
+            "     ",
+            "     ",
+            " L  R"
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+          "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+          "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+          "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+          "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+          "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+          "L": "alekiships:cleat[facing=north]",
+          "R": "alekiships:cleat[facing=south]"
+        }
+      },
+      "name": "นั่งร้านสร้างเรือสลุป",
+      "text": "สุดท้าย เพิ่มหูกระต่ายยึดเชือก (Cleats) ลงบนตัวเรือ สิ่งนี้สามารถตีขึ้นรูปได้จากแท่งคู่เหล็กดัด",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "อย่างไรก็ตาม การสร้างตัวเรือเป็นเพียงขั้นตอนแรกของการสร้างเรือสลุปเท่านั้น! หลังจากตัวเรือเสร็จสมบูรณ์ มองหาไอคอนค้อนสีฟ้าแล้วใช้ $(item)$(k:key.use)$() เพื่อเพิ่มไอเทมที่แสดงข้างเป้าเล็ง เพื่อสร้างส่วนที่เหลือของเรือ$(br2)หน้าถัดไปประกอบด้วยสูตรคราฟต์ไอเทมเฉพาะที่คุณต้องใช้ในการสร้างให้เสร็จสมบูรณ์"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/small_triangular_sail",
+      "recipe2": "firmaciv:crafting/medium_triangular_sail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "firmaciv:crafting/rope_coil",
+      "text": "คุณจำเป็นต้องเพิ่มสมอเรือด้วย ซึ่งสามารถตีขึ้นรูปได้จากแผ่นคู่เหล็กดัด"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

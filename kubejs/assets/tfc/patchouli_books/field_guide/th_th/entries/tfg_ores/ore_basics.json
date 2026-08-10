@@ -1,0 +1,44 @@
+{
+    "name": "การขุดแร่ใน TFG",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "tfc:tfg_ores",
+    "priority": true,
+    "sortnum": 0,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "คุณจะต้องใช้ $(thing)อีเตอร์ (pickaxe)$() หรือ $(thing)ค้อนขุดแร่ (mining hammer)$() เพื่อขุดแร่$(br2)ค้อน $(thing)hammer$() ทั่วไปสามารถทำลายบล็อกประเภทหินได้เร็วเช่นกัน แต่จะไม่ดรอปแร่ออกมา อย่างไรก็ตาม มันยังคงมีประโยชน์สำหรับการ$(l:getting_started/primitive_anvils#raw_rock)สกัด$()บล็อกหิน"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "recipe2": "gtceu:shaped/mining_hammer_copper"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "อีเตอร์",
+            "text": "การทำลายบล็อกแร่ด้วยอีเตอร์จะได้รับ $(thing)แร่ดิบ$() (คุณภาพต่ำ, ปกติ, หรือสมบูรณ์) รวมถึงผงหินบางส่วน แร่ดิบเหล่านี้ให้ปริมาณ mB ไม่มากนักต่อชิ้น และคุณจะต้องใช้หลายชิ้นเพื่อหลอมเป็นแท่งโลหะเดียว อย่างไรก็ตาม แร่อื่นๆ บางชนิดสามารถใช้งานได้ในสถานะนี้เท่านั้น เช่น $(thing)ถ่านหิน (coal)$()",
+            "item": { "tag": "minecraft:pickaxes" }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ค้อนขุดแร่",
+            "text": "สิ่งนี้เปรียบเสมือนอีเตอร์ที่มีระยะการขุด 3x3 และจะให้ $(thing)แร่ดิบ$() เช่นเดียวกัน นอกจากนี้ยังเหมาะสำหรับการสกัดหินอีกด้วย!$(br2)การกด $(thing)ย่อ (sneak)$() ค้างไว้จะทำลายบล็อกเพียงบล็อกเดียวต่อครั้ง",
+            "item": { "tag": "forge:tools/mining_hammers" }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "การแปรรูปแร่เบื้องต้น",
+            "anchor": "processing",
+            "item": "gtceu:crushed_copper_ore",
+            "text": "การแปรรูปแร่จะส่งผลให้ได้ปริมาณโลหะที่ใช้ประโยชน์ได้มากขึ้นอย่างมาก ขั้นตอนแรกคือการใช้ $(l:mechanics/quern)แท่นบดแร่ (Quern)$() เพื่อบดแร่ดิบ ขั้นตอนนี้สามารถทำเป็นระบบอัตโนมัติได้ในอนาคตด้วยเครื่องจักรที่ได้รับการปรับปรุง เช่น $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), และ $(thing)Forge Hammer$()"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "การทำผงแร่ให้บริสุทธิ์",
+            "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
+            "text": "เพื่อให้แร่บดของคุณหลอมละลายได้ปริมาณ mB มากยิ่งขึ้น ให้วางพวกมันในตารางคราฟต์ร่วมกับ $(thing)ค้อน (Hammer)$() ซึ่งจะผลิต $(thing)ผงแร่ไม่บริสุทธิ์ (Impure Dust)$() ออกมา ในการทำผงแร่ให้บริสุทธิ์ ให้โยนมันลงในน้ำ หรือกด $(item)$(k:key.use)$() ที่ $(thing)หม้อใหญ่ (Cauldron)$() ที่มีน้ำเต็ม"
+        }
+    ]
+}

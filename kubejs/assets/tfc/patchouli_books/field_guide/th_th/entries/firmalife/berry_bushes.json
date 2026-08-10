@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "พุ่มไม้เบอร์รี่",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/pineapple_bush",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife ได้เพิ่มพุ่มไม้เบอร์รี่บางชนิด สำหรับข้อมูลเกี่ยวกับพุ่มองุ่นป่า ดูที่ $(l:firmalife/wine)การทำไวน์$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/nightshade_berry",
+      "link_recipes": false,
+      "text": "อย่างแรกคือ Nightshade โดย Nightshade เป็นเบอร์รี่ที่มีพิษ เมื่อใส่ลงในซุป จะทำให้ได้ $(thing)Stinky Soup$() ที่มีพิษ สามารถพบได้ในพื้นที่ป่าที่มีปริมาณน้ำฝนระหว่าง 200-400mm และอุณหภูมิ 7-24 C"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/pineapple",
+      "link_recipes": false,
+      "text": "พุ่ม Pineapple พบได้ในพื้นที่ป่าที่มีปริมาณน้ำฝน 250-500mm และอุณหภูมิ 20-32 C สับปะรดนั้นเหมือนกับผลไม้อื่นๆ ทั่วไป เว้นแต่ว่าจะสามารถนำไปทำเป็น $(thing)Pineapple Leather$() ได้"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pineapple_fiber",
+      "text": "สับปะรดที่ผ่านการ $(l:firmalife/drying)ตากแห้ง$() แล้ว สามารถนำมาคราฟต์เป็น pineapple fiber ได้"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
+      "text": "Pineapple yarn ทำได้โดยการคราฟต์ $(thing)Spindle$() ร่วมกับเส้นใย"
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "firmalife:loom/pineapple_leather",
+      "text": "สุดท้าย Pineapple Leather สามารถนำไปทอใน $(l:tfc:mechanics/weaving)Loom$() ได้ มันเป็นวัสดุทดแทนหนังจากพืชสำหรับหนังทั่วไปที่สามารถนำไปใช้ในการกะเทาะ (knapping), คราฟต์ และการใช้งานอื่นๆ ได้!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 21
+}

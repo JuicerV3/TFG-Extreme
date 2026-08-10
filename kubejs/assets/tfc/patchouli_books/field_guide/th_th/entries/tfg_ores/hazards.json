@@ -1,0 +1,200 @@
+{
+	"name": "วัตถุอันตราย",
+	"icon": "createdeco:decal_skull",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "วัตถุอันตราย",
+			"item": "gtceu:cobaltite_dust",
+			"text": "$(thing)แร่$(), $(thing)ผงแร่$() และ $(thing)สารเคมี$() บางชนิดเป็นอันตรายและสามารถก่อให้เกิด $(item)เอฟเฟกต์เชิงลบ$() หรือแม้กระทั่ง $(item)สังหาร$() คุณได้หากพกไว้ในช่องเก็บของ เมื่อพกพา วัตถุเหล่านี้จะแสดงบนหน้าจอด้วย $(item)สถานะเอฟเฟกต์ (Status Effect)$()$(br2)อุปกรณ์บางอย่าง เช่น $(thing)หน้ากาก$(), $(thing)ถุงมือ$(), และ $(thing)ชุดป้องกันวัตถุอันตราย (Hazmat Suit)$() สามารถใช้เพื่อรับมือกับเอฟเฟกต์เหล่านี้ได้"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "เอฟเฟกต์ทั้งหมด",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)พิษสารหนู (Arsenicosis)$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)โรคปอดจากแอสเบสตอส (Asbestosis)$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)พิษเบริลเลียม (Berylliosis)$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)พิษคาร์บอนมอนอกไซด์ (Carbon Monoxide poisoning)$()$(li)$(l:tfg_ores/hazards#Carcinogens)สารก่อมะเร็ง (Carcinogens)$()$(li)$(l:tfg_ores/hazards#Chemical_burns)แผลไหม้จากสารเคมี (Chemical burns)$()$(li)$(l:tfg_ores/hazards#Irritants)สารก่อความระคายเคือง (Irritants)$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)พิษเมทานอล (Methanol poisoning)$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)สารเคมีก่อมึนงง (Nauseating chemicals)$()$(li)$(l:tfg_ores/hazards#Poisons)วัตถุมีพิษ (Poisonous materials)$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)วัตถุกัมมันตรังสี (Radioactive materials)$()$(li)$(l:tfg_ores/hazards#Silicosis)โรคปอดซิลิโคสิส (Silicosis)$()$()$(br2)หน้าถัดไปจะให้ข้อมูลเกี่ยวกับวิธีจัดการกับเอฟเฟกต์เหล่านี้"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "การป้องกันและการรักษา",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)หิน?$()$()$(li)$(l:tfg_ores/hazards#containers)ภาชนะบรรจุ$()$(li)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$()$(li)$(l:tfg_ores/hazards#gloves)ถุงมือยาง (Rubber Gloves)$()$(li)$(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$()$(li)$(l:tfg_ores/hazards#medicine)ยาเม็ด ยาตลับ และยาทา$()$(li)$(l:tfg_ores/hazards#rad_away)ยาเม็ด RadAwayᵗᵐ$()$(li)$(l:tfg_ores/hazards#respawn)สิ่งที่ไม่อยากให้เกิด...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ก้อนหิน!",
+			"item": { "tag": "tfc:rock_knapping" },
+			"anchor": "rocks",
+			"text": "$(thing)วิธีที่ง่ายที่สุด$()ในการ$(thing)ป้องกัน$()เอฟเฟกต์อันตรายคือ$(item)ไม่ต้องเก็บไอเทมอันตรายขึ้นมาเลย$()$(br2)ตัวอย่างเช่น การเติมช่องเก็บของด้วย $(thing)ก้อนหิน$() จะช่วยให้คุณเลือกเก็บเฉพาะไอเทมที่ต้องการได้ และค่อยจัดการกับไอเทมอันตรายในภายหลัง"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ภาชนะบรรจุ",
+			"anchor": "containers",
+			"text": "วัตถุอันตรายจะทำความเสียหายเฉพาะขณะที่อยู่ใน $(thing)ช่องเก็บของ$() ของคุณเท่านั้น แต่นั่นสร้างความเสียหายไม่ได้เมื่ออยู่ในภาชนะอื่น!$(br)วัตถุอันตรายจะไม่สร้างความเสียหายเมื่ออยู่ในภาชนะอื่น เช่น $(l:tfg_tips/inventory_management)กระเป๋าเป้ (Backpack)$() หรือ $(l:getting_started/pottery#vessel)ไห (Vessel)$() การ$(thing)คลิกขวา$() ขณะถือไหจะช่วยให้ถ่ายโอนสิ่งของภายในเข้าและออกจากภาชนะบรรจุได้โดยตรง",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "หน้ากากอนามัย (Face Mask)",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)หน้ากากอนามัย (Face Mask)$() ให้การปกป้องจากอันตรายจากการ$(item)สูดดม$() ทั้งหมด เช่น พิษสารหนู (Arsenicosis)",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "ถุงมือยาง (Rubber gloves)",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "$(thing)ถุงมือยาง (Rubber gloves)$() สามารถทำจาก $(l:mechanics/leather_making)หนังสัตว์ (Leather)$() และ $(l:arborfirmacraft/making_rubber)น้ำยาง (Latex)$() หรือทำจาก $(thing)แผ่นยาง (Rubber Sheets)$() พวกมันให้การปกป้องจากอันตรายจากการ$(item)สัมผัสผิวหนัง$() ทั้งหมด เช่น $(thing)ผงเบริลเลียม (Beryllium Dust)$()"
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "ขั้นแรก สกัดหนังสัตว์ให้เป็นถุงมือไร้นิ้ว (mittens)"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "จากนั้นนำ $(thing)ถุงมือไร้นิ้ว (Mittens)$() ไปแช่ใน $(thing)น้ำส้มสายชู (Vinegar)$() ซึ่งเป็นส่วนผสมของผลไม้และแอลกอฮอล์"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "จากนั้นนำ $(thing)ถุงมือหนังที่เตรียมไว้$() ไปต้มใน $(thing)ถัง (vat)$() ร่วมกับ $(thing)น้ำยางคงรูป (Vulcanized Latex)$() ซึ่งเป็นขั้นตอนก่อนจะกลายเป็นยาง"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "สุดท้าย นำถุงมือชุบน้ำยางไปอบใน $(l:firmalife/ovens)เตาอบ (Oven)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ชุดฮัซแมท (Hazmat Suit)",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "$(thing)ชุดฮัซแมท (Hazmat suit)$() ที่สมบูรณ์แบบจะให้ $(item)ภูมิคุ้มกัน $()จากอันตราย$(item)ทุกชนิด$() แม้กระทั่ง $(item)กัมมันตรังสี$() สร้างขึ้นใน $(thing)เครื่องประกอบ LV (LV Assembler)$() จาก $(thing)พอลิเอทิลีน (Polyethylene)$() และ $(thing)พอลิไวนิลคลอไรด์ (Polyvinyl Chloride)$()$(br2)เกร็ดน่ารู้! คุณยังสามารถค้นหา $(thing)#ppe_armor$() ใน JEI เพื่อดูอุปกรณ์เพิ่มเติมที่ช่วยป้องกันวัตถุอันตรายได้อีกด้วย",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ยารักษาโรค (Medicine)",
+			"item": { "tag": "tfg:medicine" },
+			"anchor": "medicine",
+			"text": "ในกรณีที่คุณได้รับสัมผัสกับอันตรายอย่างรุนแรง ยังมี $(thing)ยารักษาโรค (Medicines)$() บางชนิดที่สามารถช่วยให้คุณฟื้นตัวได้$(br2)$(thing)ยาเม็ดเบื้องต้น (Pills)$() เป็นยาขั้นพื้นฐานที่สุดและทำได้ง่าย แต่ส่วนใหญ่มาพร้อมกับ $(item)ผลข้างเคียงเชิงลบ$() ส่วน $(thing)ยาอัดเม็ด (Tablets)$() และ $(thing)ยาทา (Salvos)$() จะมีประสิทธิภาพมากกว่าและมีผลข้างเคียงน้อยกว่า แต่ต้องใช้ $(thing)อุปกรณ์ระดับ LV$() และทรัพยากรขั้นสูงขึ้นในการคราฟต์"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ยาเม็ด RadAwayᵗᵐ",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "นี่คือยารักษา $(item)ขั้นสุดยอด$() สำหรับอันตราย $(item)ทั้งหมด$() และเป็นยารักษาเพียงชนิดเดียวที่มี $(item)ประสิทธิภาพ$() ต่อ $(item)กัมมันตรังสี (Radiation)$() อย่างไรก็ตาม มันยังเป็นยาที่ $(thing)แพงที่สุด$() และ $(thing)ยากที่สุด$() ในการสร้าง ซึ่งต้องใช้อุปกรณ์ $(thing)ระดับ HV$() และวัตถุดิบขั้นสูง"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "เมื่อทุกอย่างล้มเหลว...",
+			"item": { "tag": "minecraft:beds" },
+			"anchor": "respawn",
+			"text": "หากวิธีอื่นล้มเหลว การพกเตียงนอนติดตัวไปด้วยเพื่อเกิดใหม่เป็นความคิดที่ดี$(br2)หากคุณยังเข้าไม่ถึง $(thing)ขนสัตว์ (Wool)$() หรือ $(thing)เชือก (String)$() คุณสามารถทำ $(l:getting_started/a_place_to_sleep)เตียงฟาง (Thatch Bed)$() ได้เช่นกัน"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "พิษสารหนู (Arsenicosis)",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "Arsenicosis",
+			"text": "$(thing)ภาวะได้รับสารหนู (Arsenicosis)$() เป็นความเจ็บป่วยที่เกิดจากการสูดดม $(thing)สารหนู (Arsenic)$() จากผง ไอระเหย หรือ $(thing)แร่เรียลการ์ (Realgar)$() มันจะค่อยๆ เพิ่ม $(item)ความหิว$() ตามด้วย $(item)การคลื่นไส้$() และในที่สุดจะทำให้ $(item)เสียชีวิต$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกัน $(thing)ภาวะได้รับสารหนู$() ได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "โรคปอดจากแอสเบสตอส (Asbestosis)",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "Asbestosis",
+			"text": "$(thing)โรคปอดจากแอสเบสตอส (Asbestosis)$() เป็นความเจ็บป่วยที่เกิดจากการสูดดมผง $(thing)แอสเบสตอส (Asbestos)$() หากพกไว้เป็นเวลานานพอ จะทำให้เกิด $(item)ความหิว$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกัน $(thing)โรคปอดจากแอสเบสตอส$() ได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "พิษเบริลเลียม (Berylliosis)",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "Berylliosis",
+			"text": "$(thing)พิษเบริลเลียม (Berylliosis)$() เป็นความเจ็บป่วยที่เกิดจากการสัมผัสผิวหนังกับ $(thing)ผงเบริลเลียม (Beryllium dust)$() หรือ $(thing)เบริลเลียมเหลว (Liquid Beryllium)$() ในตอนแรกอาจดูเหมือนว่าไม่ได้ทำอะไรมากนัก อย่างไรก็ตาม ยิ่งสัมผัสนานเท่าไร มันก็จะยิ่ง $(item)สังหาร$() คุณเร็วขึ้นเท่านั้น$(br2)$(l:tfg_ores/hazards#gloves)ถุงมือ (Gloves)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกัน $(thing)พิษเบริลเลียม$() ได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "พิษคาร์บอนมอนอกไซด์ (Carbon Monoxide poisoning)",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)ภาวะพิษคาร์บอนมอนอกไซด์ (Carbon Monoxide poisoning)$() เป็นความเจ็บป่วยที่เกิดจากการสูดดมก๊าซ $(thing)คาร์บอนมอนอกไซด์ (Carbon Monoxide)$() การสัมผัสเป็นเวลานานจะทำให้เกิด $(item)การคลื่นไส้$() และ $(item)เสียชีวิต$() อย่างรวดเร็ว$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกัน $(thing)คาร์บอนมอนอกไซด์$() ได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "สารก่อมะเร็ง (Carcinogens)",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "Carcinogens",
+			"text": "$(thing)สารก่อมะเร็ง (Carcinogens)$() คือสารที่ทำให้เกิด $(item)โรคมะเร็ง (Cancer)$() ซึ่งรวมถึง $(thing)ผงโครเมียม (Chromium Dust)$() รวมถึงสารประกอบอินทรีย์บางชนิด เช่น $(thing)เบนซีนและผลิตภัณฑ์ของมัน (Benzene and its products)$() $(thing)สารก่อมะเร็ง$() $(item)จะไม่หายไปเอง$() แต่จะให้คำเตือนมากมายก่อนที่จะก่อให้เกิดอันตรายจริง เริ่มต้นด้วย $(item)ความอ่อนแอ (Weakness)$() ตามด้วย $(item)ความหิว (Hunger)$() จากนั้น $(item)ความเชื่องช้า (Slowness)$() และในเวลาต่อมาคือ $(item)ความเหนื่อยล้าจากการขุด (Mining Fatigue)$() เมื่อมีการสะสมการสัมผัสมากพอเท่านั้นจึงจะทำให้เกิด $(item)การเสียชีวิต (Death)$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "สารก่อมะเร็ง (Carcinogens)",
+			"item": "gtceu:chromium_dust",
+			"anchor": "Carcinogens",
+			"text": "$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() ช่วยป้องกันการสูดดมสารเคมีที่เป็นอันตราย ในขณะที่ $(l:tfg_ores/hazards#gloves)ถุงมือ (Gloves)$() ช่วยป้องกันการสัมผัสกับ $(thing)ผงโครเมียม (Chromium Dust)$()$(br2)$(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันทั้งสองอย่าง$(br2)ในกรณีที่ได้รับสัมผัสอย่างรุนแรง ขอแนะนำให้รับประทาน $(l:tfg_ores/hazards#medicine)ยารักษาโรค (Medicines)$() เพื่อ $(thing)ป้องกัน$() ความเสียหายที่อาจเกิดขึ้น"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "แผลไหม้จากสารเคมี (Chemical burns)",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)แผลไหม้จากสารเคมี (Chemical burns)$() เกิดจากการสูดดมหรือการสัมผัสผิวหนังกับ $(thing)ก๊าซ (Gases)$(), $(thing)กรด (Acids)$(), $(thing)ด่าง (Bases)$() หรือ $(thing)ผงแร่ (Dusts)$() บางชนิด การสัมผัสจะทำให้เกิด $(item)ความอ่อนแอ (Weakness)$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() ช่วยป้องกันการสูดดม ในขณะที่ $(l:tfg_ores/hazards#gloves)ถุงมือ (Gloves)$() ช่วยป้องกันการสัมผัสผิวหนังโดยตรง$(br2)$(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันจากทุกสิ่ง"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "สารก่อความระคายเคือง (Irritants)",
+			"item": "gtceu:chromite_dust",
+			"anchor": "Irritants",
+			"text": "$(thing)การระคายเคือง (Irritation)$() เกิดจากการสูดดม $(thing)แอมโมเนียมฟอร์เมต (Ammonium Formate)$() หรือการสัมผัสผิวหนังกับ $(thing)ผงโครไมต์ (Chromite Dust)$() การสัมผัสในระยะเวลาสั้นๆ จะทำให้เกิดเฉพาะ $(item)ความอ่อนแอ (Weakness)$() แต่หากละเลยเป็นเวลานานจะเริ่ม $(item)สร้างความเสียหายแบบสุ่ม$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() ช่วยป้องกันการสูดดม ในขณะที่ $(l:tfg_ores/hazards#gloves)ถุงมือ (Gloves)$() ช่วยป้องกันการสัมผัสผิวหนังโดยตรง$(br2)$(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันจากทั้งสองอย่าง"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "พิษเมทานอล (Methanol poisoning)",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)ภาวะพิษเมทานอล (Methanol poisoning)$() เกิดจากการสูดดม $(thing)เมทานอล (Methanol)$() ทำให้เกิดเอฟเฟกต์ $(item)ตาบอด (Blindness)$() อย่างรุนแรง$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันการสูดดม"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "สารเคมีก่อมึนงง (Nauseating chemicals)",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)สารเคมีก่อมึนงง (Nauseating chemicals)$() เช่น $(thing)บิวทิรัลดีไฮด์ (Butyraldehyde)$() คือสารที่ทำให้เกิดอาการ $(item)คลื่นไส้มึนงง (Nausea)$() เมื่อสูดดม$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันการสูดดม"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "วัตถุมีพิษ (Poisonous materials)",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "$(thing)วัตถุมีพิษ (Poisonous materials)$() มีสองประเภท พิษอ่อนได้แก่ $(thing)ผงตะกั่ว (Lead Dust)$() ในขณะที่พิษรุนแรงกว่าได้แก่ $(thing)ไนโตรเจนไดออกไซด์ (Nitrogen Dioxide)$() $(thing)พิษอ่อน$() จะทำให้เกิดเอฟเฟกต์ $(item)พิษที่ทวีความรุนแรงขึ้นเรื่อยๆ$() ในขณะที่ $(thing)พิษทั่วไป$() จะทำให้เกิด $(item)ความอ่อนแอ (Weakness)$() และเอฟเฟกต์ $(item)พิษที่รุนแรงกว่า$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() ช่วยป้องกันการสูดดม ในขณะที่ $(l:tfg_ores/hazards#gloves)ถุงมือ (Gloves)$() ช่วยป้องกันการสัมผัสผิวหนังโดยตรง$(br2)$(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันจากการสัมผัสทุกรูปแบบ"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "วัตถุกัมมันตรังสี (Radioactive materials)",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "$(thing)สารกัมมันตรังสี $()ส่วนใหญ่ เช่น $(thing)ยูเรเนียม 238 (Uranium 238)$() คุณจะพบได้เฉพาะใน $(thing)ระดับ EV (EV tier)$() หรือสูงกว่าเท่านั้น พวกมันจะทำให้คุณ $(item)ได้รับรังสีอย่างถาวร$() การสัมผัสเพียงเล็กน้อยจะทำให้เกิดการ $(item)เรืองแสง$() แต่การสัมผัสเป็นเวลานานจะกระตุ้นให้ $(item)เสียชีวิต$() อย่างรวดเร็ว$(br2)เรารู้ว่ามันดูน่าอร่อยและมีพลังงานเป็นพันล้านแคลอรี แต่ $(#ff0000)กรุณาอย่ากินยูเรเนียม!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "วัตถุกัมมันตรังสี (Radioactive materials)",
+			"item": "gtceu:plutonium_ingot",
+			"text": "เฉพาะ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() และชุดเกราะขั้นสูงบางชุดเท่านั้นที่ให้การปกป้องจากกัมมันตรังสีได้อย่างสมบูรณ์$(br2)ในกรณีที่คุณได้รับรังสี มีเพียง $(l:tfg_ores/hazards#rad_away)ยาเม็ด RadAwayᵗᵐ$() เท่านั้นที่สามารถรักษาคุณได้"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "โรคปอดซิลิโคสิส (Silicosis)",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "Silicosis",
+			"text": "$(thing)โรคปอดซิลิโคสิส (Silicosis)$() เป็นความเจ็บป่วยที่เกิดจากการสูดดม $(thing)ผงซิลิคอนไดออกไซด์ (Silicon Dioxide Dust)$() การสัมผัสทำให้เกิด $(item)การลดลง$() ของทั้ง $(item)พลังชีวิต$() และ $(item)ปริมาณอากาศ$() ที่คุณมีขณะดำ $(thing)ใต้น้ำ$()$(br2)$(l:tfg_ores/hazards#mask)หน้ากากอนามัย (Face Mask)$() และ $(l:tfg_ores/hazards#hazmat)ชุดฮัซแมท (Hazmat Suit)$() ช่วยป้องกันการสูดดมซิลิคอนไดออกไซด์"
+		}
+	]
+}

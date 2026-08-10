@@ -1,0 +1,99 @@
+{
+  "name": "ถนนยางมะตอย",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:asphalt_road",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ถนนยางมะตอยเป็นประเภทถนนระดับสูงที่อาศัยน้ำมันและสายการผลิตของ GregTech$(br)หลังจากเตรียม $(l:roadsandroofs/making_a_road)base course$() เสร็จแล้ว ให้เท $(thing)asphalt mixture$() ลงไป มันจะกลายเป็น $(thing)hot asphalt$() ชั่วคราวก่อนจะแข็งตัวเป็น $(thing)asphalt road$() ที่ทนทาน$(br)ถนนยางมะตอยที่สร้างอย่างถูกต้องจะให้โบนัสความเร็วในการเคลื่อนที่ 40%"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ถนนยางมะตอย",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ไม่เหมือนกับถนนคอนกรีต ยางมะตอยไม่จำเป็นต้องมี control joints และจะไม่แตกร้าวจากวัสดุที่เปียกหรือเสียหายจากการเดินบนพื้นผิวที่ยังไม่แข็งตัว$(br2)โปรดระมัดระวังเมื่อทำงานกับ $(thing)Hot Asphalt$()—การสัมผัสถูกจะทำให้คุณไหม้ คุณควรสวมใส่อุปกรณ์ป้องกันความร้อน นอกจากนี้ การทุบยางมะตอยจะได้ $(thing)Asphalt Rubble$() คืนมาแทนที่จะเป็นบล็อกถนนที่สมบูรณ์"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "tar_chunk",
+      "item": "tfg:tar_chunk",
+      "title": "Tar Chunk",
+      "text": "วัตถุดิบสำหรับถนนยางมะตอยคือน้ำมัน แข็งตัว $(thing)Oil$(), $(thing)Raw Oil$(), $(thing)Heavy Oil$() ฯลฯ ใน $(thing)Fluid Solidifier$() เพื่อรับบล็อก $(thing)Tar$() ที่สอดคล้องกัน จากนั้นนำไปแปรรูปใน $(thing)Extractor$() เพื่อให้ได้ $(thing)Tar Chunk$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "asphalt_mix",
+      "item": "tfg:asphalt_mix_bucket",
+      "title": "Asphalt Mixture",
+      "text": "ใน $(thing)Mixer$() ให้ผสม Tar Chunks เข้ากับ $(thing)Stone Dust$() เพื่อทำ $(thing)Asphalt Binder$() การเพิ่ม $(thing)Gilsonite Dust$() จะช่วยเพิ่มผลผลิตของ binder$(br)จากนั้นผสม binder กับทราย, stone dust และ $(thing)Crushed Base$() เพื่อสร้างของเหลว $(thing)Asphalt Mixture$()$(br)จัดเก็บไว้ในภาชนะบรรจุของเหลวเพื่อการขนส่งและเทได้ง่าย"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "การเทยางมะตอย",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "คลิกขวาที่ $(thing)Base Course Block$() ที่วางไว้ด้วยถัง $(thing)Asphalt Mixture$() เพื่อเทลงไป ส่วนผสมจะกระจายไปยังบล็อก base course ที่อยู่ติดกัน โดยแปลงบล็อก base course ที่อยู่ติดกันสูงสุด 20 บล็อกให้กลายเป็น $(thing)Hot Asphalt$() หลังจากผ่านไปครู่หนึ่ง hot asphalt จะเย็นลงกลายเป็น $(thing)Asphalt Road$()$(br2)ย่อตัว+คลิกขวาบน $(thing)Base Course Block$() ด้วยส่วนผสมเพื่อซ่อมแซมพื้นที่ขนาดเล็ก ซึ่งจะใช้ของเหลวน้อยลง"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_hot",
+      "title": "Hot Asphalt",
+      "text": "$(thing)Hot Asphalt$() ร้อนมาก การสัมผัสถูกจะทำให้เกิดความเสียหายจากการไหม้อย่างต่อเนื่อง สวมใส่อุปกรณ์ป้องกันความร้อนเมื่อทำงานกับมัน$(br2)เมื่อมันเย็นลงกลายเป็น $(thing)Asphalt Road$() พื้นผิวจะไม่ร้อนอีกต่อไป"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+      "text": "$(thing)Asphalt Roads$() สามารถเปลี่ยนเป็น $(thing)Asphalt Road Slabs$() และ $(thing)Asphalt Road Stairs$() ได้โดยใช้ $(thing)Mattock$() หรือ stonecutter"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "road_marking_stencils",
+      "item": {
+        "tag": "tfg:road_marking_stencils"
+      },
+      "title": "Road Marking Stencils",
+      "text": "คุณสมบัติการปรับแต่งที่เป็นเอกลักษณ์ที่สุดของถนนยางมะตอยคือการตีเส้นจราจร: ฉีดพ่นสีและลวดลายบนพื้นผิวที่เสร็จแล้วเพื่อวางแผนช่องจราจร, ทางแยก และเส้นเตือนภัย$(br2)แผ่นแบบพ่น (stencils) ต่างๆ สามารถคราฟต์ได้ที่ $(thing)Artisan Table$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+      "text": "ถือ $(thing)Spray Can$() ในมือข้างหนึ่ง และไม่ถืออะไรเลยหรือถือ $(thing)Road Marking Stencil$() ในมืออีกข้างหนึ่ง จากนั้นใช้มันบนถนนยางมะตอยหรือสแลบเพื่อพ่นสี"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "สีจะกำหนดโดยกระป๋องพ่นสี และทิศทางจะกำหนดโดยทิศทางของผู้เล่น$(br)การพ่นซ้ำบนเครื่องหมายที่มีอยู่จะแทนที่เครื่องหมายเดิมและสูญเสียความทนทานของกระป๋องพ่นสี เว้นแต่ว่าจะใช้สี ทิศทาง และลวดลายเดิม"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:solvent_spray_can",
+      "title": "การลบเครื่องหมาย",
+      "text": "หากต้องการออกแบบถนนใหม่ ให้ใช้ $(thing)Spray Can (Solvent)$() บนถนนยางมะตอยหรือสแลบเพื่อลบเครื่องหมาย ณ ตำแหน่งนั้น"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_rubble",
+      "title": "การทุบและการรีไซเคิล",
+      "text": "การทุบถนนยางมะตอย, hot asphalt, สแลบ หรือบันได จะดรอป $(thing)Asphalt Rubble$() แทนที่จะเป็นบล็อกที่สมบูรณ์ การนำเศษยางมะตอยไปแปรรูปใน $(thing)Extractor$() จะกู้คืนส่วนผสมยางมะตอยกลับมาได้เล็กน้อย"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

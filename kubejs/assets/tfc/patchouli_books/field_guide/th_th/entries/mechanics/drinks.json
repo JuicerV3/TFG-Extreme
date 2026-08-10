@@ -1,0 +1,132 @@
+{
+  "name": "เครื่องดื่ม",
+  "icon": "firmalife:olivine_wine_bottle",
+  "category": "tfc:mechanics",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "intro",
+      "text": "โพชันและเวทมนตร์ไม่มีอยู่ในโลกของ TerraFirmaCraft แต่ยังมีอีกหลากหลายวิธีที่จะได้รับผลลัพธ์ที่คล้ายคลึงกัน!$(br2)หัวข้อนี้ทำหน้าที่เป็นรายการเครื่องดื่มและผลกระทบของมันเมื่อบริโภค"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ดัชนี",
+      "anchor": "index",
+      "text": "$(li)$(bold)$(l:mechanics/drinks#containers)Containers$()$(li)$(bold)$(l:mechanics/drinks#alcohol)Alcohol$()$(li2)$(l:mechanics/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:mechanics/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:mechanics/drinks#wine)Wine$()$(li)$(bold)$(l:mechanics/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:mechanics/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:mechanics/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:mechanics/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:mechanics/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)Ice Slush$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "ภาชนะบรรจุเครื่องดื่ม",
+      "text": "คุณสามารถดื่มสิ่งต่างๆ ได้จาก $(l:getting_started/pottery#jug)Jug$(), $(l:waterflasks/recipes)Flask$() หรือ $(l:mechanics/glassworking_applications#glass_bottle)Glass Bottle$() โดย Jug บรรจุเครื่องดื่มได้เพียง 1 ดื่มและแตกหักได้ง่าย Glass Bottle บรรจุได้เพียงไม่กี่ดื่มและมีโอกาสแตกหักเช่นกัน Flask สามารถบรรจุได้มากขึ้นและค่อยๆ ใช้ค่าความทนทานแทน เว้นแต่ $(item)Red Steel Flask$() ซึ่งบรรจุได้ 20 ดื่มและไม่มีวันแตกหัก",
+      "item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
+      "anchor": "containers"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Alcohol",
+      "text": "$(thing)Base Alcohols$() ไม่ได้มอบบัฟใดๆ ให้แก่ผู้เล่น สามารถผลิตได้โดยการทิ้งผลไม้ แป้ง หรือวัตถุดิบอื่นๆ ไว้ใน $(l:mechanics/barrels)Barrel$() ร่วมกับน้ำ ข้อดีคือ เมื่อดื่มแอลกอฮอล์ใดๆ จะส่งผลต่อคำพูดของคุณในข้อความแชต!",
+      "item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+      "anchor": "alcohol"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Aged Alcohol",
+      "text": "$(thing)Aged Alcohols$() จัดเตรียมขึ้นโดยการบ่มแอลกอฮอล์ปกติเป็นเวลา 3 เดือนในถัง Barrel ที่ปิดผนึก Aged Alcohol จะมอบสถานะพิเศษเมื่อบริโภค",
+      "item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+      "anchor": "aged_alcohol"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Aged Beer: Absorption II (5:20)$(li)Aged Cider: Speed (5:20)$(li)Aged Rum: Speed II (2:40)$(li)Aged Sake: Resistance (5:20)$(li)Aged Vodka: Resistance II (2:40)$(li)Aged Corn Whiskey: Haste (5:20)$(li)Aged Rye Whiskey: Haste (5:20)$(li)Aged Whiskey: Haste II (2:40)$(li)Aged Mead: Regeneration (5:20)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Vintage Alcohol",
+      "text": "$(thing)Vintage Alcohols$() จัดเตรียมขึ้นโดยการบ่ม Aged Alcohol เพิ่มเติมในถัง Barrel ที่ปิดผนึกอีกเป็นเวลา 3 เดือน แอลกอฮอล์เหล่านี้จะมอบสถานะที่แข็งแกร่งขึ้นและมีระยะเวลานานขึ้น",
+      "item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
+      "anchor": "vintage_alcohol"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Vintage Beer: Absorption III (8:00)$(li)Vintage Cider: Speed II (8:00)$(li)Vintage Rum: Speed III (4:00)$(li)Vintage Sake: Resistance II (8:00)$(li)Vintage Vodka: Resistance III (4:00)$(li)Vintage Corn Whiskey: Haste II (8:00)$(li)Vintage Rye Whiskey: Haste II (8:00)$(li)Vintage Whiskey: Haste III (4:00)$(li)Vintage Mead: Regeneration II (8:00)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Wine",
+      "text": "$(thing)Wine$() เป็นแอลกอฮอล์อีกประเภทหนึ่งที่ทำขึ้นด้วยวิธีที่แตกต่างจากชนิดอื่น เป็นกระบวนการที่ซับซ้อนแต่คุ้มค่าซึ่งไม่สามารถใช้เครื่องจักรอัตโนมัติได้ ตรวจสอบหัวข้อ $(l:firmalife/wine)Winemaking$() เพื่อเรียนรู้วิธีการทำ$(br2)ไวน์ทั้งหมดจะมอบ $(item)Strength (5:20)$() เพิ่มเติมจากผลสถานะอื่นๆ อีกด้วย!",
+      "item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
+      "anchor": "wine"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Red Wine: Haste (5:20)$(li)White Wine: Wither Resistance (5:20)$(li)Rose Wine: Swim Speed (5:20)$(li)Sparkling Wine: Jump Boost II (5:20)$(li)Dessert Wine: Knockback Resistance (5:20)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Milks",
+      "text": "$(thing)Milk$() สามารถรับได้จากปศุสัตว์ตัวเมียส่วนใหญ่โดยเพียงแค่คลิกขวาใส่พวกมันด้วยถังไม้หรือถังโลหะเมื่อระดับความคุ้นเคยสูงพอ (หากการรีดนมไม่ทำงาน ให้แน่ใจว่าถังไม่ได้วางซ้อนกัน!)$(br)แม้ว่าจะไม่ได้มอบบัฟใดๆ แต่มันให้โภชนาการประเภท Dairy หากดื่มหลังจากรับประทานอาหาร และสามารถนำไปทำชีสได้ในภายหลัง",
+      "item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
+      "anchor": "milk"
+    },
+    {
+      "title": "Spring Water",
+      "text": "การดื่ม $(thing)Spring Water$() จะช่วยให้อบอุ่นขึ้น 4°C และปรับใช้ผลการฟื้นฟู (regeneration) เล็กน้อยในขณะที่ยืนอยู่ในน้ำ รวมถึงทำให้อุ่นขึ้น",
+      "item": "tfc:bucket/spring_water",
+      "type": "patchouli:spotlight",
+      "anchor": "spring_water"
+    },
+    {
+      "title": "Sea Water",
+      "text": "การดื่ม $(thing)Sea Water$() ไม่ได้เพิ่มระดับน้ำในร่างกายและจะทำให้คุณกระหายน้ำมากขึ้นแทน อุณหภูมิร่างกายที่ร้อนยังทำให้คุณกระหายน้ำมากขึ้นอีกด้วย หลอนหลงทางกลางทะเล? มองขึ้นไปข้างบนขณะฝนตกเพื่อเพิ่มระดับน้ำในร่างกายได้อย่างง่ายดาย!",
+      "type": "patchouli:spotlight",
+      "item": "tfc:bucket/salt_water",
+      "anchor": "sea_water"
+    },
+    {
+      "title": "Muddy Water",
+      "text": "การดื่ม $(thing)Muddy Water$() เป็นสิ่งที่ไม่แนะนำ การดื่มน้ำนี้จะทำให้คุณคลื่นไส้และติดพยาธิ",
+      "type": "patchouli:spotlight",
+      "item": "tfg:muddy_water_bucket",
+      "anchor": "muddy_water"
+    },
+    {
+      "title": "Fruit Juice",
+      "text": "$(thing)Fruit Juice$() เป็นวิธีที่ดีในการควบแน่นผลไม้ของคุณให้เป็นรายการอาหารที่อยู่ได้นานขึ้น Fruit Juice มอบ $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$() ซึ่งช่วยป้องกันความกระหายน้ำ$(br2)Fruit Juice จะหมดอายุตามเวลา$()",
+      "type": "patchouli:spotlight",
+      "anchor": "juice",
+      "item": "tfg:food/juice"
+    },
+    {
+      "title": "Yogurt",
+      "text": "$(thing)Yogurt$() ให้โภชนาการประเภท Dairy คล้ายกับ Milk นอกจากนี้ยังสามารถผสมกับผลไม้เพื่อทำ $(item)Fruit Yogurt$() ได้อีกด้วย$(br2)Yogurt จะหมดอายุตามเวลา$()",
+      "type": "patchouli:spotlight",
+      "anchor": "yogurt",
+      "item": "tfg:food/yogurt"
+    },
+    {
+      "title": "Fruit Smoothies",
+      "text": "$(thing)Smoothies$() เป็นเครื่องดื่มที่มีประสิทธิภาพ พวกมันมอบทั้ง $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$() และ $(l:getting_started/food_and_water#cooling_transient_effect)Cooling Effect$() นอกจากนี้ยังเป็นแหล่งโภชนาการชั้นดีสำหรับ $(l:getting_started/food_and_water#fruit)Fruit$() และ $(l:getting_started/food_and_water#dairy)Dairy$()$(br2)Smoothies จะหมดอายุตามเวลา$()",
+      "type": "patchouli:spotlight",
+      "anchor": "smoothie",
+      "item": "tfg:food/smoothie"
+    },
+    {
+      "title": "Liquid Ice Slush",
+      "text": "การดื่ม $(thing)Ice Slush$() จะช่วยลดอุณหภูมิร่างกายลง 4°C เหมาะอย่างยิ่งสำหรับฤดูร้อน! นอกจากนี้ยังมีประโยชน์สำหรับการเดินทางใน The Beneath",
+      "type": "patchouli:spotlight",
+      "item": "gtceu:ice_bucket",
+      "anchor": "ice_slush"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "อ่านเพิ่มเติม",
+      "anchor": "relations",
+      "entries": [
+        "tfc:getting_started/food_and_water",
+        "tfc:firmalife/wine",
+        "tfc:waterflasks/recipes"
+      ]
+    }
+  ]
+}

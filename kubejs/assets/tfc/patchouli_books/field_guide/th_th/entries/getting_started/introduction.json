@@ -1,131 +1,168 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "name": "บทนำ",
-  "category": "tfc:getting_started",
-  "icon": "tfc:rock/loose/granite",
-  "pages": [
-    {
-      "type": "patchouli:text",
-      "text": "ใน TerraFirmaCraft สิ่งแรกที่คุณสามารถหาได้คือกิ่งไม้ กิ่งไม้เล็ก และเศษหิน สามารถพบได้ในแทบทุกสภาพอากาศ โดยวางกระจัดกระจายอยู่บนพื้น กด $(item)$(k:key.use)$() หรือทำลายสิ่งเหล่านี้เพื่อเก็บขึ้นมา"
-    },
-    {
-      "type": "patchouli:multiblock",
-      "multiblock": {
-        "pattern": [["1    ", " 2  4", "  03 ", " 4   ", "    5"], ["GGGGG", "GGGGG", "GGGGG", "GGGGG", "GGGGG"]],
-        "mapping": {
-          "G": "tfc:grass/sandy_loam",
-          "1": "tfc:rock/loose/granite[count=1]",
-          "2": "tfc:rock/loose/granite[count=2]",
-          "3": "tfc:rock/loose/granite[count=3]",
-          "4": "tfc:groundcover/stick",
-          "5": "tfc:wood/twig/ash"
-        }
-      },
-      "name": "ตัวอย่าง",
-      "text": "ตัวอย่างกิ่งไม้และเศษหินทั่วไปที่กระจายอยู่บนพื้น",
-      "enable_visualize": false
-    },
-    {
-      "type": "patchouli:text",
-      "text": "นอกจากการเก็บกิ่งไม้และกิ่งไม้เล็กบนพื้นแล้ว คุณยังสามารถรับกิ่งไม้ได้จากการต่อยใบไม้ด้วยมือเปล่า เมื่อคุณมีหินและกิ่งไม้จำนวนหนึ่งแล้ว คุณก็พร้อมที่จะเริ่ม $(thing)การกะเทาะหิน$() การกะเทาะหินคือกระบวนการที่นำหินสองก้อนมากระทบกันเพื่อขึ้นรูปเป็นรูปทรงที่ต้องการ ในการกะเทาะหิน ให้ถือหินอย่างน้อยสองก้อนไว้ในมือ จากนั้นคลิกขวาในอากาศ ซึ่งจะเปิดหน้าต่าง $(thing)Knapping Interface$() ขึ้นมา"
-    },
-    {
-      "type": "patchouli:image",
-      "images": ["tfc:textures/gui/book/gui/rock_knapping.png"],
-      "text": "หน้าต่าง Knapping Interface",
-      "border": false
-    },
-    {
-      "type": "patchouli:text",
-      "text": "ในการกะเทาะหินให้ได้ไอเทมที่ต้องการ คุณต้องกะเทาะช่องสี่เหลี่ยมออกจนกว่าจะได้รูปแบบที่ต้องการ ตัวอย่างเช่น สร้างคมมีดโดยกะเทาะตามสูตรที่แสดงทางด้านขวา$(br2)เช่นเดียวกับสูตรการคราฟต์ ตำแหน่งของรูปแบบที่ต้องการไม่ส่งผลต่อผลลัพธ์ และบางสูตรอาจมีหลายรูปแบบที่สามารถใช้ได้"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "anchor": "knife",
-      "recipes": ["tfg:rock_knapping/stone_knife_head", "tfg:rock_knapping/stone_knife_head_1", "tfg:rock_knapping/stone_knife_head_2", "tfg:rock_knapping/stone_knife_head_3"],
-      "text": "คมมีด คราฟต์ขึ้นจากหินประเภทต่างๆ"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "gtceu:shaped/knife_stone",
-      "text": "หัวเครื่องมือหินทั้งหมดสามารถคราฟต์ร่วมกับกิ่งไม้หรือกิ่งไม้เล็กเพื่อประกอบเป็นเครื่องมือได้$(br2)Stone Knife สามารถใช้เก็บเกี่ยว $(thing)Straw$() ได้โดยการทำลายพืช"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "recipes": ["tfg:rock_knapping/stone_axe_head"],
-      "text": "$(thing)Axes$() สามารถใช้โค่นต้นไม้ทั้งต้นได้ รวมถึงขอนไม้และใบไม้ อย่างไรก็ตาม ต้นกล้าและกิ่งไม้จะได้รับก็ต่อเมื่อทำลายใบไม้ทีละใบเท่านั้น"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "recipes": ["tfg:rock_knapping/stone_shovel_head"],
-      "text": "$(thing)Shovels$() สามารถใช้ขุดบล็อกประเภทดินได้ นอกจากนี้ยังสามารถใช้สร้าง $(thing)Paths$() ได้โดยการกด $(item)ใช้$() กับ $(thing)Dirt$() หรือ $(thing)Grass$()"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "recipes": ["tfg:rock_knapping/stone_hoe_head", "tfg:rock_knapping/stone_hoe_head_1", "tfg:rock_knapping/stone_hoe_head_2"],
-      "text": "$(thing)Hoes$() เป็นเครื่องมือที่มีประโยชน์สำหรับ$(l:mechanics/crops)การทำฟาร์ม$() แต่ยังสามารถใช้ตัดใบไม้และซากพืชอื่นๆ ได้อีกด้วย"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "recipes": ["tfg:rock_knapping/stone_hammer_head"],
-      "text": "$(thing)Hammers$() สามารถใช้เป็นอาวุธประเภท$(l:mechanics/damage_types)การทุบตี$() ได้ แต่เป็นเครื่องมือที่สำคัญยิ่งกว่าสำหรับใช้ใน$(l:getting_started/primitive_anvils)การตีขึ้นรูป$()"
-    },
-    {
-      "type": "tfc:rock_knapping_recipe",
-      "recipes": ["tfc:rock_knapping/javelin_head_sedimentary", "tfc:rock_knapping/javelin_head_metamorphic", "tfc:rock_knapping/javelin_head_igneous_extrusive", "tfc:rock_knapping/javelin_head_igneous_intrusive"],
-      "text": "สุดท้ายนี้ $(thing)Javelin$() สามารถใช้เป็นอาวุธยุคเริ่มต้น โดยสามารถขว้างใส่เป้าหมาย หรือใช้เป็นอาวุธประเภท$(l:mechanics/damage_types)การทิ่มแทง$() ได้"
-    }
-  ],
-  "read_by_default": true,
-  "sortnum": 0,
-  "extra_recipe_mappings": {
-    "tfc:stone/knife_head/sedimentary": 5,
-    "tfc:stone/knife_head/metamorphic": 5,
-    "tfc:stone/knife_head/igneous_extrusive": 5,
-    "tfc:stone/knife_head/igneous_intrusive": 5,
-    "tfc:stone/knife/sedimentary": 5,
-    "tfc:stone/knife/metamorphic": 5,
-    "tfc:stone/knife/igneous_extrusive": 5,
-    "tfc:stone/knife/igneous_intrusive": 5,
-    "tfc:stone/axe_head/sedimentary": 7,
-    "tfc:stone/axe_head/metamorphic": 7,
-    "tfc:stone/axe_head/igneous_extrusive": 7,
-    "tfc:stone/axe_head/igneous_intrusive": 7,
-    "tfc:stone/axe/sedimentary": 7,
-    "tfc:stone/axe/metamorphic": 7,
-    "tfc:stone/axe/igneous_extrusive": 7,
-    "tfc:stone/axe/igneous_intrusive": 7,
-    "tfc:stone/shovel_head/sedimentary": 8,
-    "tfc:stone/shovel_head/metamorphic": 8,
-    "tfc:stone/shovel_head/igneous_extrusive": 8,
-    "tfc:stone/shovel_head/igneous_intrusive": 8,
-    "tfc:stone/shovel/sedimentary": 8,
-    "tfc:stone/shovel/metamorphic": 8,
-    "tfc:stone/shovel/igneous_extrusive": 8,
-    "tfc:stone/shovel/igneous_intrusive": 8,
-    "tfc:stone/hoe_head/sedimentary": 9,
-    "tfc:stone/hoe_head/metamorphic": 9,
-    "tfc:stone/hoe_head/igneous_extrusive": 9,
-    "tfc:stone/hoe_head/igneous_intrusive": 9,
-    "tfc:stone/hoe/sedimentary": 9,
-    "tfc:stone/hoe/metamorphic": 9,
-    "tfc:stone/hoe/igneous_extrusive": 9,
-    "tfc:stone/hoe/igneous_intrusive": 9,
-    "tfc:stone/hammer_head/sedimentary": 10,
-    "tfc:stone/hammer_head/metamorphic": 10,
-    "tfc:stone/hammer_head/igneous_extrusive": 10,
-    "tfc:stone/hammer_head/igneous_intrusive": 10,
-    "tfc:stone/hammer/sedimentary": 10,
-    "tfc:stone/hammer/metamorphic": 10,
-    "tfc:stone/hammer/igneous_extrusive": 10,
-    "tfc:stone/hammer/igneous_intrusive": 10,
-    "tfc:stone/javelin_head/sedimentary": 11,
-    "tfc:stone/javelin_head/metamorphic": 11,
-    "tfc:stone/javelin_head/igneous_extrusive": 11,
-    "tfc:stone/javelin_head/igneous_intrusive": 11,
-    "tfc:stone/javelin/sedimentary": 11,
-    "tfc:stone/javelin/metamorphic": 11,
-    "tfc:stone/javelin/igneous_extrusive": 11,
-    "tfc:stone/javelin/igneous_intrusive": 11
-  }
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "บทนำ",
+	"category": "tfc:getting_started",
+	"icon": "tfc:rock/loose/granite",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "ใน TerraFirmaCraft สิ่งแรกที่คุณสามารถหาได้คือ sticks, twigs และ loose rocks สิ่งเหล่านี้สามารถพบได้ในแทบทุกสภาพอากาศ โดยนอนกระจัดกระจายอยู่บนพื้น กด $(item)$(k:key.use)$() หรือทำลายสิ่งเหล่านี้เพื่อเก็บขึ้นมา"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"1    ",
+						" 2  4",
+						"  03 ",
+						" 4   ",
+						"    5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "tfc:rock/loose/granite[count=1]",
+					"2": "tfc:rock/loose/granite[count=2]",
+					"3": "tfc:rock/loose/granite[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "tfc:wood/twig/ash"
+				}
+			},
+			"name": "ตัวอย่าง",
+			"text": "เศษกิ่งไม้และก้อนหินทั่วไปที่กระจัดกระจายอยู่",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "นอกจากการเก็บ sticks และ twigs บนพื้นแล้ว sticks ยังสามารถหาได้จากการต่อยใบไม้ด้วยมือเปล่า เมื่อคุณมี rocks และ sticks จำนวนหนึ่งแล้ว คุณก็พร้อมที่จะเริ่ม $(thing)Knapping$() แล้ว การ Knapping คือกระบวนการที่นำหินสองก้อนมากระแทกกันเพื่อขึ้นรูปตามทรงที่ต้องการ ในการกระเทาะหิน (knap) ก่อนอื่นให้ถือ rocks อย่างน้อยสองก้อนไว้ในมือ แล้วคลิกขวาในอากาศ ซึ่งจะเปิดหน้าต่าง $(thing)Knapping Interface$() ขึ้นมา"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "หน้าต่าง Knapping Interface",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ในการกระเทาะหินเป็นไอเท็มเฉพาะ คุณต้องกะเทาะช่องสี่เหลี่ยมออกจนกระทั่งได้รูปแบบที่ต้องการ ตัวอย่างเช่น สร้าง knife blade โดยจัดรูปแบบให้ตรงกับสูตรที่แสดงทางด้านขวา$(br2)เช่นเดียวกับสูตรคราฟต์ ตำแหน่งของรูปแบบที่ต้องการไม่มีผลต่อผลลัพธ์ และบางสูตรอาจมีรูปแบบที่ใช้ได้หลายรูปแบบ"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "knife blade ที่คราฟต์จากหินหลากหลายชนิด"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "หัวเครื่องมือหิน (stone tool heads) ทั้งหมดสามารถคราฟต์ร่วมกับ stick หรือ twig เพื่อประกอบเข้าด้วยกันเป็นเครื่องมือได้$(br2)stone knife สามารถใช้เก็บเกี่ยว $(thing)Straw$() ได้โดยการตัดพืชพรรณ"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "$(thing)Axes$() (ขวาน) สามารถใช้ตัดต้นไม้ทั้งต้น รวมถึงท่อนไม้และใบไม้ได้ อย่างไรก็ตาม saplings และ sticks จะได้รับก็ต่อเมื่อทำลายใบไม้ทีละใบเท่านั้น"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "$(thing)Shovels$() (พลั่ว) สามารถใช้ขุดบล็อกประเภทดินได้ นอกจากนี้ยังสามารถใช้สร้าง $(thing)Paths$() (ทางเดิน) ได้โดยการ $(item)กดใช้$() บน $(thing)Dirt$() หรือ $(thing)Grass$()"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "$(thing)Hoes$() (จอบ) เป็นเครื่องมือที่มีประโยชน์สำหรับการ $(l:mechanics/crops)Farming (การทำฟาร์ม)$() แต่ยังสามารถใช้ตัดใบไม้และมวลพืชอื่น ๆ ได้ด้วย"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "$(thing)Hammers$() (ค้อน) สามารถใช้เป็นอาวุธประเภท $(l:mechanics/damage_types)Crushing (การทุบ)$() ได้ แต่เป็นเครื่องมือที่มีความสำคัญมากกว่าเมื่อใช้สำหรับ $(l:getting_started/primitive_anvils)Forging (การตีขึ้นรูป)$()"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "สุดท้าย $(thing)Javelin$() (หอกขว้าง) สามารถใช้เป็นอาวุธยุคโบราณ ซึ่งสามารถขว้างใส่เป้าหมาย หรือใช้เป็นอาวุธประเภท $(l:mechanics/damage_types)Piercing (การแทง)$() ได้"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 5,
+		"tfc:stone/knife_head/metamorphic": 5,
+		"tfc:stone/knife_head/igneous_extrusive": 5,
+		"tfc:stone/knife_head/igneous_intrusive": 5,
+		"tfc:stone/knife/sedimentary": 5,
+		"tfc:stone/knife/metamorphic": 5,
+		"tfc:stone/knife/igneous_extrusive": 5,
+		"tfc:stone/knife/igneous_intrusive": 5,
+		"tfc:stone/axe_head/sedimentary": 7,
+		"tfc:stone/axe_head/metamorphic": 7,
+		"tfc:stone/axe_head/igneous_extrusive": 7,
+		"tfc:stone/axe_head/igneous_intrusive": 7,
+		"tfc:stone/axe/sedimentary": 7,
+		"tfc:stone/axe/metamorphic": 7,
+		"tfc:stone/axe/igneous_extrusive": 7,
+		"tfc:stone/axe/igneous_intrusive": 7,
+		"tfc:stone/shovel_head/sedimentary": 8,
+		"tfc:stone/shovel_head/metamorphic": 8,
+		"tfc:stone/shovel_head/igneous_extrusive": 8,
+		"tfc:stone/shovel_head/igneous_intrusive": 8,
+		"tfc:stone/shovel/sedimentary": 8,
+		"tfc:stone/shovel/metamorphic": 8,
+		"tfc:stone/shovel/igneous_extrusive": 8,
+		"tfc:stone/shovel/igneous_intrusive": 8,
+		"tfc:stone/hoe_head/sedimentary": 9,
+		"tfc:stone/hoe_head/metamorphic": 9,
+		"tfc:stone/hoe_head/igneous_extrusive": 9,
+		"tfc:stone/hoe_head/igneous_intrusive": 9,
+		"tfc:stone/hoe/sedimentary": 9,
+		"tfc:stone/hoe/metamorphic": 9,
+		"tfc:stone/hoe/igneous_extrusive": 9,
+		"tfc:stone/hoe/igneous_intrusive": 9,
+		"tfc:stone/hammer_head/sedimentary": 10,
+		"tfc:stone/hammer_head/metamorphic": 10,
+		"tfc:stone/hammer_head/igneous_extrusive": 10,
+		"tfc:stone/hammer_head/igneous_intrusive": 10,
+		"tfc:stone/hammer/sedimentary": 10,
+		"tfc:stone/hammer/metamorphic": 10,
+		"tfc:stone/hammer/igneous_extrusive": 10,
+		"tfc:stone/hammer/igneous_intrusive": 10,
+		"tfc:stone/javelin_head/sedimentary": 11,
+		"tfc:stone/javelin_head/metamorphic": 11,
+		"tfc:stone/javelin_head/igneous_extrusive": 11,
+		"tfc:stone/javelin_head/igneous_intrusive": 11,
+		"tfc:stone/javelin/sedimentary": 11,
+		"tfc:stone/javelin/metamorphic": 11,
+		"tfc:stone/javelin/igneous_extrusive": 11,
+		"tfc:stone/javelin/igneous_intrusive": 11
+	}
 }

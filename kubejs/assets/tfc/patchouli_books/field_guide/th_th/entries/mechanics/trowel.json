@@ -1,0 +1,18 @@
+{
+	"name": "Trowel",
+	"icon": "tfg:trowel",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"title": "Trowel",
+			"recipe": "tfg:shaped/trowel",
+			"text": "$(item)Trowel$() ช่วยให้ผู้สร้างบล็อกสามารถวางบล็อกแบบสุ่มจากฮอตบาร์ของตนเองได้เมื่อคลิกขวาบนพื้นผิว$(br2)Trowel ยังมีความสามารถในตัวที่รองรับม็อด $(item)Roads and Roofs$() ซึ่งหมายความว่าสามารถวางไอเทมตกแต่งเติมเต็มอย่าง bricks หรือ flagstones แบบสุ่มได้เช่นกัน"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ได้รับแรงบันดาลใจจากเครื่องมือ Trowel ในม็อด $(item)Quark$() ซึ่งเป็นม็อดโดย Vazkii"
+		}
+	]
+}

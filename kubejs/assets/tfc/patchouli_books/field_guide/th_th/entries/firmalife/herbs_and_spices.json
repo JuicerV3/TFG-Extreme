@@ -1,0 +1,325 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "สมุนไพรและเครื่องเทศ",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:spice/basil_leaves",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "ใน Firmalife มีพืชขนาดเล็กหลายชนิดที่คุณสามารถเก็บรวบรวมและนำมาปลูกได้เอง ซึ่งมีคุณสมบัติในการทำอาหาร พืชเหล่านี้ทั้งหมดสามารถพบได้ในป่า และเมื่อเก็บเกี่ยวแล้ว สามารถนำไปเพาะปลูกใน $(l:firmalife/greenhouse)Greenhouse$() ได้ ซึ่งพวกมันจะใช้นิวเทรียนต์ N, P และ K อย่างละ 20 แต้ม"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=1]"
+					}
+				}
+			],
+			"name": "Basil",
+			"text": "$(thing)Wild Basil$() เติบโตได้ในอุณหภูมิระหว่าง 12 ถึง 25C และปริมาณน้ำฝน 300 ถึง 500mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=1]"
+					}
+				}
+			],
+			"name": "Bay Laurel",
+			"text": "$(thing)Wild Bay Laurel$() เติบโตได้ในอุณหภูมิระหว่าง 8 ถึง 14C และปริมาณน้ำฝน 25 ถึง 225mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=1]"
+					}
+				}
+			],
+			"name": "Cardamom",
+			"text": "$(thing)Wild Cardamom$() เติบโตได้ในอุณหภูมิระหว่าง 18 ถึง 30C และปริมาณน้ำฝน 350 ถึง 500mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=1]"
+					}
+				}
+			],
+			"name": "Cilantro",
+			"text": "$(thing)Wild Cilantro$() เติบโตได้ในอุณหภูมิระหว่าง 5 ถึง 15C และปริมาณน้ำฝน 0 ถึง 150mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=1]"
+					}
+				}
+			],
+			"name": "Cumin",
+			"text": "$(thing)Wild Cumin$() เติบโตได้ในอุณหภูมิระหว่าง 6 ถึง 20C และปริมาณน้ำฝน 50 ถึง 250mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=1]"
+					}
+				}
+			],
+			"name": "Oregano",
+			"text": "$(thing)Wild Oregano$() เติบโตได้ในอุณหภูมิระหว่าง 5 ถึง 13C และปริมาณน้ำฝน 50 ถึง 150mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=1]"
+					}
+				}
+			],
+			"name": "Pimento",
+			"text": "$(thing)Wild Pimento$() เติบโตได้ในอุณหภูมิระหว่าง 15 ถึง 30C และปริมาณน้ำฝน 200 ถึง 450mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=1]"
+					}
+				}
+			],
+			"name": "Vanilla",
+			"text": "$(thing)Wild Vanilla$() เติบโตได้ในอุณหภูมิระหว่าง 18 ถึง 30C และปริมาณน้ำฝน 200 ถึง 500mm",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "$(item)Seed Balls$() สามารถใช้เพื่อปลูกหญ้าชนิดต่างๆ ได้ ซึ่งจะมีประโยชน์อย่างมากหลังจากเคลียร์พื้นที่ฐานของคุณเพื่อการก่อสร้าง สูตรคราฟต์สำหรับ seed ball จำเป็นต้องใช้ $(item)Compost$() และ 4 $(thing)Seeds$()"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "",
+			"text": "ต้น Butterfly grass",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Butterfly grass จะเติบโตเต็มที่ตามกาลเวลา เมื่อต้นหนึ่งเติบโตเต็มที่ มันจะมีโอกาสแพร่ขยายไปยังบล็อกโดยรอบ หรือเปลี่ยนเป็นหญ้าชนิดใหม่ บล็อก Butterfly grass ที่ถูกแพร่ขยายมาจากบล็อกหญ้าอื่นจะไม่แพร่ขยายต่ออีกต่อไป$(br)หลังจากที่ Butterfly grass เปลี่ยนเป็นหญ้าชนิดอื่นแล้ว คุณสามารถเก็บพวกมันขึ้นมาได้ด้วย $(item)Shears$()"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 19,
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": 1,
+		"firmalife:plant/bay_laurel": 2,
+		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/cilantro": 4,
+		"firmalife:plant/cumin": 5,
+		"firmalife:plant/oregano": 6,
+		"firmalife:plant/pimento": 7,
+		"firmalife:plant/vanilla": 8,
+		"firmalife:seed_ball": 9
+	}
+}

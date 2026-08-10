@@ -1,0 +1,27 @@
+{
+	"name": "The Beneath คืออะไร?",
+	"category": "tfc:beneath",
+	"icon": "minecraft:deepslate",
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)The Beneath$() คือเครือข่ายถ้ำที่ลึกมาก ซึ่งอยู่ใต้ Overworld โดยตรง$(br)มิตินี้สมดุลอยู่รอบช่วงกลางถึงปลายของ $(thing)Primitive Age$() มันอันตรายกว่าพื้นผิว ดังนั้นเราจึงแนะนำให้สวมชุดเกราะสัมฤทธิ์ (bronze armor) แบบเต็มชุดและโล่โลหะเป็นอย่างน้อย รวมทั้งอาหาร น้ำ และเครื่องมืออื่นๆ อีกมากมาย"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "มันแตกต่างจากประสบการณ์ Nether ทั่วไปในสองสามประการ:$(li)คุณเข้าไปในมิตินี้ด้วยวิธีที่$(l:beneath/beneath#entering)แตกต่างออกไป$()$(li)น้ำไม่ระเหยทันที$(li)เตียงนอนทำงานได้ตามปกติ$(li)การเดินทางใน Beneath ไม่ได้เร็วกว่าใน Overworld$(br2)เพื่อเป็นการตอบแทน คุณสามารถค้นพบทรัพยากรอย่าง $(thing)Kaolin Clay$(), $(thing)Graphite$(), $(thing)ore veins$() ที่อุดมสมบูรณ์และเปิดโล่งมากกว่า รวมไปถึงสมบัติอื่นๆ"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "การเข้าสู่ The Beneath",
+			"text": "ในการเดินทางเข้าสู่ Beneath เพียงยืนบน bedrock ของ Overworld สักครู่ ในการลงไปถึง bedrock คุณจะต้องเจาะผ่านชั้น Hornfels ด้วย $(item)Explosives$() หรือ $(item)Steel+ Tools$() หรือค้นหาถ้ำที่มี $(thing)Keratophyre$() ที่เปราะกว่า"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "ในการเดินทางกลับ ให้ยืนอยู่ใต้เพดาน bedrock โดยตรงในลักษณะเดียวกัน$(br2)เป็นการดีที่จะ $(thing)จดบันทึก$() ตำแหน่งที่คุณเข้ามา เพื่อให้คุณสามารถกลับไปยังตำแหน่งเดิมใน Overworld ได้ทุกเมื่อที่คุณพร้อมจะกลับออกไป"
+		}
+	],
+	"read_by_default": true
+}

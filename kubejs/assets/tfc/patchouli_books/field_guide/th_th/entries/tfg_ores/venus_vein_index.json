@@ -1,0 +1,181 @@
+{
+  "__credits__": "หน้านี้สร้างขึ้นโดยอัตโนมัติด้วย OresToFieldGuide",
+  "name": "Venus Vein Index",
+  "icon": "gtceu:venus_stone_sulfur_ore",
+  "category": "tfc:tfg_ores",
+  "read_by_default": true,
+  "secret": false,
+  "pages": [
+    {
+      "Type": "patchouli:text",
+      "text": "นี่คือ $(thing)Vein Index$() ของ $(item)Venus$() แต่ละ Vein มีรายละเอียดเกี่ยวกับความหายาก ความหนาแน่น ประเภทของสายแร่ ระดับความสูงที่พบ ขนาด หินที่สามารถเกิดได้ และอื่น ๆ",
+      "title": "Venus Vein Index",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Halite, Sylvite, Lepidolite...$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Sulfur, Pyrite, Sphalerite$()$()",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)Height$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Ignimbrite, Lamproite, Rhyolite, Trachyte, Travertine",
+      "title": "Halite, Sylvite, Lepidolite...",
+      "type": "patchouli:text",
+      "anchor": "venus_manual_salt"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Halite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 80%$(br)$(thing)แหล่งที่มาของ$(): Sodium, Chlorine$(br)$(thing)สูตร$(): NaCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sylvite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 10%$(br)$(thing)แหล่งที่มาของ$(): Potassium, Chlorine, Fertilizer$(br)$(thing)สูตร$(): KCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lepidolite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lepidolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 5%$(br)$(thing)แหล่งที่มาของ$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)สูตร$(): KLi₃Al₄F₂O₁₀",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Spodumene",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spodumene"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 5%$(br)$(thing)แหล่งที่มาของ$(): Lithium, Aluminium$(br)$(thing)สูตร$(): LiAlSi₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Ignimbrite, Lamproite, Rhyolite, Trachyte, Travertine",
+      "title": "Sulfur, Pyrite, Sphalerite",
+      "type": "patchouli:text",
+      "anchor": "venus_manual_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sulfur",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 80%$(br)$(thing)แหล่งที่มาของ$(): Sulfur$(br)$(thing)สูตร$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pyrite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 15%$(br)$(thing)หลอมเป็น$(): Cast Iron$(br)$(thing)สูตร$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sphalerite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)เปอร์เซ็นต์$(): 5%$(br)$(thing)หลอมเป็น$(): Zinc$(br)$(thing)สูตร$(): ZnS",
+      "type": "patchouli:multiblock"
+    }
+  ],
+  "sortnum": 9
+}

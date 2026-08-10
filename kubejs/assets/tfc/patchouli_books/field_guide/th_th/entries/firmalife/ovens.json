@@ -1,0 +1,138 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Ovens",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:cured_oven_top",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Ovens$() เป็นวิธีที่ยอดเยี่ยมในการปรุงอาหารปริมาณมากโดยช่วยยืดอายุการเก็บรักษา อาหารที่อบด้วยเตาอบจะเน่าเสียในอัตรา 90% ของอาหารปกติ เตาอบเป็นโครงสร้าง Multiblock ที่ประกอบด้วย $(thing)Bottom Oven$(), $(thing)Top Oven$() และอาจมี $(thing)Chimneys$() เสริม บล็อกเหล่านี้เริ่มต้นจากดินเหนียว และจะต้องถูกทำให้ $(thing)Cured$() โดยการเพิ่มอุณหภูมิขึ้นถึงระดับที่กำหนดเป็นเวลาโปรดนานพอ$(br)$(l:firmalife/oven_appliances)Oven Appliances$() จะช่วยขยายฟังก์ชันการทำงานของเตาอบ"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_top",
+      "text": "สูตรสำหรับ Top Oven"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_bottom",
+      "text": "สูตรสำหรับ Bottom Oven"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_chimney",
+      "text": "สูตรสำหรับ Oven Chimney"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bricks",
+      "text": "เตาอบถูกฉนวนด้วย $(thing)Bricks$(), บล็อกเตาอบอื่นๆ หรือสิ่งใดก็ตามที่สามารถใช้เป็นฉนวนสำหรับ Forge ได้ ซึ่งหมายความว่าคุณสามารถใช้บล็อกหินได้ หากต้องการ!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "$(thing)Tongs$() เป็นวิธีที่ปลอดภัยในการหยิบไอเทมร้อนออกจากเตาอบ เพียงกด $(item)$(k:key.use)$() ขณะถือมันไว้เพื่อหยิบไอเทม มิฉะนั้น คุณอาจถูกไฟลวกได้!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เตาอบประกอบด้วย Top Oven วางไว้บน Bottom Oven ก่อนเป็นอันดับแรก จากนั้นควรปกคลุมทุกด้านของแต่ละส่วนของเตาอบ ยกเว้นด้านหน้า ด้วยบล็อกฉนวนเตาอบ ตามที่ได้อธิบายไว้ในสองหน้าก่อน คุณสามารถเลือกใช้ $(thing)Oven Chimneys$() เป็นฉนวนได้ การวางปล่องไฟต่อกันเป็นตั้งตรงหลังเตาอบโดยตรงจะทำให้ควันจากเตาอบลอยขึ้นและออกไปข้างนอก หากคุณไม่ทำเช่นนี้ ควันจะพุ่งเต็มบ้านอย่างรวดเร็ว ซึ่งเป็นเรื่องที่รบกวนมาก!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "ตัวอย่างโครงสร้างเตาอบ แบบ uncured และ cured",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:cured_oven_top[facing=north]",
+            "T": "firmalife:cured_oven_top[facing=north]",
+            "B": "firmalife:cured_oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:cured_oven_chimney"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:oven_top[facing=north]",
+            "T": "firmalife:oven_top[facing=north]",
+            "B": "firmalife:oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:oven_chimney"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bottom Oven ใช้สำหรับบรรจุเชื้อเพลิง ซึ่งใช้ได้เฉพาะท่อนไม้ (logs) เท่านั้น กด $(item)$(k:key.use)$() เพื่อใส่หรือถอดท่อนไม้ Bottom Oven ยังเป็นส่วนของเตาอบที่สามารถจุดไฟได้ด้วย $(thing)Firestarter$() หรือเครื่องมืออื่น โดยจะส่งผ่านความร้อนที่มีอยู่ไปยัง Top Oven"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Top Oven เป็นส่วนที่บรรจุไอเทมซึ่งกำลังถูกปรุงอยู่ โดยจะดึงความร้อนจาก Bottom Oven และค่อยๆ ปล่อยออกมาอย่างช้าๆ เมื่อเวลาผ่านไป ซึ่งหมายความว่าแม้เชื้อเพลิงของคุณจะหมดลง Top Oven ก็ยังคงทำงานต่อไปได้อีกครู่หนึ่ง การใส่ไอเทมลงไปทำได้ง่ายๆ เพียงกด $(item)$(k:key.use)$() อย่าลืมใช้ $(thing)Peel$() เพื่อหยิบไอเทมออกมาในภายหลัง"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "การ Curing บล็อกเตาอบเป็นเรื่องง่าย แต่ต้องใช้ความอดทน เพียงเริ่มจุด Bottom Oven ตามปกติ แล้วรอ หากบล็อกเตาอบมีอุณหภูมิสูงกว่า 600 องศาเป็นเวลาประมาณ 80 วินาที มันจะบ่มตัวเองและบล็อกเตาอบรอบๆ ผลของการ curing จะส่งผ่านไปจนสุดปล่องไฟที่อยู่ใกล้เคียง"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_insulation",
+      "text": "การคราฟต์ฉนวนเตาอบสำหรับ Bottom Oven ช่วยให้คุณไม่จำเป็นต้องใส่ฉนวนที่ด้านข้างและด้านหลัง แต่ไม่ได้ยกเลิกความจำเป็นของปล่องไฟ กด $(item)$(k:key.use)$() เพื่อใช้งาน"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/brick_countertop",
+      "text": "Countertops เป็นบล็อกเพื่อความสวยงามที่นับเป็นฉนวนเตาอบ และมีรูปลักษณ์ที่เข้ากันกับบล็อกเตาอบ ถือเป็นตัวเลือกตกแต่งที่ดีสำหรับห้องครัวของคุณ"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "เตาอบยังมี $(thing)Finishes$() ที่สามารถใช้เปลี่ยนรูปลักษณ์ของพวกมันได้ ฟินิชเหล่านี้จะถูกทาลงบนขั้นพื้นฐานของอิฐเตาอบ (หรือบล็อกอิฐเอง) และมีไว้เพื่อความสวยงาม ฟินิชสามารถผสมและจับคู่กันได้ โดยทาด้วยการกด $(item)$(k:key.use)$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/rustic_finish",
+      "recipe2": "firmalife:crafting/stone_finish"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tile_finish"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 14
+}
