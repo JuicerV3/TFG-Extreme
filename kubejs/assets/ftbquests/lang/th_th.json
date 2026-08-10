@@ -1,0 +1,10 @@
+{
+  "ftbquests": "FTB Quests",
+  "ftbquests.chapter": "บท",
+  "ftbquests.chapter.completed": "บทนี้เสร็จสมบูรณ์แล้ว!",
+  "ftbquests.gui.collect_rewards": "คลิกเพื่อรับรางวัลทั้งหมด!",
+  "ftbquests.gui.open_in_guide": "คลิกที่นี่เพื่ออ่านเพิ่มเติม...",
+  "ftbquests.gui.linked_quest_id": "ID เควสต์ที่เชื่อมโยง: %s",
+  "ftbquests.message.missing_xlate_1": "ไม่มีคำแปลสำหรับ %s ในภาษาปัจจุบัน '%s'",
+  "ftbquests.file.progression_mode.tooltip": "เชิงเส้น: ต้องทำเควสต์ให้เสร็จก่อนจึงจะเริ่มเควสต์ที่ต้องพึ่งพาได้\nยืดหยุ่น: สามารถดำเนินภารกิจในเควสต์ที่ต้องพึ่งพาได้ตลอดเวลา\nแต่เควสต์ที่ต้องพึ่งพาจะไม่สามารถทำเสร็จได้จนกว่าเควสต์เงื่อนไขจะเสร็จสิ้น"
+}
